@@ -112,14 +112,16 @@
 ////    appdelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     self.delegate = self;
 
-    UITabBarItem *tabBarItem = [self.tabBar.items objectAtIndex:0];
+  /*  UITabBarItem *tabBarItem = [self.tabBar.items objectAtIndex:0];
     tabBarItem.selectedImage = [UIImage imageNamed: @"tab-timeline-02b"];
     tabBarItem = [self.tabBar.items objectAtIndex:1];
     tabBarItem.selectedImage = [UIImage imageNamed: @"tab-calendar-02b"];
     tabBarItem = [self.tabBar.items objectAtIndex:2];
-    tabBarItem.selectedImage = [UIImage imageNamed: @"tab-topics-02b"];
+    tabBarItem.selectedImage = [UIImage imageNamed: @"tab-calendar-02b"];
     tabBarItem = [self.tabBar.items objectAtIndex:3];
-    tabBarItem.selectedImage = [UIImage imageNamed: @"tab-more-02b"];
+    tabBarItem.selectedImage = [UIImage imageNamed: @"tab-topics-02b"];
+    tabBarItem = [self.tabBar.items objectAtIndex:4];
+    tabBarItem.selectedImage = [UIImage imageNamed: @"tab-more-02b"];*/
 
     // TODO: Keep protocol in TabBar instead of AppDelegate
 //    appdelegate.visibleProtocol = self.userT4bProtocol;
@@ -192,11 +194,11 @@
 //    [svc updateChildBounds];
 
     // ****************************************************************************************************
-    // Prepare 2 Calendar controllers and add them to SwapViewController for TAB 1
+    // Prepare 2 Calendar controllers and add them to SwapViewController for TAB 2
     // ****************************************************************************************************
     
     // Create PREGNANCY Calendar ViewConroller, prepare for first screen
-    NSLog(@"*** MainTabBarController -> viewDidLoad -> Building Pregnancy CalendarViewController");
+   /* NSLog(@"*** MainTabBarController -> viewDidLoad -> Building Pregnancy CalendarViewController");
     vcCalendarPreg = [[UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil]
                       instantiateViewControllerWithIdentifier:@"CalendarVC"];
     vcCalendarPreg.screenFunction = CalendarFunctionsPreg;
@@ -214,9 +216,9 @@
     [svc2 addChildViewController:vcCalendarBaby];
 //    [svc2.vc2.view addSubview:vcCalendarBaby.view];
     [svc2 updateChildBounds];
-
+*/
     // ****************************************************************************************************
-    // Prepare 2 Topics controllers and add them to SwapViewController for TAB 2
+    // Prepare 2 Topics controllers and add them to SwapViewController for TAB 3
     // ****************************************************************************************************
 
     // Create PREGNANCY Topics ViewConroller, prepare for first screen
@@ -230,7 +232,7 @@
                       instantiateViewControllerWithIdentifier:@"TopicsVC"];
     vcTopicsBaby.screenFunction  = TopicsFunctionsBaby;
     // Locate instance of SwapViewController to load its Preg/Baby View Controllers
-    SwapViewController *svc3 = [[[self.viewControllers objectAtIndex:2] viewControllers] objectAtIndex:0];
+    SwapViewController *svc3 = [[[self.viewControllers objectAtIndex:3] viewControllers] objectAtIndex:0];
     svc3.vc1 = vcTopicsPreg;
     [svc3 addChildViewController:vcTopicsPreg];
     svc3.vc2 = vcTopicsBaby;
@@ -317,7 +319,7 @@
         return NO;
 
     // Update the selected tab content in case user switched between Pregnancy and New Baby
-    if (viewController != [self.viewControllers objectAtIndex:3]) // Not for last tab
+    if (viewController != [self.viewControllers objectAtIndex:4] && viewController != [self.viewControllers objectAtIndex:1] && viewController != [self.viewControllers objectAtIndex:2]) // Not for last tab
     {
         // Update UI for selected tab before displayed in case protocol has changed
         [[[(UINavigationController*) viewController viewControllers] objectAtIndex:0] updateProtocol];

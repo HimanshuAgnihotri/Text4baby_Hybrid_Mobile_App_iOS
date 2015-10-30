@@ -54,12 +54,15 @@
     self.view1 = self.vc1.view;
     [self addChildViewController:self.vc1];
     [self.view addSubview: self.vc2.view];
+    
     self.view2 = self.vc2.view;
     [self addChildViewController:self.vc2];
     
-//    [self updateChildBounds];
+    
+    
+    [self updateChildBounds];
 
-    [self updateProtocol];
+    //[self updateProtocol];
 
     UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
     [self.navigationItem setBackBarButtonItem:backButtonItem];
