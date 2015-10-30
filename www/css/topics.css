@@ -1,0 +1,121 @@
+.ui-mobile, .ui-mobile body{height: 99.9% !important;}
+html {
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	 -webkit-tap-highlight-color: rgba(0,0,0,0);
+     -webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+.ui-overlay-a {background-image: none; border-width: 0;}
+.ui-loader-background{width:100%; height:100%; top:0; margin: 0; background: rgba(0, 0, 0, 0) !important; display:none; position: fixed; z-index:9999;}
+.ui-body-a, .ui-body-a input, .ui-body-a select, .ui-body-a textarea, .ui-body-a button {font-family: "VAG Rounded Std bold", Arial, sans-serif;}
+.ui-content{padding: 0px 0px 0px 0px; position: relative; letter-spacing: 1px;}
+
+.ui-loader-default{opacity: 1 !important; height: 32px !important; opacity: 1 !important; width: 32px !important; margin-left: 0 !important; margin-top: 0 !important;}
+.ui-loader{left: 45% !important; top: 44% !important;}
+.ui-loader .ui-icon{background-color: none !important; display: block; height: 32px !important; margin: 0 !important; padding: 0px !important; width: 32px !important; border-radius: 100px !important;}
+.ui-icon-loading{background: url(images/ajax-loader.gif) no-repeat scroll 0 0 / 32px 32px rgba(0, 0, 0, 0) !important;}
+
+.safe-sleep-banner{background: url(../images/topics/baby/safe-sleep.jpg) no-repeat center center;}
+.no-tv-baby-banner{background: url(../images/topics/baby/no-tv-baby.jpg) no-repeat center center;}
+.crying-baby-banner{background: url(../images/topics/baby/crying-baby.jpg) no-repeat center center;}
+.bathing-baby-banner{background: url(../images/topics/baby/bathing-baby.jpg) no-repeat center center;}
+.reading-baby-banner{background: url(../images/topics/baby/reading-baby.jpg) no-repeat center center;}
+.bedtime-routine-banner{background: url(../images/topics/baby/bedtime-routine.jpg) no-repeat center center;}
+.baby-vaccines-banner{background: url(../images/topics/baby/vaccines.jpg) no-repeat center center;}
+.sun-safety-banner{background: url(../images/topics/baby/sun-safety.jpg) no-repeat center center;}
+.car-seat-safety-banner{background: url(../images/topics/baby/car-seat-safety.jpg) no-repeat center center;}
+.baby-walkers-banner{background: url(../images/topics/baby/baby-walkers.jpg) no-repeat center center;}
+.tips-banner{background: url(../images/topics/baby/tips.jpg) no-repeat center center;}
+.cavities-banner{background: url(../images/topics/baby/cavities.jpg) no-repeat center center;}
+.jaundice-banner{background: url(../images/topics/baby/jaundice.jpg) no-repeat center center;}
+.fever-banner{background: url(../images/topics/baby/fever.jpg) no-repeat center center;}
+.preemies-correct-age-banner{background: url(../images/topics/baby/preemies-correct-age.jpg) no-repeat center center;}
+.iron-deficiency-banner{background: url(../images/topics/baby/iron-deficiency.jpg) no-repeat center center;}
+.rsv-banner{background: url(../images/topics/baby/rsv.jpg) no-repeat center center;}
+.flu-banner{background: url(../images/topics/baby/flu.jpg) no-repeat center center;}
+.breastfeeding-banner{background: url(../images/topics/baby/breastfeeding.jpg) no-repeat center center;}
+.how-much-banner{background: url(../images/topics/baby/how-much.jpg) no-repeat center center;}
+.baby-weight-gain-banner{background: url(../images/topics/baby/weight-gain.jpg) no-repeat center center;}
+.starting-solids-banner{background: url(../images/topics/baby/starting-solids.jpg) no-repeat center center;}
+.first-foods-banner{background: url(../images/topics/baby/first-foods.jpg) no-repeat center center;}
+.self-feeding-banner{background: url(../images/topics/baby/self-feeding.jpg) no-repeat center center;}
+.baby-safety-banner{background: url(../images/topics/baby/baby-safety.jpg) no-repeat center center;}
+.baby-help-support-banner{background: url(../images/topics/help-support.jpg) no-repeat center center;}
+.baby-health-banner{background: url(../images/topics/health.jpg) no-repeat center center;}
+.responsive-banner{padding: 0px; height: 167px; max-width: 385px; min-width: 320px; text-align: center;}
+
+.grid-container{padding: 0 16px 20px 16px;}
+.topics-block h2{color: #6E2C8D; font-family: "VAG Rounded Std light"; font-size: 19px; font-weight: normal; letter-spacing: 1px; margin: 0; padding: 10px 0 15px; text-align: center;}
+.topics-block p{color: #585858; font-family: "VAG Rounded Std light"; font-size: 14px; line-height: 21px; margin: 0; padding: 8px 0 15px;}
+.topics-block ul{overflow: hidden; list-style-type: none; padding: 0; margin: 10px 0 0 0;}
+.topics-block ul li{margin-bottom: 15px; overflow: hidden;}
+.topics-block ul li span{background: url(../images/about-list.png) no-repeat scroll 0 1px transparent; color: #FFFFFF; display: inline-block; float: left; font-size: 14px; height: 17px; margin-right: 10px; padding-top: 4px; text-align: center; width: 20px; line-height: 17px;}
+.topics-block ul li div{display: inline-block; float: left; width: 88%; line-height: 21px; text-align: left;}
+.topics-block ul li div p{padding: 0;}
+.topics-list-grid ul li{font-size: 14px; color: #585858; font-family: "VAG Rounded Std light"; margin: 0px; padding: 0 0 15px 20px; line-height: 21px;}
+
+p{text-align: left !important;}
+
+.topics-list-grid ul{border: none; list-style-type: none; margin-top: 0;}
+.topics-list-grid ul li{background: url(../images/topics-bullet.png) no-repeat 5px 6px; border: none; padding: 0 0 15px 20px;}
+.topics-list-grid ul li p{float: none; width: 100%; padding: 0;}
+
+.grey-bg p a, .grey-bg a, p a{color: #EC008C !important; text-decoration: none !important; font-weight: normal !important;}
+p.italic{font-family:Verdana, Geneva, sans-serif; !important; font-size:13px; font-style:italic; !important;}
+
+
+.baby-safety-banner{background: url(../images/topics/baby/baby-safety.jpg) no-repeat center center;}
+.baby-help-support-banner{background: url(../images/topics/help-support.jpg) no-repeat center center;}
+.baby-health-banner{background: url(../images/topics/health.jpg) no-repeat center center;}
+.topics-block .ui-collapsible-set{margin: 15px 0 0 !important;}
+.ui-corner-all, .ui-btn-corner-all {-webkit-background-clip: padding; background-clip: padding-box;}
+.ui-corner-all {-webkit-border-radius: 7px; border-radius: 7px;}
+.ui-collapsible{border-radius: 8px !important; margin-bottom: 10px !important;}
+h3{font-size: 16px; color: #606b73; margin: 0px; /*padding: 0px 0px 8px 0px !important;*/ font-weight: normal;}
+.ui-collapsible-heading-toggle{border: 1px solid #ec008c; color: #fff; font-weight: 700; text-shadow: 0 -1px 0 #000; background: rgb(254,102,192); background: -moz-linear-gradient(top, rgba(254,102,192,1) 0%, rgba(251,64,175,1) 50%, rgba(249,40,164,1) 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,102,192,1)), color-stop(50%,rgba(251,64,175,1)), color-stop(100%,rgba(249,40,164,1))); background: -webkit-linear-gradient(top, rgba(254,102,192,1) 0%,rgba(251,64,175,1) 50%,rgba(249,40,164,1) 100%); background: -o-linear-gradient(top, rgba(254,102,192,1) 0%,rgba(251,64,175,1) 50%,rgba(249,40,164,1) 100%); background: -ms-linear-gradient(top, rgba(254,102,192,1) 0%,rgba(251,64,175,1) 50%,rgba(249,40,164,1) 100%); background: linear-gradient(to bottom, rgba(254,102,192,1) 0%,rgba(251,64,175,1) 50%,rgba(249,40,164,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe66c0', endColorstr='#f928a4',GradientType=0 );}
+.ui-btn-up-a, .ui-btn-hover-a, .ui-btn-down-a {font-family: "VAG Rounded Std bold", Arial, sans-serif; text-decoration: none;}
+.ui-collapsible-heading a.ui-collapsible-heading-toggle .ui-btn-inner{padding:8px 10px 8px 10px; display:table; width: 98%;}
+.ui-btn-inner {border-top: 1px solid #fff; border-color: rgba(255,255,255,.3);}
+.ui-btn-up-a:visited, .ui-btn-up-a a.ui-link-inherit {color: #80878c;}
+h3 a .ui-btn-text{color: #ffffff; font-size: 17px; font-weight: normal; text-shadow: none; font-family: "VAG Rounded Std bold", Arial, sans-serif; display: block; padding: 8px 0px 8px 0px; white-space: normal; display: table-cell !important; vertical-align: middle; width: 80%;}
+h3 a .ui-btn-inner .ui-icon{border-radius: 25px; height: 34px; width: 20% !important; display: table-cell !important; position: relative !important;}.ui-icon-accord-plus{background: url(../images/plus.png) no-repeat center center; width: 50px !important; height: 50px !important;}
+.ui-icon-accord-minus{background: url(../images/minus.png) no-repeat center center; width: 48px !important;  height: 48px !important;}
+.ui-icon-shadow {/*-moz-box-shadow: 0 1px 0 rgba(255,255,255,.4); -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.4); box-shadow: 0 1px 0 rgba(255,255,255,.4);*/}
+.ui-icon, .ui-icon-searchfield:after {/*background: #ffffff; background: rgba(255,255,255,1); background-image: url(images/icons-18-black.png); background-repeat: no-repeat; -webkit-border-radius: 9px; border-radius: 9px;*/}
+.topics-block .ui-collapsible-content{background: #ffffff; margin-top: 10px;}
+.ui-collapsible-content{padding: 0 6px 20px !important;}
+.topics-block .ui-collapsible-content p{padding: 0 0 15px;}
+.ui-collapsible-content p{font-size: 13px; color: #000; margin: 0px; padding: 0px; line-height: 21px; font-family: "VAG Rounded Std light"; text-align: left; letter-spacing: 1px; font-weight: normal; text-shadow: none;}
+.topics-block .btm-lnks{overflow: hidden;}
+.topics-block span.accord-contact{background: url(../images/phone.png) no-repeat 0 0; font-size: 12px; color: #2E2EFE; padding-bottom: 1px; padding-left: 30px; padding-top: 7px; display: block; text-shadow: none; margin-bottom:8px;}
+.topics-block span.accord-contact .ui-link{color: #2E2EFE !important;}
+.ui-body-a .ui-link:visited {}
+.ui-body-a .ui-link {color: #434344; font-weight: bold;}
+.topics-block a.accord-site{background: url(../images/site.png) no-repeat 0 2px; font-size: 12px; color: #f41f8d !important; padding-left: 30px; text-decoration: none; padding-bottom: 1px; padding-top: 7px; display: block; text-shadow: none; font-weight: normal;}
+
+.breakfast-banner{background: url(../images/topics/pregnancy/breakfast-ideas.jpg) no-repeat center center;}
+.weight-gain-banner{background: url(../images/topics/pregnancy/weight-gain.jpg) no-repeat center center;}
+.week39-banner{background: url(../images/topics/pregnancy/weeks39.jpg) no-repeat center center;}
+.morning-sickness-banner{background: url(../images/topics/pregnancy/morning-sickness.jpg) no-repeat center center;}
+.visits-banner{background: url(../images/topics/pregnancy/visits.jpg) no-repeat center center;}
+.ultrasound-banner{background: url(../images/topics/pregnancy/ultrasound.jpg) no-repeat center center;}
+.vaccine-banner{background: url(../images/topics/vaccines.jpg) no-repeat center center;}
+.tests-banner{background: url(../images/topics/pregnancy/tests.jpg) no-repeat center center;}
+.pre-vitamins-banner{background: url(../images/topics/pregnancy/prenatal-vitamins.jpg) no-repeat center center;}
+.folic-acid-banner{background: url(../images/topics/pregnancy/folic-acid.jpg) no-repeat center center;}
+.food-safety-banner{background: url(../images/topics/pregnancy/food-safety.jpg) no-repeat center center;}
+.listeriosis-banner{background: url(../images/topics/pregnancy/listeriosis.jpg) no-repeat center center;}
+.eating-seafood-banner{background: url(../images/topics/pregnancy/eating-seafood.jpg) no-repeat center center;}
+.hbp-banner{background: url(../images/topics/pregnancy/high-blood-pressure.jpg) no-repeat center center;}
+.preeclampsia-banner{background: url(../images/topics/pregnancy/preeclampsia.jpg) no-repeat center center;}
+.gestational-diabetes-banner{background: url(../images/topics/pregnancy/gestational-diabetes.jpg) no-repeat center center;}
+.uti-banner{background: url(../images/topics/pregnancy/uti.jpg) no-repeat center center;}
+.bleeding-banner{background: url(../images/topics/pregnancy/bleeding.jpg) no-repeat center center;}
+.exercise-banner{background: url(../images/topics/pregnancy/exercise.jpg) no-repeat center center;}
+.signs-labor-banner{background: url(../images/topics/pregnancy/signs-labor.jpg) no-repeat center center;}
+.contraction-types-banner{background: url(../images/topics/pregnancy/contraction-types.jpg) no-repeat center center;}
+.preterm-labor-banner{background: url(../images/topics/pregnancy/preterm-labor.jpg) no-repeat center center;}
+.help-support-banner{background: url(../images/topics/help-support.jpg) no-repeat center center;}
+.health-banner{background: url(../images/topics/health.jpg) no-repeat center center;}
+

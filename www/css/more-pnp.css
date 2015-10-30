@@ -1,0 +1,25 @@
+.ui-mobile, .ui-mobile body{height: 99.9% !important;}
+html {
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	 -webkit-tap-highlight-color: rgba(0,0,0,0);
+     -webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+.ui-overlay-a {background-image: none; border-width: 0;}
+.ui-loader-background{width:100%; height:100%; top:0; margin: 0; background: rgba(0, 0, 0, 0) !important; display:none; position: fixed; z-index:9999;}
+.ui-body-a, .ui-body-a input, .ui-body-a select, .ui-body-a textarea, .ui-body-a button {font-family: "VAG Rounded Std bold", Arial, sans-serif;}
+.ui-content{padding: 0px 0px 0px 0px; position: relative; letter-spacing: 1px;}
+
+.more-container h2{font-size: 18px; color: #ec0088; font-weight: normal; text-align: center; margin: 0px; padding: 12px 0px 0px;}
+p{text-align: left !important;}
+#tnc {color: #585858; font-family: "VAG Rounded Std light"; font-size: 13px; font-weight: normal; letter-spacing: 1px; line-height: 21px; margin: 0; padding: 8px 0 15px; text-align: left; text-shadow: none;}
+.grid-container{padding: 0 16px 20px 16px;}
+h5{color: #585858; font-size: 15px; line-height: 21px; margin: 0px; padding: 10px 0px 0px; text-align: left; font-weight: normal;}
+#terms-conditions-block p, #privacy-policy-block p{color: #585858; font-family: "VAG Rounded Std light"; font-size: 13px; font-weight: normal; letter-spacing: 1px; line-height: 21px; margin: 0; padding: 8px 0 15px; text-align: left; text-shadow: none;}
+.ui-body-a .ui-link:visited {}
+.grey-bg p a, .grey-bg a, p a{color: #EC008C !important; text-decoration: none !important; font-weight: normal !important;}
+.ui-loader-default{opacity: 1 !important; height: 32px !important; opacity: 1 !important; width: 32px !important; margin-left: 0 !important; margin-top: 0 !important;}
+.ui-loader{left: 45% !important; top: 44% !important;}
+.ui-loader .ui-icon{background-color: none !important; display: block; height: 32px !important; margin: 0 !important; padding: 0px !important; width: 32px !important; border-radius: 100px !important;}
+.ui-icon-loading{background: url(images/ajax-loader.gif) no-repeat scroll 0 0 / 32px 32px rgba(0, 0, 0, 0) !important;}

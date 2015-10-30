@@ -1,0 +1,164 @@
+﻿
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+		<title>:: Text4baby :: Timeline ::</title>
+		<link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css" />		
+	    <link rel="stylesheet" href="themes/css/t4b-style.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body onload="RegisterPagehit('timeline/pregnancy/week-11');">
+    	<div class="ui-loader-background"> </div>
+		<div data-role="page" data-theme="a">
+
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery.mobile-1.3.2.min.js"></script>		
+	 <script src="js/nativeeventhandler.js"></script>
+		<script src = "js/process.js"></script> 
+		<script src = "js/exec.js"></script> 		
+		<script src="js/analytics.js"></script>
+		<script src="js/pageinfo.js"></script>	
+        
+         <!--<script>
+             $(document).on("expand", "[data-role=collapsible]", function () {
+                 var topoffset = 50;
+                 var position = $(this).offset().top - topoffset;
+                 window.localStorage.setItem("to_position", position);
+                 $.mobile.silentScroll(position);
+             });
+            </script>-->
+
+         <script>
+             function toggleMoreInfo(val) {
+				 document.getElementById("textid-4").style.display = "block";
+                 var elementId = "#cf2 img.top" + (val);
+                 //toggleMoveInFront();
+                 $(elementId).toggleClass("transparent");
+             }
+         </script>
+
+                        <!--Content Section Starts Here-->
+                        <div data-role="content" data-theme="a" id="timeline-pregnancy-content">  
+								<div id="timeline2">						
+                                                       <div id='cf2' class='banner'>
+                                                       <span class='banner-text' id='textid-4' style='display: none;'>
+                                                         <h5>Mom this Week</h5>
+                                                         <p>Hopefully you&#39;re feeling better these days.  You might feel really thirsty though. Drink plenty of water and milk (not soda). Make sure to take care of yourself. Listen to music, read, and take long walks. Anything that keeps you happy!</p>
+                                                       </span>
+                                                   <img class='top11' src='images/timeline/pregnancy/pregnancy-week11.jpg' onClick='toggleMoreInfo(11);' />							
+												</div>   
+												
+										<!-- Pregnancy Accordion Information Starts Here -->
+										<div id="pregnancy_week_info" class="slide_wrapper">
+											<div data-role="collapsible-set" data-theme="a" data-content-theme="d" data-iconpos="right">
+													<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="timeline-icon-one" data-expanded-icon="timeline-icon-one" id="preg1">
+														<h3>How Big is Baby?</h3>
+														<div class="timeline-grid-pregnancy-one">
+                                                            <h2 class='margin-spacer txt-center'>Your baby is the size of a kiwi!</h2>
+                                                          <div class='timeline-block-one'> 
+                                                           <div class='timeline-block-one-pic'>
+                                                            <img src="images/timeline/pregnancy-tab1/week11.jpg">
+                                                           </div> 
+                                                            <ul> 
+                                                            <li>Less than .5 oz</li> 
+                                                            <li>1.5 inches</li> 
+                                                            </ul>  
+                                                          </div> 
+                                                           <p>Baby has grown a lot. If you looked inside you would see a tiny face, long arms and legs, and a big head. Your baby&#39;s head makes up almost 1/2 of baby&#39;s body now. </p>
+														</div>
+													</div>
+													<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="timeline-icon-two" data-expanded-icon="timeline-icon-two" id="preg2">
+														<h3 onclick="ShowResult(11);">How You Compare</h3>
+														<div class="timeline-grid-pregnancy-two">
+														  <div id="poll-pregnancy-quiz11"> 
+                                                            <h2 class='txt-center'>Take our poll and see what other Text4baby moms have to say!</h2> 
+                                                              <div class='radio-grid'> 
+                                                                <p class='survey-spacer title-fontSize'>My pregnancy hormones make me:</p> 
+                                                                   <label for="radio-choice-pregnancy11-a">Lose my temper</label> 
+                                                                   <input name="radio-choice-pregnancy11" id="radio-choice-pregnancy11-a" value='on' checked='checked' type='radio'> 
+                                                                   <label for="radio-choice-pregnancy11-b">Cry on a dime</label> 
+                                                                   <input name="radio-choice-pregnancy11" id="radio-choice-pregnancy11-b" value='off' type='radio'> 
+                                                                   <label for="radio-choice-pregnancy11-c">Laugh out loud</label> 
+                                                                   <input name="radio-choice-pregnancy11" id="radio-choice-pregnancy11-c" value='other' type='radio'> 
+                                                              </div> 
+                                                           <div class='ui-field-contain'> 
+                                                             <input id='submit-radio' value='Submit' type='submit' onClick='PregAccorTwo(11)'> 
+                                                           </div> 
+                                                         </div> 
+                                                        <div id="poll-pregnancy-result11" style='display: none;'> 
+                                                          <p class='survey-spacer'>Pregnancy hormones can put you through an emotional roller coaster. Don&#39;t worry! Your body is changing and these feelings are normal.</p> 
+                                                            <div class='graph-shadow'> 
+                                                              <div class='custom-graph-grid'> 
+                                                                   <h3 class='graph-title'>Other Text4baby Moms Said:</h3>
+                                                                      <div class='graph' style='padding : 0 0 0 13%;'>
+                                                                         <div class='graph-block'>
+                                                                             <div class='graph-bar-value-grid'> 
+                                                                                <div class='graph-bar1-value'>31%</div> 
+                                                                                <div class='graph-bar2-value'>60%</div> 
+                                                                                <div class='graph-bar3-value'>9%</div> 
+                                                                              </div> 
+                                                                         <div class='bar1 pregnancy-week11-bar-1'>
+                                                                    </div> 
+                                                              <div class='bar2 pregnancy-week11-bar-2'>
+                                                         </div> 
+                                                            <div class='bar3 pregnancy-week11-bar-3'>
+                                                            </div> 
+                                                            <div class='labels'>
+                                                              <ul> 
+                                                                  <li class='bar-one'>Temper</li> 
+                                                                  <li class='bar-two'>Cry</li> 
+                                                                  <li class='bar-three'>Laugh</li> 
+                                                              </ul>
+                                                            </div>
+                                                          </div>
+                                                        </div> 
+                                                     </div> 
+                                                  </div> 
+                                              </div>	
+					                   </div>
+													</div>
+													<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="timeline-icon-three" data-expanded-icon="timeline-icon-three" id="preg3">
+														<h3 onclick="ShowCheckList(11);">To-Dos This Week</h3>
+														<div class="timeline-grid-pregnancy-three">
+														  <h2 class='txt-center'>Weekly Checklist</h2> 
+                                                            <p class='bottom-margin20'>Get a star every time you complete a total of three tasks. When you collect 5 stars, you'll get a Text4baby badge</p> 
+                                                            <p class='bottom-margin20'>In &quot;More&quot; you can see all your badges!</p> 
+                                                               <div id='checklist-grid'> 
+                                                                 <input name="checkbox-week11-pregnancy-c1" id="checkbox-week11-pregnancy-c1" type='checkbox' onClick='CheckboxSelect(11)'> 
+                                                                 <label for="checkbox-week11-pregnancy-c1">Ask friends and family if they have maternity clothes to share</label> 
+                                                                 <input name="checkbox-week11-pregnancy-c2" id="checkbox-week11-pregnancy-c2" type='checkbox' onClick='CheckboxSelect2(11)'> 
+                                                                 <label for="checkbox-week11-pregnancy-c2">Be sure to brush your teeth twice a day and floss once a day</label> 
+                                                               </div> 
+                                                            <div class='star-badge-grid'> 
+                                                               <div class='star-rating'> 
+                                                                  <span id='star1'>Star</span> 
+                                                                  <span id='star2'>Star</span> 
+                                                                  <span id='star3'>Star</span> 
+                                                                  <span id='star4'>Star</span> 
+                                                                  <span id='star5'>Star</span> 
+                                                              </div> 
+                                                           <div class='timeline-grid-one txt-center' id='badgediv'> 
+                                                                  <span id='badgespan' >
+                                                                  </span> 
+                                                                  <span id='badgetext' class='badge-name'>
+                                                                  </span>
+                                                           </div>
+                                                        </div>	
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- Pregnancy Accordion Information Ends Here -->
+										  <!--Pregnancy Section Ends Here-->							
+							</div>
+						</div>
+                        <!--Content Section Ends Here-->   
+		</div>
+
+	</body>
+</html>
+
+

@@ -1,0 +1,2457 @@
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/topics.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<title>:: Text4baby :: Topics ::</title>
+		<!-- InstanceEndEditable -->
+        <!-- CORDOVA InApp Browser Code start -->
+        <script src="phonegap.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            document.addEventListener("deviceready", onDeviceReady, false);
+            // Global InAppBrowser reference
+            var iabRef = null;
+            function iabLoadStart(event) {
+                alert(event.type + ' - ' + event.url);
+            }
+            function iabLoadStop(event) {
+                alert(event.type + ' - ' + event.url);
+            }
+            function iabClose(event) {
+                alert(event.type);
+                iabRef.removeEventListener('loadstart', iabLoadStart);
+                iabRef.removeEventListener('loadstop', iabLoadStop);
+                iabRef.removeEventListener('exit', iabClose);
+            }
+            // Cordova is ready
+            function onDeviceReady() {
+                var iVoxC4L = 1;
+            }
+        </script>
+    	<!-- CORDOVA InApp Browser Code end -->
+		<link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css" />
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.mobile-1.3.2.min.js"></script>
+        <script src="js/header-footer-fix.js"></script>
+        <link rel="stylesheet" href="themes/css/t4b-style.css" />
+        <link rel="stylesheet" href="css/style.css" />
+		<script src="js/analytics.js"></script>
+		<script src="js/pageinfo.js"></script>
+        <script src="js/topics.js"></script>
+        <script src="js/exec.js"></script>
+       
+
+        <!-- InstanceBeginEditable name="head" -->
+        <!-- InstanceEndEditable -->
+       
+        <script type="text/javascript">
+            $(document).on("tap", function () {
+                if (window.localStorage.getItem("session") == 'false') {
+                    window.location = 'sign-in.html';
+                }
+
+            });
+      </script> 
+   
+      <script type="text/javascript">
+          $(function () {
+              $('a').on('click touchend', function () {
+                  var link = $(this).attr('href');
+              });
+          });
+     </script>
+
+
+        
+</head>
+    
+	<body onload="show();">
+    <div class="ui-loader-background"> </div>
+	<div data-role="page" data-theme="a">
+   
+            <!--Baby topics Header Section Starts Here-->
+            <div id="baby_topics" style=" display : none;">
+            <div data-role="header" data-theme="a" data-position="fixed">
+		  	  	<!-- InstanceBeginEditable name="Back" --><div id="back-btn"><a href="#" rel="external" title="" onclick="dispdiv('1002' ,3);">Back</a></div><!-- InstanceEndEditable -->
+				<div class="logo"><img src="images/logo.png" alt="text4baby" width="96" height="21"></div>
+				<!-- InstanceBeginEditable name="Flip Button" --><div class="pregnancy-flip"><a href="#" title="Pregnancy Topics" onclick="dispdivflip('1001');">Pregnancy</a></div><!-- InstanceEndEditable -->
+			</div>
+            </div>
+            <!-- Baby topics Header Section Ends Here-->
+
+            <!--Pregnancy topics Header Section Starts Here-->
+            <div id="pregnancy_topics" style=" display : none;">
+            <div data-role="header" data-theme="a" data-position="fixed">
+		  	  	<!-- InstanceBeginEditable name="Back" --><div id="back-btn-preg"><a href="#" rel="external" title="" onclick="dispdiv('1001' ,3);">Back</a></div><!-- InstanceEndEditable -->
+				<div class="logo"><img src="images/logo.png" alt="text4baby" width="96" height="21"></div>
+				<!-- InstanceBeginEditable name="Flip Button" --><div class="baby-flip"><a href="#" title="Baby Topics" onclick="dispdivflip('1002');">Baby</a></div><!-- InstanceEndEditable -->
+			</div>
+            </div>
+            <!--Pregnancy topics Header Section Ends Here-->
+
+            <!--Content Section Starts Here-->
+			<div data-role="content" data-theme="a">
+            <div id="timeline">
+				<!-- InstanceBeginEditable name="Content Section" -->
+                <!-- content of baby topics -->
+                <div id="content_baby" style=" display : none;">
+                <div class="responsive-banner baby-topics-banner" id="baby-topics-banner"></div>
+                <div class="grid-container top-margin20">
+                <div data-role="collapsible-set" data-theme="a" data-content-theme="d" data-iconpos="right">
+                        <div data-role="collapsible" data-collapsed-icon="topics-icon-baby-one" data-expanded-icon="topics-icon-baby-one">
+                            <h3>Baby Care</h3>
+                            <div class="timeline-grid-one" id="baby-care-block">
+                                <div data-role="navbar">
+                                    <ul>
+                                        <li class="top-left-corner"><a href="#" rel="external" class="safe-sleep-icon" onclick="dispdiv('1');" id="1">Safe Sleep</a></li>
+                                        <li class="top-right-corner"><a href="#" rel="external" class="no-tv-baby-icon" onclick="dispdiv('2');" id="2">No TV for Baby</a></li>
+                                        <li class="top-left-corner no-corner"><a href="#" rel="external" class="crying-baby-icon" onclick="dispdiv('3');" id="3">Crying Baby</a></li>
+                                        <li class="top-right-corner no-corner"><a href="#" rel="external" class="bathing-baby-icon" onclick="dispdiv('4');" id="4">Bathing Baby</a></li>
+                                        <li class="bottom-left-corner"><a href="#" rel="external" class="reading-baby-icon" onclick="dispdiv('5');" id="5">Reading to Baby</a></li>
+                                        <li class="bottom-right-corner"><a href="#" rel="external" class="bedtime-routine-icon" onclick="dispdiv('6');" id="6">Bedtime Routine</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-role="collapsible" data-collapsed-icon="topics-icon-baby-two" data-expanded-icon="topics-icon-baby-two">
+                            <h3>Baby's Health &amp; Safety</h3>
+                            <div class="timeline-grid-one" id="baby-health-safety-block">
+                                <div data-role="navbar">
+                                    <ul>
+                                        <li class="top-left-corner"><a href="#" rel="external" class="baby-vaccines-icon" onclick="dispdiv('7');" id="7">Vaccines</a></li>
+                                        <li class="top-right-corner"><a href="#" rel="external" class="sun-safety-icon" onclick="dispdiv('8');" id="8">Sun Safety</a></li>
+                                        <li class="bottom-left-corner"><a href="#" rel="external" class="car-seat-safety-icon" onclick="dispdiv('9');" id="9">Car Seat Safety</a></li>
+                                        <li class="bottom-right-corner"><a href="#" rel="external" class="baby-walkers-icon" onclick="dispdiv('10');" id="10">Baby Walkers</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-role="collapsible" data-collapsed-icon="topics-icon-baby-three" data-expanded-icon="topics-icon-baby-three">
+                            <h3>Teething</h3>
+                            <div class="timeline-grid-one" id="teething-block">
+                                <div data-role="navbar">
+                                    <ul>
+                                        <li class="left-corner"><a href="#" rel="external" class="tips-icon" onclick="dispdiv('11');" id="11">Tips</a></li>
+                                        <li class="right-corner"><a href="#" rel="external" class="cavities-icon" onclick="dispdiv('12');" id="12">Cavities</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-role="collapsible" data-collapsed-icon="topics-icon-baby-four" data-expanded-icon="topics-icon-baby-four">
+                            <h3>Issues &amp; Concerns</h3>
+                            <div class="timeline-grid-one" id="issues-concerns-block">
+                                <div data-role="navbar">
+                                    <ul>
+                                        <li class="top-left-corner"><a href="#" rel="external" class="jaundice-icon" onclick="dispdiv('13');" id="13">Jaundice</a></li>
+                                        <li class="top-right-corner"><a href="#" rel="external" class="fever-icon" onclick="dispdiv('14');" id="14">Fever</a></li>
+                                        <li class="top-left-corner no-corner"><a href="#" rel="external" class="preemies-correct-age-icon" onclick="dispdiv('15');" id="15">Preemies<br> Correct Age</a></li>
+                                        <li class="top-right-corner no-corner"><a href="#" rel="external" class="iron-deficiency-icon" onclick="dispdiv('16');" id="16">Iron Deficiency</a></li>
+                                        <li class="bottom-left-corner"><a href="#" rel="external" class="rsv-icon" onclick="dispdiv('17');" id="17">RSV</a></li>
+                                        <li class="bottom-right-corner"><a href="#" rel="external" class="flu-icon" onclick="dispdiv('18');" id="18">Flu</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-role="collapsible" data-collapsed-icon="topics-icon-baby-five" data-expanded-icon="topics-icon-baby-five">
+                            <h3>Feeding Baby</h3>
+                            <div class="timeline-grid-one" id="feeding-baby-block">
+                                <div data-role="navbar">
+                                    <ul>
+                                        <li class="top-left-corner"><a href="#" rel="external" class="breastfeeding-icon" onclick="dispdiv('19');" id="19">Breastfeeding</a></li>
+                                        <li class="top-right-corner"><a href="#" rel="external" class="how-much-icon" onclick="dispdiv('20');" id="20">How Much?</a></li>
+                                        <li class="top-left-corner no-corner"><a href="#" rel="external" class="baby-weight-gain-icon" onclick="dispdiv('21');" id="21">Baby's<br> Weight Gain</a></li>
+                                        <li class="top-right-corner no-corner"><a href="#" rel="external" class="starting-solids-icon" onclick="dispdiv('22');" id="22">Starting Solids</a></li>
+                                        <li class="bottom-left-corner"><a href="#" rel="external" class="first-foods-icon" onclick="dispdiv('23');" id="23">First Foods</a></li>
+                                        <li class="bottom-right-corner"><a href="#" rel="external" class="self-feeding-icon" onclick="dispdiv('24');" id="24">Self-Feeding</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-role="collapsible" data-collapsed-icon="topics-icon-hotline" data-expanded-icon="topics-icon-hotline">
+                            <h3>Hotlines</h3>
+                            <div class="timeline-grid-one" id="baby-hotlines-block">
+                                <div data-role="navbar">
+                                    <ul>
+                                        <li class="top-left-corner"><a href="#" rel="external" class="baby-safety-icon" onclick="dispdiv('25');" id="25">Baby Safety</a></li>
+                                        <li class="top-right-corner"><a href="#" rel="external" class="help-support-icon" onclick="dispdiv('26');" id="26">Help &amp; Support</a></li>
+                                        <li class="bottom-left-corner"><a href="#" rel="external" class="health-icon" onclick="dispdiv('27');" id="27">Health</a></li>
+                                        <li class="bottom-right-corner"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                 <!-- content of baby topics ends -->
+
+                  <!-- content of pregnancy topics -->
+                <div id="content_pregnancy" style=" display : none;">
+                <div class="responsive-banner pregnancy-topics-banner" id="pregnancy-topics-banner"></div>
+                <div class="grid-container top-margin20">
+                <div data-role="collapsible-set" data-theme="a" data-content-theme="d" data-iconpos="right">
+                        <div data-role="collapsible" data-collapsed-icon="topics-icon-one" data-expanded-icon="topics-icon-one">
+                            <h3>Prenatal Care</h3>
+                            <div class="timeline-grid-one" id="prenatal-care-block">
+                                <div data-role="navbar">
+                                    <ul>
+                                        <li class="top-left-corner"><a href="#" rel="external" class="visit-icon" onclick="dispdiv('28');" id="28">Visits</a></li>
+                                        <li class="top-right-corner"><a href="#" rel="external" class="ultrasound-icon" onclick="dispdiv('29');" id="29">Ultrasound</a></li>
+                                        <li class="bottom-left-corner"><a href="#" rel="external" class="vaccines-icon" onclick="dispdiv('30');" id="30">Vaccines</a></li>
+                                        <li class="bottom-right-corner"><a href="#" rel="external" class="test-icon" onclick="dispdiv('31');" id="31">Tests</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-role="collapsible" data-collapsed-icon="topics-icon-two" data-expanded-icon="topics-icon-two">
+                            <h3>Food &amp; Nutrition</h3>
+                            <div class="timeline-grid-one" id="food-nutrition-block">
+                                <div data-role="navbar">
+                                    <ul>
+                                        <li class="top-left-corner"><a href="#" rel="external" class="pre-vitamin-icon" onclick="dispdiv('32');" id="32">Prenatal Vitamins</a></li>
+                                        <li class="top-right-corner"><a href="#" rel="external" class="folic-acid-icon" onclick="dispdiv('33');" id="33">Folic Acid</a></li>
+                                        <li class="top-left-corner no-corner"><a href="#" rel="external" class="breakfast-icon" onclick="dispdiv('34');" id="34">Breakfast Ideas</a></li>
+                                        <li class="top-right-corner no-corner"><a href="#" rel="external" class="food-safety-icon" onclick="dispdiv('35');" id="35">Food Safety</a></li>
+                                        <li class="bottom-left-corner"><a href="#" rel="external" class="listeriosis-icon" onclick="dispdiv('36');" id="36">Listeriosis</a></li>
+                                        <li class="bottom-right-corner"><a href="#" rel="external" class="seafood-icon" onclick="dispdiv('37');" id="37">Eating Seafood</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-role="collapsible" data-collapsed-icon="topics-icon-four" data-expanded-icon="topics-icon-four">
+                            <h3>Health Issues</h3>
+                            <div class="timeline-grid-one" id="health-issues-block">
+                                <div data-role="navbar">
+                                    <ul>
+                                        <li class="top-left-corner"><a href="#" rel="external" class="hbp-icon" onclick="dispdiv('38');" id="38">High Blood<br> Pressure</a></li>
+                                        <li class="top-right-corner"><a href="#" rel="external" class="preeclampsia-icon" onclick="dispdiv('39');" id="39">Preeclampsia</a></li>
+                                        <li class="top-left-corner no-corner"><a href="#" rel="external" class="diabetes-icon" onclick="dispdiv('40');" id="40">Gestational<br> Diabetes</a></li>
+                                        <li class="top-right-corner no-corner"><a href="#" rel="external" class="morning-sickness-icon" onclick="dispdiv('41');" id="41">Morning<br> Sickness</a></li>
+                                        <li class="bottom-left-corner"><a href="#" rel="external" class="uti-icon" onclick="dispdiv('42');" id="42">Urinary Tract<br> Infection</a></li>
+                                        <li class="bottom-right-corner"><a href="#" rel="external" class="bleeding-icon" onclick="dispdiv('43');" id="43">Bleeding</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-role="collapsible" data-collapsed-icon="topics-icon-three" data-expanded-icon="topics-icon-three">
+                            <h3>Weight &amp; Exercise</h3>
+                            <div class="timeline-grid-one" id="weight-exercise-block">
+                                <div data-role="navbar">
+                                    <ul>
+                                        <li class="left-corner"><a href="#" rel="external" class="weight-gain-icon" onclick="dispdiv('44');" id="44">Weight Gain</a></li>
+                                        <li class="right-corner"><a href="#" rel="external" class="exercise-icon" onclick="dispdiv('45');" id="45">Exercise</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-role="collapsible" data-collapsed-icon="topics-icon-five" data-expanded-icon="topics-icon-five">
+                            <h3>Labor &amp; Delivery</h3>
+                            <div class="timeline-grid-one" id="labor-delivery-block">
+                                <div data-role="navbar">
+                                    <ul>
+                                        <li class="top-left-corner"><a href="#" rel="external" class="signs-labor-icon" onclick="dispdiv('46');" id="46">Signs of Labor</a></li>
+                                        <li class="top-right-corner"><a href="#" rel="external" class="contraction-icon" onclick="dispdiv('47');" id="47">Contraction<br> Types</a></li>
+                                        <li class="bottom-left-corner"><a href="#" rel="external" class="weeks39-icon" onclick="dispdiv('48');" id="48">Why Wait<br> 39 Weeks</a></li>
+                                        <li class="bottom-right-corner"><a href="#" rel="external" class="preterm-labor-icon" onclick="dispdiv('49');" id="49">Preterm Labor</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-role="collapsible" data-collapsed-icon="topics-icon-hotline" data-expanded-icon="topics-icon-hotline">
+                            <h3>Hotlines</h3>
+                            <div class="timeline-grid-one" id="hotlines-block">
+                                <div data-role="navbar">
+                                    <ul>
+                                        <li class="left-corner"><a href="#" rel="external" class="help-support-icon" onclick="dispdiv('50');" id="50">Help &amp; Support</a></li>
+                                        <li class="right-corner"><a href="#" rel="external" class="health-icon" onclick="dispdiv('51');" id="51">Health</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                 <!-- content of pregnancy topics ends -->
+
+                  <!-- content of baby topics pages -->
+                <div id="page1" style=" display : none;">
+                <div class="responsive-banner safe-sleep-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Safe Sleep</h2>
+                    <p>Here are some tips to help keep your baby sleeping safely:</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Place baby on his/her back on a firm, tight-fitting mattress in a crib that meets current safety standards.</p>
+                            </li>
+                            <li>
+                                <p>Remove pillows, quilts, comforters, sheepskins, stuffed toys and other soft products from the crib.</p>
+                            </li>
+                            <li>
+                                <p>Consider using a sleeper as an alternative to blankets, with no other covering.</p>
+                            </li>
+                            <li>
+                                <p>If using a blanket, put baby with her feet at the foot of the crib. Tuck a thin blanket around the crib mattress, only as far as the baby's chest.</p>
+                            </li>
+                            <li>
+                                <p>Make sure your baby's head remains uncovered during sleep.</p>
+                            </li>
+                            <li>
+                                <p>Do not place baby on a waterbed, sofa, soft mattress, pillow or other soft surface to sleep.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+
+                <div id="page2" style=" display : none;">
+                       <div class="responsive-banner no-tv-baby-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>No TV for Baby</h2>
+                    <p>Pediatricians recommend that babies under the age of 2 don't watch TV. Parents are often surprised by this! Surveys tell us that about 40% of babies are watching some sort of video by age 5 months, and by age 2 the number rises to 90%.</p>
+                    <h5>Early Brain Development</h5>
+                    <p>Kids' brains grow a huge amount during the first 3 years of life. Your baby's brain grows 3 times its size in the first year alone. During this time your baby's Dr. wants to make sure that your baby is learning from the real world because it helps your baby's brain grow more.</p>
+                    <p>Here is an example, think about a ball in real life and a ball on TV. Infants are developing 3-dimensional vision. On TV it is 2 dimensions, so the ball is just a flat, shaded circle. If you roll a ball across the floor it moves in a single motion, slowing gradually until it stops. The same action on TV is broken up. You see the ball leave someone's hand, then there's a shot of it in motion, then a picture of the ball at rest. If your infant wants to grab a ball in real life he'll move for it, grab it, or crawl after it. The stuff on the screen just disappears, to be replaced by other stuff; you can never get your hands (or mouth) on it. Infants may stare at the bright colors and motion on a screen, but their brains don't know what it means. <strong>It takes 2 full years for a baby's brain to develop to the point where they know what they are seeing on the TV is also what exists in real life.</strong></p>
+                    <p>Doctors also say there is good research and evidence that shows TV watching before age 2 has lasting negative effects on children's language development, reading skills, and short term memory. It also contributes to problems with sleep and attention.</p>
+                    <p>Sometimes TV seems like an easy way to entertain your child if you have to get something done, but find a friend, toy, stationary activity center, or room with no dangerous objects and just let your baby move instead-you are doing great things for her brain development!</p>
+                    <p class="italic">In partnership with HealthyChildren.org</p>
+                </div>
+                </div>
+
+                 <div id="page3" style=" display : none;">
+                <div class="responsive-banner crying-baby-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Crying Baby</h2>
+                    <p>All babies cry and some cry more than others. It's important to respond quickly when your baby cries during the first few months of life. Don't worry about spoiling your newborn baby. If you respond quickly to your baby's cries, she may cry less overall.</p>
+                    <p>If your baby cries often, it doesn't mean you're a bad parent. It can be very frustrating, as you get to know your baby, you'll learn how much crying is normal for her and what you can do to help.</p>
+                    <p>Here are some tips to try and help baby if she is crying:</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Check to make sure she isn't hungry.</p>
+                            </li>
+                            <li>
+                                <p>Check to make sure she has a clean diaper. If not, change it.</p>
+                            </li>
+                            <li>
+                                <p>Look for signs of illness or pain. Check for a fever over 100.4 degrees</p>
+                            </li>
+                            <li>
+                                <p>Rock or walk baby.</p>
+                            </li>
+                            <li>
+                                <p>Sing or talk to the baby.</p>
+                            </li>
+                            <li>
+                                <p>Offer her a pacifier or a toy.</p>
+                            </li>
+                            <li>
+                                <p>Take her for a ride in a stroller.</p>
+                            </li>
+                            <li>
+                                <p>Take her for a ride in the car. Be sure baby is secured in the car seat.</p>
+                            </li>
+                            <li>
+                                <p>Swaddle baby by wrapping her snugly in a receiving blanket.</p>
+                            </li>
+                            <li>
+                                <p>Play soft music.</p>
+                            </li>
+                            <li>
+                                <p>Hold baby close to your body. Breathe calmly and slowly.</p>
+                            </li>
+                            <li>
+                                <p>If nothing else works, put baby in her crib on her back, close the door and check on him in 10 minutes.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>If your baby cries longer than usual and nothing you do soothes him, call your baby's health care provider to see if she's sick. If she pulls up her legs or passes gas often, she may have colic (intense crying for more than 3 hours a day).</p>
+                    <p class="italic">In partnership with March of Dimes</p>
+                </div>
+                </div>
+
+                 <div id="page4" style=" display : none;">
+                <div class="responsive-banner bathing-baby-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Bathing Baby</h2>
+                    <p>Your baby should get a bath every 2 to 3 days. Bathing him more often can dry out his skin.</p>
+                    <h5>Getting Ready for Baby's Bath</h5>
+                    <p>Here is what you need:</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Baby shampoo or soap</p>
+                            </li>
+                            <li>
+                                <p>Wash cloths</p>
+                            </li>
+                            <li>
+                                <p>Towels</p>
+                            </li>
+                            <li>
+                                <p>Clean clothes and diaper</p>
+                            </li>
+                            <li>
+                                <p>A small, plastic tub or a sink for a tub bath</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>If you need to leave the room to get something, take your baby with you. Babies can drown in just a little water. NEVER leave your baby alone near water!</p>
+                    <p>Don't forget to set your water heater thermostat at 120 degrees Fahrenheit. Each time you bathe baby test the bathwater with your wrist or elbow before placing your baby in the bathwater.</p>
+                    <p>You can also use a wet washcloth without putting baby into water. This helps keep the belly button or circumcision dry for healing.</p>
+                    <p>Here's what to do:</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Place your baby on a flat surface, like a changing table.</p>
+                            </li>
+                            <li>
+                                <p>Undress him and wrap him in a towel.</p>
+                            </li>
+                            <li>
+                                <p>Use a washcloth in plain water to gently wipe his eyes.</p>
+                            </li>
+                            <li>
+                                <p>Use a soapy washcloth to clean the rest of his body. Wash one area at a time. Clean between skin folds. Keep the rest of him wrapped in a towel so he doesn't get cold.</p>
+                            </li>
+                            <li>
+                                <p>Wash the diaper area last to keep germs from spreading.</p>
+                            </li>
+                            <li>
+                                <p>Rinse him off with plain water and pat him dry.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>Until your baby's umbilical cord stump falls off:</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Tuck her diaper below the stump.</p>
+                            </li>
+                            <li>
+                                <p>Keep the area clean and dry. If it gets dirty, clean it with a baby wipe or rubbing alcohol.</p>
+                            </li>
+                            <li>
+                                <p>Call her provider if you see signs of infection, like pus or redness, or if she cries when you touch the area.</p>
+                            </li>
+                            
+                            <p class="italic">In partnership with March of Dimes</p>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+
+
+                <div id="page5" style=" display : none;">
+                 <div class="responsive-banner reading-baby-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Reading to Baby</h2>
+                    <h5>Encourage Early Literacy</h5>
+                    <ul>
+                    	<li>
+                        	<span>1</span>
+                            <div>
+                            	<p>Keep books out and at your baby's level and let baby explore the books. For a 6-month old, this may mean mouthing the book while a 1 year old may enjoy stacking the books.</p>
+                            </div>
+                        </li>
+                        <li>
+                        	<span>2</span>
+                            <div>
+                            	<p>Talk, talk, talk to your baby, even newborns. For young babies, hearing language means learning language.</p>
+                            </div>
+                        </li>
+                        <li>
+                        	<span>3</span>
+                            <div>
+                            	<p>Make reading part of baby's routines.</p>
+                            </div>
+                        </li>
+                        <li>
+                        	<span>4</span>
+                            <div>
+                            	<p>You can consider labeling the places and things that your baby often like "door," "bathroom," "toys." Place the labels at the child's eye-level.</p>
+                            </div>
+                        </li>
+                        <li>
+                        	<span>5</span>
+                            <div>
+                            	<p>Point out the written word in places other than books. You can point out letters in your child?s name when you see them or things like the STOP sign.</p>
+                            </div>
+                        </li>
+                        <li>
+                        	<span>6</span>
+                            <div>
+                            	<p>Read books that appeal to infants and toddlers.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <p>Some tips for picking out books just right for your baby:</p>
+                    <h5>For Babies 0 to 6 Months</h5>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Books with simple, large pictures or designs with bright colors.</p>
+                            </li>
+                            <li>
+                                <p>Stiff cardboard, "chunky" books, or fold out books.</p>
+                            </li>
+                            <li>
+                                <p>Cloth and soft vinyl books with simple pictures of people or familiar objects that can go in the bath or get washed.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <h5>For Babies 6 to 12 Months</h5>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Board books with photos of other babies.</p>
+                            </li>
+                            <li>
+                                <p>Brightly colored "chunky" board books to touch and taste!</p>
+                            </li>
+                            <li>
+                                <p>Books with photos of familiar objects like balls and bottles.</p>
+                            </li>
+                            <li>
+                                <p>Plastic/vinyl books for bath time.</p>
+                            </li>
+                            <li>
+                                <p>Washable cloth books to cuddle and mouth.</p>
+                            </li>
+                            <li>
+                                <p>Small plastic photo albums of family and friends.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <h5>For Young Toddlers 12 to 24 Months</h5>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Sturdy board books that they can carry.</p>
+                            </li>
+                            <li>
+                                <p>Books with photos of children doing things like sleeping or playing.</p>
+                            </li>
+                            <li>
+                                <p>Goodnight books for bed time.</p>
+                            </li>
+                            <li>
+                                <p>Books about saying good-bye and hello.</p>
+                            </li>
+                            <li>
+                                <p>Books with only a few words on each page.</p>
+                            </li>
+                            <li>
+                                <p>Brightly colored books.</p>
+                            </li>
+                            <li>
+                                <p>Books with simple rhymes or predictable text.</p>
+                            </li>
+                            <li>
+                                <p>Touch-and-feel books.</p>
+                            </li>
+                            <li>
+                                <p>Animal books of all sizes and shapes.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+
+                <div id="page6" style=" display : none;">
+                <div class="responsive-banner bedtime-routine-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Bedtime Routine</h2>
+                    <p>By setting and keeping a bedtime routine you are letting your baby know it is time for bed. As your baby gets older she will know when to expect bedtime. This will help for a smoother bedtime. Here are some tips for creating a bedtime routine</p>
+                    <h5>Bathing</h5>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Baths are a good way to transition from eating to getting ready for bed.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <h5>Brushing</h5>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Whether you choose to brush your child's teeth (or gums) right after the last feeding or just before the actual bedtime itself, we strongly encourage you to get in the habit of having a toothbrush (or washcloth or gauze) be the last thing in your baby's mouth at night.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <h5>Books</h5>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Since you don't want food or drink to become your child's bedtime source of comfort, books can serve as the perfect reminder that it's time to cuddle up and go to sleep.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <h5>Bedtime</h5>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Keep a routine time for your baby to get ready for and get into bed. Once you've set the stage so that bathing, brushing, and books signal bedtime, you should just let your child fall asleep by herself. </p>
+                            </li>
+                        </ul>
+                        <p class="italic">In partnership with HealthyChildren.org</p>
+                    </div>
+                </div>
+                </div>
+
+                <div id="page7" style=" display : none;">
+                <div class="responsive-banner baby-vaccines-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Vaccines</h2>
+                    <p>Vaccines prevent dangerous or even deadly diseases. Vaccines reduce the risk of infection by working with the body's to help it safely develop immunity to the diseases.</p>
+                    <p>When germs, such as bacteria or viruses, come into the body, they attack and grown in number. This invasion of germs is called an infection, and the infection is what causes illness. The immune system then has to fight the infection. Once the immune system fights off the infection, the body is left with a supply of cells that help recognize and fight that disease in the future.</p>
+                    <p>Vaccines help develop immunity by pretending to be an infection, but this "imitation" infection does not cause illness. It does, however, cause the immune system to develop the same response as it does to a real infection so the body can recognize and fight the vaccine-preventable disease in the future.</p>
+                    <p>The side effects associated with getting vaccines are almost always mild (such as redness and swelling where the shot was given) and go away within a few days. If your child experiences a reaction at the injection site, you can use a cool, wet cloth to reduce redness, soreness, and swelling.</p>
+                    <p>Serious side effects following vaccination, such as severe allergic reaction, are very rare and doctors and clinic staff are trained to deal with them. Pay extra attention to your child for a few days after vaccination. If you see something that concerns you, call your child's doctor.</p>
+                    <p>Click <a id="a1" onclick="window.open('http://www.cdc.gov/vaccines/schedules/easy-to-read/child.html','_blank','location=yes,enableViewportScale=yes')" href="#" title="">here</a> to see the recommended immunization schedule for U.S. babies.</p>
+                    
+                </div>
+                </div>
+
+                <div id="page8" style=" display : none;">
+                <div class="responsive-banner sun-safety-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Sun Safety</h2>
+                    <h5>Babies Younger than 6 Months</h5>
+                    <p>Try to keep babies younger than 6 months out of direct sunlight. Find shade under a tree, umbrella, or a stroller. If protective clothing and shade are not available, use sunscreen on small areas of the body, such as the face and the backs of the hands.</p>
+                    <h5>Babies Older than 6 Months</h5>
+                    <p>You can apply sunscreen to all areas of the body, but be careful around the eyes. If your baby rubs sunscreen into her eyes, wipe the eyes and hands clean with a damp cloth. If a rash develops, talk with your child's doctor.</p>
+                    <p>Here are some tips about sunscreen:</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Use a sunscreen that says "broad-spectrum" on the label - that means it will screen out both UVB and UVA rays.</p>
+                            </li>
+                            <li>
+                                <p>Use a sunscreen with an SPF (sun protection factor) of at least 15. The higher the SPF, the more UVB protection the sunscreen has.</p>
+                            </li>
+                            <li>
+                                <p>Look for the new UVA "star" rating system on the label.</p>
+                                <ul>
+                                	<li><p>One star is low UVA protection.</p></li>
+                                    <li><p>Two stars is medium protection.</p></li>
+                                    <li><p>Three stars is high protection.</p></li>
+                                    <li><p>Four stars is the highest UVA protection available in an over-the-counter sunscreen product.</p></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>For sensitive areas of the body, such as the nose, cheeks, tops of the ears, and the shoulders, choose a sunscreen or sunblock with zinc oxide or titanium dioxide.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <h5>How to Apply Sunscreen</h5>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Use enough sunscreen to cover all skin, especially the face, nose, ears, feet, and hands and backs of the knees. Rub it in well.</p>
+                            </li>
+                            <li>
+                                <p>Apply sunscreen 15 to 30 minutes before going outdoors to give time for the sunscreen to get into to the skin.</p>
+                            </li>
+                            <li>
+                                <p>Use sunscreen any time you or your child might sunburn.</p>
+                            </li>
+                            <li>
+                                <p>Reapply sunscreen every 2 hours. Sunscreen wears off after swimming, sweating, or just from soaking into the skin.</p>
+                            </li>
+                        </ul>
+                        <p class="italic">In partnership with HealthyChildren.org</p>
+                    </div>
+                </div>
+                </div>
+
+                <div id="page9" style=" display : none;">
+                <div class="responsive-banner car-seat-safety-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Car Seat Safety</h2>
+                    <p>One of your first important jobs as a parent is making sure your baby is safe in any vehicle she rides in.</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>The American Academy of Pediatrics (AAP) recommends that all infants should ride rear-facing starting with their <strong>first ride home from the hospital</strong>.</p>
+                            </li>
+                            <li>
+                                <p>For the best possible protection, <strong>keep your baby in a rear-facing child safety seat in a back seat for as long as possible</strong> - up to the height or weight limit of the particular seat. All infants and toddlers should ride in a rear-facing car seat until they are 2 years of age or until they reach the highest weight or height allowed by their car seat's manufacturer. You may have heard parents with older kids talk about a "12 months and 20 pounds" rule to turn their child forward-facing in the car but this is actually the minimum size and age requirement for that change. As the AAP says, you should keep a baby rear-facing in a convertible seat until he or she reaches the highest height or weight allowed by the manufacturer. For many children that will be 30, 35 or even 40 pounds. <strong>Many kids will be over age 2 when they reach that weight</strong>. Rear-facing children are safest.</p>
+                            </li>
+                            <li>
+                                <p>Use your baby's car seat rear-facing and semi-reclined to no more than 45 degrees, so the baby's head stays in contact with the seat and the baby's airway stays open. Read the car seat instructions.</p>
+                            </li>
+                            <li>
+                                <p>Make sure the buckled straps that keep your baby fit in the car seat are snug. Loose straps don't provide the most protection. Be sure the harness is tight enough that you cannot pinch the strap at the shoulder.</p>
+                            </li>
+                            <li>
+                                <p>Position the shoulder straps through the slots at or below your baby's shoulders.</p>
+                            </li>
+                            <li>
+                                <p>Adjust the chest clip to armpit level.</p>
+                            </li>
+                            <li>
+                                <p>Use either the car's seat belt or lower anchors and tethers for children (LATCH) system to lock the car seat into the car. Do not use both systems at the same time.</p>
+                            </li>
+                            <li>
+                                <p>Your car seat should not move more than one inch side to side or front to back. To test it, grab the car seat at the safety belt or LATCH path.</p>
+                            </li>
+                            <li>
+                                <p>Every car seat has an expiration date. Generally, it is six years from manufacture date. Many have the expiration date stamped on the seat. Contact the manufacturer of your specific seat to find out what its expiration date is.</p>
+                            </li>
+                            <li>
+                                <p>Never buy a used car seat if you do not know its full history. Never use a car seat that has been in a crash. Avoid seats sold at flea markets or yard sales or online.</p>
+                            </li>
+                            <li>
+                                <p>Do not use any products that did not come from the manufacturer in or with the car seat. Car seat fabrics meet strict fire safety codes.</p>
+                            </li>
+                            <li>
+                                <p>Add-on toys can injure your child in a crash.</p>
+                            </li>
+                            <li>
+                                <p>Find the frontal airbags in your vehicle by checking the owner's manual. Never put a rear-facing car seat in front of an active frontal airbag. Children are always safest in a back seat.</p>
+                            </li>
+                            <li>
+                                <p>Have your car seat checked for free by a currently certified child passenger safety technician to make sure it is properly installed. You can find a car seat inspection center by <a id="a2" onclick="window.open('http://www.safercar.gov/cpsApp/cps/index.htm','_blank','location=yes,enableViewportScale=yes')" href="#" title="">clicking here</a> or calling 1-866-SEAT-CHECK.</p>
+                            </li>
+                            <li>
+                                <p>Never leave a child alone in a vehicle - not even for a minute.</p>
+                            </li>
+                        </ul>
+                        <p class="italic">In partnership with Safe Kids USA</p>
+                    </div>
+                </div>
+                </div>
+
+                <div id="page10" style=" display : none;">
+                 <div class="responsive-banner baby-walkers-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Baby Walkers</h2>
+                    <p>Many parents think walkers will help their children learn to walk. But they don't. In fact, walkers can actually delay when a child starts to walk.</p>
+                    <h5>Babies in Walkers Can Get Many Injuries</h5>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Roll down the stairs - which often causes broken bones and severe head injuries. This is how most children get hurt in baby walkers.</p>
+                            </li>
+                            <li>
+                                <p>Get burned - a child can reach higher in a walker. It is now easier for a child to pull a tablecloth off a table and spill hot coffee, grab pot handles off the stove, and reach radiators, fireplaces, or space heaters.</p>
+                            </li>
+                            <li>
+                                <p>Drown - a child can fall into a pool or bathtub while in a walker.</p>
+                            </li>
+                            <li>
+                                <p>Be poisoned - reaching high objects is easier in a walker.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>Most walker injuries happen while adults are watching. Parents or caregivers simply cannot get there fast enough. A child in a walker can move more than 3 feet in 1 second! That is why walkers are never safe to use, even with an adult close by.</p>
+                    <h5>What You Can Do</h5>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Throw out your baby walkers! Also, be sure that there are no walkers wherever your child is being cared for, such as child care centers or in someone else's home.</p>
+                            </li>
+                            <li>
+                                <p>Try something just as enjoyable but safer, like</p>
+                                <ul>
+                                	<li>
+                                    	<p>Stationary activity centers-they look like walkers but have no wheels. They usually have seats that rotate, tip, and bounce.</p>
+                                    </li>
+                                    <li>
+                                    	<p>Play yards or playpens-these are great safety zones for children as they learn to sit, crawl, or walk.</p>
+                                    </li>
+                                    <li>
+                                    	<p>High chairs-older children often enjoy sitting up in a high chair and playing with toys on the tray.</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p class="italic">In partnership with HealthyChildren.org</p>
+                    </div>
+                </div>
+                </div>
+
+                <div id="page11" style=" display : none;">
+                <div class="responsive-banner tips-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Tips</h2>
+                    <h5>Teething Tips for Your Baby</h5>
+                    <p>When babies are teething, they may become fussy, sleepless and irritable, lose their appetite or drool more than usual. <strong>Diarrhea, rashes and a fever are not normal for a teething baby</strong>. If your baby has a fever or diarrhea while teething or continues to be cranky and uncomfortable, call your doctor.</p>
+                    <p>Babies may get sore or tender gums when their teeth cut their gums. Gently rubbing your child's gums with a clean finger, a small, cool spoon or a wet gauze pad can soothe them. A clean cold or frozen teething ring may also help.</p>
+                    <p>When baby teeth break through the gums, brush the teeth with a soft-bristled toothbrush and a little water to prevent tooth decay. Fluoride toothpaste is not recommended until a child reaches age 2.</p>
+                    <p>Begin regular dental checkups no later than your child's first birthday.</p>
+                </div>
+                </div>
+
+                <div id="page12" style=" display : none;">
+                <div class="responsive-banner cavities-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Cavities</h2>
+                    <p>Your child's baby teeth are at risk for decay (cavities) as soon as they show up - usually around age 6 months. Tooth decay in infants and toddlers usually occurs in the upper front teeth, but it can also occur in other teeth. In some cases, infants and toddlers have experienced decay so severe that the teeth cannot be saved and need to be removed. The good news - decay is mostly preventable.</p>
+                    <h5>Causes of Decay</h5>
+                    <p>Tooth decay begins when cavity-causing bacteria is passed to an infant. For example, if you put your baby's spoon or pacifier in your mouth and then put it in your baby's mouth, cavity-causing bacteria is passed to the baby.</p>
+                    <p>Another cause of tooth decay in babies is if you give your baby liquids that contain sugar, like fruit juice or soda and let her have them a lot or drink them for a long time.</p>
+                    <p>It's also important to put your baby to bed WITHOUT a bottle. Sugary liquids from a bottle pool around the teeth while the child sleeps. Bacteria in the mouth use these sugars as food. They then produce acids that attack the teeth. Each time your child drinks these liquids, acids attack for 20 minutes or longer. After these attacks, the teeth can decay.</p>
+                    <p>Pacifiers dipped in sugar, honey or sweetened liquids can also lead to tooth decay since the sugar or honey can provide food for the bacteria's acid attacks.</p>
+                </div>
+                </div>
+
+                <div id="page13" style=" display : none;">
+                <div class="responsive-banner jaundice-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Jaundice</h2>
+                    <p>Jaundice is a yellow discoloration of the skin and the whites of the eyes. It is caused by a build-up in the blood of a yellow pigment called bilirubin. Jaundice occurs in over 50 percent of all newborns. Skin usually starts to turn yellow a few days after birth. If you think your baby has a yellowish color, call your baby's health care provider.</p>
+                    <p>Most babies with jaundice are alert and eat and sleep normally. However, you should call the baby's health care provider immediately or seek emergency medical care if a baby with jaundice:</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Appears very yellow</p>
+                            </li>
+                            <li>
+                                <p>Is hard to wake</p>
+                            </li>
+                            <li>
+                                <p>Sucks or nurses poorly</p>
+                            </li>
+                            <li>
+                                <p>Appears floppy or stiff (or alternates between both)</p>
+                            </li>
+                            <li>
+                                <p>Arches the neck or back backwards</p>
+                            </li>
+                            <li>
+                                <p>Develops a high-pitched cry or fever</p>
+                            </li>
+                            <li>
+                                <p>Has unusual eye movements</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <h5>How is Jaundice Treated?</h5>
+                    <p>Most babies with jaundice do not need treatment. Health care providers sometimes suggest steps parents can take at home to help clear up mild to moderate jaundice. Your baby's provider may recommend increasing the number of feedings to encourage more bowel movements, which helps eliminate bilirubin.</p>
+                    <p>If a baby has moderate to severe jaundice that does not clear up on its own, treatment is recommended:</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p><strong>Phototherapy</strong>: The baby, wearing only a small diaper, is placed under special white or blue lights called bili-lights. Some babies receive phototherapy before discharge from the newborn nursery or are admitted to the hospital for a few days for phototherapy, while others are treated at home.</p>
+                            </li>
+                            <li>
+                                <p><strong>Exchange transfusions</strong>: Babies who do not respond to phototherapy and continue to have rising or dangerously high bilirubin levels may need to be treated with a special kind of blood transfusion.</p>
+                            </li>
+                        </ul>
+                        <p class="italic">In partnership with March of Dimes</p>
+                    </div>
+                </div>
+                </div>
+
+                <div id="page14" style=" display : none;">
+                <div class="responsive-banner fever-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Fever</h2>
+                    <p>The most important things you can do when your baby has a fever are to improve your baby's comfort by making sure they drink enough fluids (breast milk or formula) to stay hydrated and monitor for signs and symptoms of a serious illness. It is a good sign if your baby plays and interacts with you after receiving medicine for discomfort.</p>
+                    <p>Call your baby's doctor right away if your baby has a fever and</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Is younger than 3 months (12 weeks) and has a temperature of 100.4&deg;F(38.0&deg;C) or higher.</p>
+                            </li>
+                            <li>
+                                <p>Looks very ill, is unusually drowsy, or is very fussy.</p>
+                            </li>
+                            <li>
+                                <p>Has been in a <strong>very hot place</strong>, such as an overheated car.</p>
+                            </li>
+                            <li>
+                                <p>Has other symptoms, such as a stiff neck, severe <strong>headache</strong>, severe <strong>sore throat</strong>, severe ear pain, an unexplained <strong>rash</strong>, or repeated <strong>vomiting</strong> or <strong>diarrhea</strong>.</p>
+                            </li>
+                            <li>
+                                <p>Has immune system problems, such as sickle cell disease or <strong>cancer</strong>, or is taking steroids.</p>
+                            </li>
+                            <li>
+                                <p>Has had a <strong>seizure</strong>.</p>
+                            </li>
+                            <li>
+                                <p>Fever rises above 104&deg;F (40&deg;C) repeatedly for a child of any age.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>Also call your child's doctor if:</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>The fever persists for more than 24 hours in a child younger than 2 years.</p>
+                            </li>
+                            <li>
+                                <p>Your child still "acts sick" once his fever is brought down.</p>
+                            </li>
+                            <li>
+                                <p>Your child seems to be getting worse.</p>
+                            </li>
+                            <li>
+                                <p>The fever persists for more than 3 days (72 hours) in a child 2 years of age or older</p>
+                            </li>
+                        </ul>
+                        <p class="italic">In partnership with HealthyChildren.org</p>
+                    </div>
+                </div>
+                </div>
+
+                <div id="page15" style=" display : none;">
+                <div class="responsive-banner preemies-correct-age-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Preemies Correct Age</h2>
+                    <p>Developmental milestones are things most children can do by a certain age. When your baby is born early (premature) you need to know both your baby's due date and how many weeks premature your baby was to determine your baby's corrected age. Your baby's corrected age should be used to track her developmental milestones.</p>
+                    <h5>To calculate your baby's corrected age:</h5>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Begin with your baby's age in weeks (number of weeks since he was born)</p>
+                            </li>
+                            <li>
+                                <p>Subtract the number of weeks old your baby was at birth from 40. This is the number of weeks your baby was premature.</p>
+                            </li>
+                            <li>
+                                <p>Subtract the number of weeks your baby was premature from your baby's age in weeks. A full term pregnancy is 40 weeks. This is your baby's corrected age:</p>
+                                <ul>
+                                	<li>
+                                    	<p>(Baby's current age in weeks) - (Number of weeks premature your baby was) = Baby's corrected age</p>
+                                    </li>
+                                    <li>
+                                    	<p>Example, Andrew is now 6 months old (24 weeks since birth). Andrew was born at 28 weeks. So he was 12 weeks premature (40 weeks - 28 weeks). Andrew's corrected age is 24 weeks - 12 weeks = 12 weeks (3 months).</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <h5>What to Expect: Corrected Age</h5>
+                    <p>For Andrew even though he is 6 months old his parents should expect him to act and meet the developmental milestones of a 3 month old.</p>
+                    <p>For example, people may think Andrew is delayed for a 6-month old, when in fact he is actually doing great and meeting milestones ahead of his corrected age of 3 months.</p>
+                    <p class="italic">In partnership with HealthyChildren.org</p>
+                </div>
+                </div>
+
+                <div id="page16" style=" display : none;">
+                <div class="responsive-banner iron-deficiency-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Iron Deficiency</h2>
+                    <h5>What Can I Do to Prevent Iron Deficiency?</h5>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>If possible, breastfeed your baby for at least 12 months and starting at 4 to 6 months of age, give your baby plain, iron-fortified infant cereal and/or pureed meat. Just two or more servings a day can meet a baby's iron needs at this age. Meats should be home prepared or from the grocery store (chopped until smooth in a blender).</p>
+                            </li>
+                            <li>
+                                <p>When your baby is about 6 months of age, include a feeding per day of foods rich in vitamin C with foods that are rich iron to improve iron absorption.</p>
+                            </li>
+                            <li>
+                                <p>If you can't breastfeed, use iron-fortified formula.</p>
+                            </li>
+                            <li>
+                                <p>Don't give low-iron milks (e.g. cow's milk, goat's milk, and soy milk) until your baby is at least 12 months old.</p>
+                            </li>
+                            <li>
+                                <p>If your baby was born early or small, talk to your doctor about giving iron drops to your baby.</p>
+                            </li>
+                            <li>
+                                <p>If your baby can't get two or more servings per day of iron rich foods (such as iron-fortified cereal or pureed meats), talk to your doctor about giving iron drops to your baby.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+
+                <div id="page17" style=" display : none;">
+                <div class="responsive-banner rsv-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>RSV</h2>
+                    <h5>RSV is a virus that infects the lungs</h5>
+                    <p>RSV is a contagious viral disease that may infect a person's lungs and breathing passages.</p>
+                    <p>Most children will catch RSV by the age of 2 years.</p>
+                    <p>RSV spreads rapidly among children. While most will recover in 1 to 2 weeks, even after recovery, infants and children can continue to spread the virus for 1 to 3 weeks.</p>
+                    <p><strong>For premature infants or those with lung or heart problems, severe RSV disease can lead to serious lung infection and hospitalization.</strong></p>
+                    <h5>Prevent RSV Disease</h5>
+                    <p>RSV disease is spread just as easily as the flu. Here are some tips to prevent your baby from getting RSV:</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Wash your hands thoroughly before touching your baby, and ask others to do the same</p>
+                            </li>
+                            <li>
+                                <p>Don't let anyone smoke in your home, or near your baby</p>
+                            </li>
+                            <li>
+                                <p>Wash your baby's toys, clothes, and bedding often</p>
+                            </li>
+                            <li>
+                                <p>Keep your baby away from:</p>
+                                <ul>
+                                	<li>
+                                    	<p>Crowds and young children</p>
+                                    </li>
+                                    <li>
+                                    	<p>People with colds</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <h5>RSV Signs and Symptoms</h5>
+                    <p>If, at any time, you see any of these RSV disease warning signs, call your baby's healthcare provider right away:</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Coughing or wheezing that does not stop</p>
+                            </li>
+                            <li>
+                                <p>Fast or troubled breathing</p>
+                            </li>
+                            <li>
+                                <p>A fever (especially if it is greater than 100.4&deg;F in infants under 3 months of age)</p>
+                            </li>
+                            <li>
+                                <p>A bluish color around the mouth or fingernails</p>
+                            </li>
+                            <li>
+                                <p>Spread-out nostrils and/or a caved-in chest when trying to breathe</p>
+                            </li>
+                            <li>
+                                <p>Gasping for breath</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>Click <a id="a3" onclick="window.open('https://www.rsvprotection.com/rsv-risk-assessment.html','_blank','location=yes,enableViewportScale=yes')" href="#" title="">here</a> to answer a few questions and see if your baby is at risk for RSV complications.</p>
+                </div>
+                </div>
+
+                <div id="page18" style=" display : none;">
+                <div class="responsive-banner flu-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Flu</h2>
+                    <p>Children younger than 5 years of age are at high risk of serious flu-related complications. More than 20,000 children younger than 5 years old are hospitalized each year in the United States because of flu.</p>
+                    <p>Complications from the flu can include:</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Pneumonia</p>
+                            </li>
+                            <li>
+                                <p>Dehydration</p>
+                            </li>
+                            <li>
+                                <p>Makes long-term medical problems like heart disease or asthma, encephalopathy (inflammation of the brain), and sinus problems and ear infections worse.</p>
+                            </li>
+                            <li>
+                                <p>In rare cases, flu complications can lead to death.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>If your baby is over 6 months, they should get the flu shot. If this is baby's first year getting the shot, baby will need 2 shots, 4 weeks apart.</p>
+                    <h5>What you can do to protect your baby from the flu if he's under 6 months:</h5>
+                    <ul>
+                    	<li>
+                        	<span>1</span>
+                            <div>
+                            	<p>Take Time to Get a Vaccine Yourself</p>
+                                <div class="topics-list-grid">
+                                <ul>
+                                	<li>
+                                    	<p>A flu vaccine is the best way to protect against the flu. A flu vaccine can protect you and your loved ones - including your infant - from the flu.</p>
+                                    </li>
+                                </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                        	<span>2</span>
+                            <div>
+                            	<p>Take Everyday Preventive Steps</p>
+                                <div class="topics-list-grid">
+                                <ul>
+                                	<li>
+                                    	<p>Keep yourself and your baby away from people who are sick, as much as you can</p>
+                                    </li>
+                                    <li>
+                                    	<p>If you get the flu, stay home from work or school.</p>
+                                    </li>
+                                    <li>
+                                    	<p>Cover your nose and mouth with a tissue when you cough or sneeze-throw the tissue away after you use it.</p>
+                                    </li>
+                                    <li>
+                                    	<p>Wash your hands often with soap and water, especially after you cough or sneeze. If you are not near water, use an alcohol-based hand cleaner.</p>
+                                    </li>
+                                    <li>
+                                    	<p>Try not to touch your eyes, nose, or mouth. Germs often spread this way.</p>
+                                    </li>
+                                    <li>
+                                    	<p>Clean and disinfect frequently touched surfaces.</p>
+                                    </li>
+                                </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                        	<span>3</span>
+                            <div>
+                            	<p>Antiviral Drugs Can Treat Flu Illness</p>
+                                <div class="topics-list-grid">
+                                <ul>
+                                	<li>
+                                    	<p>If baby does become ill with flu, the antiviral drug oseltamivir (Tamiflu&reg;) is approved by the Federal Drug Administration (FDA) for use in infants aged 2 weeks and older to treat influenza.</p>
+                                    </li>
+                                </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    
+                </div>
+                </div>
+
+                <div id="page19" style=" display : none;">
+                <div class="responsive-banner breastfeeding-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Breastfeeding</h2>
+                    <h5>Breastfeeding Protects Babies</h5>
+                    <ul>
+                    	<li>
+                        	<span>1</span>
+                            <div>
+                            	<p><strong>Early breast milk is liquid gold</strong> - Known as liquid gold, colostrum is the thick yellow first breast milk that you make during pregnancy and just after birth. This milk is very rich in nutrients and antibodies to protect your baby.</p>
+                            </div>
+                        </li>
+                        <li>
+                        	<span>2</span>
+                            <div>
+                            	<p><strong>Your breast milk changes as your baby grows</strong> - Colostrum changes into what is called mature milk. By the third to fifth day after birth, this mature breast milk has just the right amount of fat, sugar, water, and protein to help your baby continue to grow.</p>
+                            </div>
+                        </li>
+                        <li>
+                        	<span>3</span>
+                            <div>
+                            	<p><strong>Breast milk is easier to digest</strong> - For most babies - especially premature babies - breast milk is easier to digest than formula. The proteins in formula are made from cow's milk and it takes time for babies' stomachs to adjust to digesting them.</p>
+                            </div>
+                        </li>
+                        <li>
+                        	<span>4</span>
+                            <div>
+                            	<p><strong>Breast milk fights disease</strong> - The cells, hormones, and antibodies in breast milk protect babies from illness. This protection is unique; formula cannot match the chemical makeup of human breast milk.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <h5>Mothers Benefit from Breastfeeding</h5>
+                    <ul>
+                    	<li>
+                        	<span>1</span>
+                            <div>
+                            	<p><strong>Life can be easier when you breastfeed</strong> - Breastfeeding may take a little more effort than formula feeding at first. When you breastfeed, there are no bottles and nipples to sterilize. You do not have to buy, measure, and mix formula. And there are no bottles to warm in the middle of the night!</p>
+                            </div>
+                        </li>
+                        <li>
+                        	<span>2</span>
+                            <div>
+                            	<p><strong>Breastfeeding can save money</strong> - Formula and feeding supplies can cost well over $1,500 each year.</p>
+                            </div>
+                        </li>
+                        <li>
+                        	<span>3</span>
+                            <div>
+                            	<p><strong>Breastfeeding can feel great</strong> - Physical contact is important to newborns. It can help them feel more secure, warm, and comforted.</p>
+                            </div>
+                        </li>
+                        <li>
+                        	<span>4</span>
+                            <div>
+                            	<p><strong>Breastfeeding can be good for the mother's health, too</strong> - Breastfeeding is linked to a lower risk of these health problems in women, like: Type 2 diabetes, breast and ovarian cancer and postpartum depression.</p>
+                            </div>
+                        </li>
+                        <li>
+                        	<span>5</span>
+                            <div>
+                            	<p><strong>Mothers miss less work</strong> - Breastfeeding mothers miss fewer days from work because their infants are sick less often.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+
+                <div id="page20" style=" display : none;">
+                <div class="responsive-banner how-much-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>How Much?</h2>
+                    <h5>Feeding</h5>
+                    <p>Breastfed babies generally eat more frequently than formula-fed babies. Newborns usually nurse on their mothers' breasts every 2 to 3 hours; as they become older, feeding times will decrease as your baby's stomach becomes larger.</p>
+                    <p>Formula-fed newborns will eat about every 3 to 4 hours during the first few weeks of life. By the end of the first month, formula fed babies will take at least 4 ounces of formula per feeding. At 6 months of age, baby will take 6 to 8 ounces per feeding.</p>
+                    <p>It's important to watch and learn when your baby is hungry. These signals are called hunger cues. When she wants to eat baby may</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Become more awake</p>
+                            </li>
+                            <li>
+                                <p>Put her hands or fingers on or in their mouth</p>
+                            </li>
+                            <li>
+                                <p>Make sucking motions, stick out their tongue</p>
+                            </li>
+                            <li>
+                                <p>Smack their lips</p>
+                            </li>
+                            <li>
+                                <p>Kick or squirm</p>
+                            </li>
+                            <li>
+                                <p>Begin rooting (moving jaw and mouth or head in search of your breast)</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>If baby begins crying, this is usually a late signal that they want to eat. Your baby should also appear satisfied for a couple of hours after each feeding if they are getting enough food.</p>
+                    
+                    <p class="italic">In partnership with HealthyChildren.org</p>
+                </div>
+                </div>
+
+                <div id="page21" style=" display : none;">
+                <div class="responsive-banner baby-weight-gain-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Baby's Weight Gain</h2>
+                    <p>From months 1 through 4 of life, your baby should gain about 1&frac12; to 2 pounds each month, and grow about 1 to 1&frac12; inches.</p>
+                    <p>Between 4 and 7 months of age, baby will gain 1 to 1&frac12; pounds per month and grow about 2 to 3 inches.</p>
+                    <p>By 8 months, the average boy will weigh between 14&frac12; and 17&frac12; pounds, while girls will probably weigh about a 14 and 17 pounds.</p>
+                    <p>At 1 year of age, the typical child weighs about 3 times their birth weight. Breastfed babies tend to be chubbier than formula-fed babies during the first 4 to 6 months of life. Then breastfed babies usually become leaner than formula-fed babies by 9 months to 1 year of age.</p>
+                    <p>If your baby always seems hungry or doesn't have the appetite that you think they should, talk to your baby's doctor.</p>
+                    <p class="italic">In partnership with HealthyChildren.org</p>
+                </div>
+                </div>
+
+                <div id="page22" style=" display : none;">
+                <div class="responsive-banner starting-solids-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Starting Solids</h2>
+                    <p>Here are some questions to consider before starting baby on solid foods:</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p><strong>Is baby big enough?</strong> Generally, when infants double their birth weight (typically at about 4 months) and weigh about 13 pounds or more, they may be ready for solid foods. However, the American Academy of Pediatrics (AAP) recommends breastfeeding as the sole source of nutrition for your baby for about 6 months.</p>
+                            </li>
+                            <li>
+                                <p><strong>Can he hold his head up?</strong> Your baby should be able to sit in a high chair or infant seat with good head control.</p>
+                            </li>
+                            <li>
+                                <p><strong>Does she open her mouth when food comes her way?</strong> Babies may be ready if they watch you eating, and want to try and eat your food.</p>
+                            </li>
+                            <li>
+                                <p><strong>Can he move food from a spoon into his throat?</strong> If you offer a spoon of rice cereal and he pushes it out of his mouth and it dribbles onto his chin, he may not have the ability to move it to the back of his mouth to swallow it. It's normal. Remember, he's never had anything thicker than breast milk or formula before, and this may take some getting used to. You can make it thinner by adding water and may also want to wait a week or two and try again.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>When you add solid foods to your baby's diet, continue breastfeeding until at least 12 months. You can continue to breastfeed after 12 months if you and your baby desire.</p>
+                    <p>Check with your child's doctor about your baby needing vitamin D and iron supplements during the first year.</p>
+                    <p class="italic">In partnership with HealthyChildren.org</p>
+                </div>
+                </div>
+
+                <div id="page23" style=" display : none;">
+               <div class="responsive-banner first-foods-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>First Foods</h2>
+                    <p>By tradition, single-grain cereals are usually introduced first. Baby cereals are available premixed in individual containers or dry, to which you can add breast milk, formula, or water. Whichever type of cereal you use, make sure that it is made for babies and iron-fortified. Many pediatricians will recommend starting vegetables before fruits. If your baby has been mostly breastfeeding, you may want to start with meat, which contains more easily absorbed sources of iron and zinc that are needed by 4 to 6 months of age. Check with your child's doctor.</p>
+                    <h5>How do I feed my baby?</h5>
+                    <p>Start with half a spoonful or less and talk to your baby through the process ('Mmm, see how good this is?'). Your baby may not know what to do at first. She may look confused, wrinkle her nose, roll the food around her mouth, or reject it altogether. One way to make eating solids for the first time easier is to give your baby a little breast milk and/or formula first, then switch to very small half-spoonfuls of food, and finish with more breast milk and/or formula. This will prevent your baby from getting frustrated when she is very hungry.</p>
+                    <p class="italic">NOTE: Do not put baby cereal in a bottle because your baby could choke. It also may increase the amount of food your baby eats and can cause your baby to gain too much weight. However, cereal in a bottle may be recommended if your baby has reflux. Check with your child's doctor.</p>
+                    <h5>When can my baby try other food?</h5>
+                    <p>Once your baby learns to eat one food, gradually give him other foods. Give your baby one new food at a time, and wait at least 2 to 3 days before starting another. After each new food, watch for any allergic reactions such as diarrhea, rash, or vomiting. If any of these occur, stop using the new food and consult with your child's doctor.</p>
+                    <p>Within a few months of starting solid foods, your baby's daily diet should include a variety of foods each day that may include the following:</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Breast milk and/or formula</p>
+                            </li>
+                            <li>
+                                <p>Meats</p>
+                            </li>
+                            <li>
+                                <p>Cereal</p>
+                            </li>
+                            <li>
+                                <p>Vegetables</p>
+                            </li>
+                            <li>
+                                <p>Fruits</p>
+                            </li>
+                            <li>
+                                <p>Eggs</p>
+                            </li>
+                            <li>
+                                <p>Fish</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="italic">NOTE: If you make your own baby food, be aware that home-prepared spinach, beets, green beans, squash, and carrots are not good choices during early infancy. They may contain large amounts of nitrates.</p>
+                    <p class="italic">In partnership with HealthyChildren.org</p>
+                </div>
+                </div>
+
+                <div id="page24" style=" display : none;">
+                <div class="responsive-banner self-feeding-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Self-Feeding</h2>
+                    <p>By the time your baby is 9 months old she should have the finger and hand skills to feed herself with her fingers. Let your baby self-feed as much as possible.</p>
+                    <p>Before giving your baby food, try a bite first and ask yourself:</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Does it melt in the mouth? Some dry cereals and crackers that are light and flaky will melt in the mouth.</p>
+                            </li>
+                            <li>
+                                <p>Is it cooked enough so that it mushes easily? Well-cooked veggies and fruits will mush easily, as will canned fruit and vegetables (choose ones without added sugar or salt).</p>
+                            </li>
+                            <li>
+                                <p>Is it naturally soft? Cottage cheese, shredded cheese, and small pieces of tofu are good examples.</p>
+                            </li>
+                            <li>
+                                <p>Can it be gummed? Pieces of ripe banana and well-cooked pasta can be chewed with gums.</p>
+                            </li>
+                            <li>
+                                <p>Is it small enough? Food should be cut into small pieces. The sizes will vary depending on the food's texture. A piece of chicken, for instance, needs to be smaller than a piece of watermelon, which even a pair of baby gums will quickly mash.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>Always watch baby while she eats, here are some foods that are choking hazards:</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Pieces of raw vegetables or hard fruits</p>
+                            </li>
+                            <li>
+                                <p>Whole grapes, berries, cherry or grape tomatoes (instead, peel and slice or cut in quarters)</p>
+                            </li>
+                            <li>
+                                <p>Raisins, dried fruit, Peanuts, nuts, and seeds</p>
+                            </li>
+                            <li>
+                                <p>Peanut butter and other nut or seed butters</p>
+                            </li>
+                            <li>
+                                <p>Whole hot dogs and kiddie sausages (peel and cut these in very small pieces)</p>
+                            </li>
+                            <li>
+                                <p>Untoasted bread, especially white bread that sticks together</p>
+                            </li>
+                            <li>
+                                <p>Chunks of cheese or meat</p>
+                            </li>
+                            <li>
+                                <p>Candy (hard candy, jelly beans, gummies, chewing gum)</p>
+                            </li>
+                            <li>
+                                <p>Popcorn, pretzels, corn chips, and marshmallows</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+
+                <div id="page25" style=" display : none;">
+                <div class="responsive-banner baby-safety-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Baby Safety</h2>
+                    <div data-role="collapsible-set" data-theme="a" data-content-theme="d" data-iconpos="right">
+                        <div data-role="collapsible" data-collapsed-icon="accord-plus" data-expanded-icon="accord-minus">
+                            <h3>Baby Product Safety</h3>
+                            <div class="timeline-grid-one">
+                            	<p class="italic">U.S. Consumer Product Safety Commission Hotline </p>
+                                <p>Consumers can call with product safety complaints and product-related injuries.</p>
+                                <div class="btm-lnks">
+                                	<span class="accord-contact"><a href="tel:800-638-2772">800-638-2772</a></span>
+                                    <a id="a4" class="accord-site fl-lt">www.SaferProducts.gov</a><!--onclick="window.open('http://www.saferproducts.gov/Default.aspx','_blank','location=yes,enableViewportScale=yes')" href="#"-->
+                                </div>
+                            </div>
+                        </div>
+                        <div data-role="collapsible" data-collapsed-icon="accord-plus" data-expanded-icon="accord-minus">
+                            <h3>Car Seat Safety Checks</h3>
+                            <div class="timeline-grid-one">
+                            	<p class="italic">Child Seat Inspection Locator, National Highway Traffic Safety Administration</p>
+                                <p>To get help locating the nearest child safety seat inspection station. Certified technicians will inspect the child safety seat and show parents how to correctly install and use it.</p>
+                                <div class="btm-lnks">
+                                	<span class="accord-contact"><a href="tel:888-327-4236">888-327-4236</a></span>
+                                    <a id="a5" class="accord-site fl-lt">www.nhtsa.gov/cpsfitting/index.cfm</a>
+<!--onclick="window.open('http://www.nhtsa.gov/cpsfitting/index.cfm','_blank','location=yes,enableViewportScale=yes')" href="#"-->
+                                </div>
+                            </div>
+                        </div>
+                        <div data-role="collapsible" data-collapsed-icon="accord-plus" data-expanded-icon="accord-minus">
+                            <h3>Fire Safety Plans</h3>
+                            <div class="timeline-grid-one">
+                            	<p class="italic">U.S. Fire Administration</p>
+                                <p>Provides information on how to develop a fire safety plan and tips for keeping families safe.</p>
+                                <div class="btm-lnks bottom-margin20">
+                                	<span class="accord-contact"><a href="tel:301-447-1000">301-447-1000</a></span>
+                                    <a id="a6" class="accord-site fl-lt">www.ufsa.dhs.gov/index.shtm</a><!--onclick="window.open('http://m.usfa.fema.gov/mobile','_blank','location=yes,enableViewportScale=yes')" href="#"-->
+                                </div>
+                            </div>
+                        </div>
+                       <div data-role="collapsible" data-collapsed-icon="accord-plus" data-expanded-icon="accord-minus">
+                            <h3>Poison Control</h3>
+                            <div class="timeline-grid-one">
+                            	<p class="italic">American Association of Poison Control Centers</p>
+                                <p>Provides free, 24-hour telephone assistance, expertise, and treatment advice by a trained medical professional.</p>
+                                <div class="btm-lnks">
+                                	<span class="accord-contact"><a href="tel:800-222-1222">800-222-1222</a></span>
+                                    <a id="a7" class="accord-site fl-lt">www.aapcc.org</a> <!--onclick="window.open('http://www.aapcc.org/','_blank','location=yes,enableViewportScale=yes')" href="#"-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div id="page26" style=" display : none;">
+                <div class="responsive-banner baby-help-support-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Help &amp; Support</h2>
+                    <div data-role="collapsible-set" data-theme="a" data-content-theme="d" data-iconpos="right">
+                        <div data-role="collapsible" data-collapsed-icon="accord-plus" data-expanded-icon="accord-minus">
+                            <h3>Domestic Violence</h3>
+                            <div class="timeline-grid-one">
+                            	<p class="italic">National Domestic Violence Hotline</p>
+                                <p>Provides crisis intervention, information and referral to victims of domestic violence, perpetrators, friends and families. The Hotline has access to more than 4,000 shelters and domestic violence programs across the United States, Puerto Rico and the U.S. Virgin Islands. The Hotline is toll-free, confidential and anonymous and operates 24 hours a day, 365 days a year.</p>
+                                <div class="btm-lnks">
+                                	<span class="accord-contact"><a href="tel:800-799-7233">800-799-7233</a></span>
+                                    <a id="a8" class="accord-site fl-lt"> www.thehotline.org</a><!--onclick="window.open('http://www.thehotline.org/','_blank','location=yes,enableViewportScale=yes')" href="#"-->
+                                </div>
+                            </div>
+                        </div>
+                        <div data-role="collapsible" data-collapsed-icon="accord-plus" data-expanded-icon="accord-minus">
+                            <h3>Finding Child Care</h3>
+                            <div class="timeline-grid-one">
+                            	<p class="italic">Child Care Aware</p>
+                                <p>Helps families learn more about the elements of quality child care and how to locate programs in their communities.</p>
+                                <div class="btm-lnks">
+                                	<span class="accord-contact"><a href="tel:800-424-2246">800-424-2246</a></span>
+                                    <a id="a9" class="accord-site fl-lt">www.ChildCareAware.org</a> <!--onclick="window.open('http://www.childcareaware.org/','_blank','location=yes,enableViewportScale=yes')" href="#">-->
+                                </div>
+                            </div>
+                        </div>
+                        <div data-role="collapsible" data-collapsed-icon="accord-plus" data-expanded-icon="accord-minus">
+                            <h3>National Hunger</h3>
+                            <div class="timeline-grid-one">
+                            	<p class="italic">WHYHunger's National Hunger Hotline</p>
+                                <p>Connects individuals in need to emergency food in their community, government assistance programs, and various social services.</p>
+                                <div class="btm-lnks">
+                                	<span class="accord-contact"><a href="tel:866-348-6479">866-348-6479</a></span>
+                                    <a id="a10" class="accord-site fl-lt">www.WhyHunger.org/FindFood</a> <!--onclick="window.open('http://www.whyhunger.org/findfood','_blank','location=yes,enableViewportScale=yes')" href="#">-->
+                                </div>
+                            </div>
+                        </div>
+                        <div data-role="collapsible" data-collapsed-icon="accord-plus" data-expanded-icon="accord-minus">
+                            <h3>Postpartum Depression</h3>
+                            <div class="timeline-grid-one">
+                            	<p class="italic">Postpartum Support International (PSI)</p>
+                                <p>Dedicated to helping women suffering from perinatal mood and anxiety disorders, including postpartum depression. Family, friends and healthcare providers can also call so moms and moms-to-be can get the support they need and recover (toll-free in English and Spanish).</p>
+                                <div class="btm-lnks">
+                                	<span class="accord-contact"><a href="tel:800-994-4773">800-994-4773</a></span>
+                                    <a id="a11" class="accord-site fl-lt">www.Postpartum.net</a> <!--onclick="window.open('http://www.postpartum.net/','_blank','location=yes,enableViewportScale=yes')" href="#">-->
+                                </div>
+                            </div>
+                        </div>
+                        <div data-role="collapsible" data-collapsed-icon="accord-plus" data-expanded-icon="accord-minus">
+                            <h3>Quitting Smoking</h3>
+                            <div class="timeline-grid-one">
+                            	<p class="italic">Smokefree.gov</p>
+                                <p>Connects you to counseling and information about quitting smoking. Help is also available via live chat online.</p>
+                                <div class="btm-lnks">
+                                	<span class="accord-contact"><a href="tel:800-784-8669">800-784-8669</a></span>
+                                    <a id="a12" class="accord-site fl-lt">www.Smokefree.gov</a> <!--onclick="window.open('http://smokefree.gov/','_blank','location=yes,enableViewportScale=yes')" href="#">-->
+                                </div>
+                            </div>
+                        </div>
+                        <div data-role="collapsible" data-collapsed-icon="accord-plus" data-expanded-icon="accord-minus">
+                            <h3>Substance Abuse Help</h3>
+                            <div class="timeline-grid-one">
+                            	<p class="italic">U.S. Substance Abuse and Mental Health Services Administration's National Helpline</p>
+                                <p>A confidential, free, 24-hour-a-day, 365-day-a-year, information service, in English and Spanish, for individuals and family members facing substance abuse issues.</p>
+                                <div class="btm-lnks">
+                                	<span class="accord-contact"><a href="tel:800-662-4357">800-662-4357</a></span>
+                                    <a id="a13" class="accord-site fl-lt">www.samhsa.gov/treatment</a> <!--onclick="window.open('http://www.samhsa.gov/treatment/','_blank','location=yes,enableViewportScale=yes')" href="#">-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div id="page27" style=" display : none;">
+                <div class="responsive-banner baby-health-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Free & Low Cost Health Care</h2>
+                    <div data-role="collapsible-set" data-theme="a" data-content-theme="d" data-iconpos="right">
+                        <div data-role="collapsible" data-collapsed-icon="accord-plus" data-expanded-icon="accord-minus">
+                            <h3>Eye Checks</h3>
+                            <div class="timeline-grid-one">
+                            	<p class="italic">InfantSEE</p>
+                                <p>Optometrists provide comprehensive eye and vision assessments for infants within the first year of life regardless of a family's income or access to insurance coverage.</p>
+                                <div class="btm-lnks">
+                                	<span class="accord-contact"><a href="tel:888-396-3937">888-396-3937</a></span>
+                                    <a id="a14" class="accord-site fl-lt"> www.InfantSee.org</a><!--onclick="window.open('http://www.infantsee.org/','_blank','location=yes,enableViewportScale=yes')" href="#">-->
+                                </div>
+                            </div>
+                        </div>
+                        <div data-role="collapsible" data-collapsed-icon="accord-plus" data-expanded-icon="accord-minus">
+                            <h3>Health Insurance</h3>
+                            <div class="timeline-grid-one">
+                            	<p class="italic">InsureKidsNow.gov</p>
+                                <p>Provides information about Medicaid and CHIP services for families who need affordable health insurance coverage.</p>
+                                <div class="btm-lnks">
+                                	<span class="accord-contact"><a href="tel:877-543-7669">877-543-7669</a></span>
+                                    <a id="a15" class="accord-site fl-lt"> www.InsureKidsNow.gov</a><!--onclick="window.open('http://m.insurekidsnow.gov/','_blank','location=yes,enableViewportScale=yes')" href="#">-->
+                                </div>
+                            </div>
+                        </div>
+                        <div data-role="collapsible" data-collapsed-icon="accord-plus" data-expanded-icon="accord-minus">
+                            <h3>Vaccines</h3>
+                            <div class="timeline-grid-one">
+                            	<p class="italic">CDC INFO/Vaccines for Children</p>
+                                <p>For info on immunizations and to connect to the Vaccines for Children (VFC) Program, which helps provide vaccines to children whose parents or guardians may not be able to afford them.</p>
+                                <div class="btm-lnks">
+                                	<span class="accord-contact"><a href="tel:800-232-4636">800-232-4636</a></span>
+                                    <a id="a16" class="accord-site fl-lt"> www.cdc.gov/vaccines/programs/vfc/index.html</a><!--onclick="window.open('http://www.cdc.gov/vaccines/programs/vfc/index.html','_blank','location=yes,enableViewportScale=yes')" href="#">-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                 <!-- content of baby topics pages ends -->
+
+                  <!-- content of pregnancy topics pages -->
+                <div id="page1p" style=" display : none;">
+                <div class="responsive-banner visits-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Visits</h2>
+                	<p>Prenatal visits are so important to help keep you and your baby healthy during pregnancy.</p>
+                    <h5>First Trimester</h5>
+                    <p>At your first prenatal visit, your provider will calculate your due date, schedule blood tests, may perform a pelvic and breast exam, measure your height and weight, listen to your heart and lungs, and touch and push lightly on your stomach. You will see your provider every 4 weeks.</p>
+                    <h5>Second Trimester</h5>
+                    <p>You'll still see your provider monthly, and you may get your first peek at baby via ultrasound in weeks 20-22.</p>
+                    <h5>Third Trimester</h5>
+                    <p>Around week 32, you'll likely increase appointments every 2 weeks, and then weekly at weeks 35-36.</p>
+                    <h5>Here are routine tests your provider will likely complete at prenatal visits:</h5>
+                    <ul>
+                    	<li>
+                        	<span>1</span>
+                            <div>
+                            	<p>Blood pressure checks</p>
+                                <p>Why: To make sure you do not have high blood pressure which can lead to a dangerous condition called preeclampsia</p>
+                            </div>
+                        </li>
+                        <li>
+                        	<span>2</span>
+                            <div>
+                            	<p>Get urine checked at every visit</p>
+                                <p>Why: To check for proteins and sugars in your urine, both of which increase risks in pregnancy</p>
+                            </div>
+                        </li>
+                        <li>
+                        	<span>3</span>
+                            <div>
+                            	<p>Fundal height (with a tape measure) and baby's heartbeat (via Doppler) at every visit, typically beginning after the first 8-12 weeks of pregnancy</p>
+                                <p>Why: To track your growing uterus against what's typical, and to listen for any changes or abnormalities in baby's heartbeat</p>
+                            </div>
+                        </li>
+                        <li>
+                        	<span>4</span>
+                            <div>
+                            	<p>May get a pap test in first trimester</p>
+                                <p>Why: To check your cervix for changes that could lead to cancer and for sexual infections</p>
+                            </div>
+                        </li>
+                        <li>
+                        	<span>5</span>
+                            <div>
+                            	<p>Get a breast exam at first visit</p>
+                                <p>Why: To check for any breast or nipple concerns</p>
+                            </div>
+                        </li>
+                        <li>
+                        	<span>6</span>
+                            <div>
+                            	<p>Blood type and antibody screen in the 1st trimester, and as needed</p>
+                                <p>Why: To check type, for anemia, rubella, or chicken pox exposure, Hepatitis B, sexual infections such as syphilis or HIV, and your blood sugar (glucose)</p>
+                            </div>
+                        </li>
+                        <li>
+                        	<span>7</span>
+                            <div>
+                            	<p>Get checked for Group B Streptococcus (GBS) in third trimester, typically around 34 or 35 weeks</p>
+                                <p>Why: If positive for GBS, you'll get antibiotics during labor/birth</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="italic">In partnership with Healthy Mom & Baby</p>
+                </div>
+                </div>
+
+                <div id="page2p" style=" display : none;">
+                <div class="responsive-banner ultrasound-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Ultrasound</h2>
+                	<p>Ultrasound (also called sonogram) is a prenatal test that uses sound waves to show a picture of your baby in your uterus. It lets your provider check on your baby's health and development.</p>
+                    <p>Ultrasound can be a fun time in pregnancy because you can "see" your baby! Depending on when it's done and your baby, you may be able to see his hands, legs and other body parts. You may be able to tell if your baby's a boy or a girl, so be sure to tell your provider if you don't want to know!</p>
+                    <p>Most women get an ultrasound at 18 to 20 weeks of pregnancy. You may get a first-trimester ultrasound (called an early ultrasound) to make sure you're pregnant and find out your due date.</p>
+                    <p>Why do I need an ultrasound? Your health care provider uses ultrasound to check your baby's growth and development and to help estimate your baby's due date. Ultrasound checks for several things, including:</p>
+                    <div class="topics-list-grid">
+                        <ul>
+                            <li>
+                            	<p>Your baby's age and growth. This helps your provider figure out your due date.</p>
+                            </li>
+                            <li>
+                            	<p>Your baby's heartbeat, muscle tone and movement</p>
+                            </li>
+                            <li>
+                            	<p>Your baby's overall development</p>
+                            </li>
+                            <li>
+                            	<p>Multiple pregnancy (twins, triplets or more)</p>
+                            </li>
+                            <li>
+                            	<p>Birth defects, like spina bifida or Down syndrome</p>
+                            </li>
+                            <li>
+                            	<p>Pregnancy complications, including miscarriage and ectopic pregnancy</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>Ultrasound is safe for you and your baby when done by your health care provider. Because ultrasound uses sound waves instead of radiation, it's safer than X-rays. Providers have used ultrasound for more than 30 years, and they have not found any dangerous risks.</p>
+                    <p class="italic">In partnership with March of Dimes</p>
+                </div>
+                </div>
+
+                <div id="page3p" style=" display : none;">
+                <div class="responsive-banner vaccine-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Vaccines</h2>
+                    <h5>Flu Vaccine</h5>
+                	<p>A flu shot is your best protection against serious illness from the flu. The flu can cause severe illness in pregnant women, causing hospitalizations or even death. Watch this 3 minute video from the Centers for Disease Control and Prevention to learn how a flu shot can protect you and baby during pregnancy and your baby after birth.</p>
+                    <h5>Tdap Vaccine</h5>
+                	<p>Pertussis, commonly known as whooping cough, is an infectious disease that begins like a cold. Someone with pertussis usually has a runny nose and cough. As the cough gets worse it can last up to six weeks or more. Often parents don't realize they are carrying the disease, so they unknowingly pass it on to their infant. Most babies who get pertussis get it from a family member who has it. Pertussis can be deadly to infants. It keeps them from breathing and eating, and may cause pneumonia, seizures, brain damage, and even death. The best way to prevent pertussis is to get vaccinated with either the Tdap (for older children and adults) or DTaP (for infants and children) vaccines.</p>
+                </div>
+                </div>
+
+                <div id="page4p" style=" display : none;">
+                <div class="responsive-banner tests-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Tests</h2>
+                	<p>A number of tests are suggested for all mothers during prenatal care. Some of these tests are done with samples of blood, urine, or cells from your cervix and vagina. You will also be tested for infections such as sexually transmitted diseases. The results of these tests are used to check for potential problems for you and your baby. If something is found, many problems can be treated during pregnancy.</p>
+                    <h5>Blood Tests During Pregnancy</h5>
+                	<div class="topics-list-grid">
+                        <ul>
+                            <li>
+                            	<p>Blood type and antibody screen-to determine your blood type and Rh factor</p>
+                            </li>
+                            <li>
+                            	<p>Hematocrit and hemoglobin-to check for anemia.</p>
+                            </li>
+                            <li>
+                            	<p>Rubella-Your blood will be checked for signs of a past infection with rubella</p>
+                            </li>
+                            <li>
+                            	<p>Hepatitis B</p>
+                            </li>
+                            <li>
+                            	<p>Syphilis</p>
+                            </li>
+                            <li>
+                            	<p>HIV</p>
+                            </li>
+                            <li>
+                            	<p>Glucose-to check for diabetes</p>
+                            </li>
+                            <li>
+                            	<p>Cystic fibrosis carrier</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <h5>Urine Tests</h5>
+                    <p>Your urine may be tested at each visit, the test checks for level of sugar (to identify diabetes) and protein (to identify, urinary or kidney infection/preeclampsia).</p>
+                    <h5>Birth Defects</h5>
+                    <p>Screening tests can be performed in the first or second trimester. Carrier testing checks whether one parent is a carrier or both parents are carriers of certain inherited disorders. Cystic fibrosis carrier testing is available for all pregnant women.</p>
+                    <p>1st Trimester Screening For Birth Defects:</p>
+                    <div class="topics-list-grid">
+                        <ul>
+                            <li>
+                            	<p>A blood test and ultrasound performed between 11 and 14 weeks look at the risk of Down Syndrome</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>2nd Trimester Screening for Birth Defects:</p>
+                    <div class="topics-list-grid">
+                        <ul>
+                            <li>
+                            	<p>A "multiple marker screening" is offered to screen for Down Syndrome and neural tube defects</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>If the results of a screening show that there is an increased risk of having a baby with a birth defect, the following diagnostic tests might be done:</p>
+                    <div class="topics-list-grid">
+                        <ul>
+                            <li>
+                            	<p>Amniocentesis-a small amount of amniotic fluid and cells are taken from the sac surrounding the baby</p>
+                            </li>
+                            <li>
+                            	<p>Chorionic villus sampling-a small sample of cells is taken from the placenta</p>
+                            </li>
+                            <li>
+                            	<p>Ultrasound</p>
+                            </li>
+                        </ul>
+                        <p class="italic">In partnership with the American Congress of Obstetricians and Gynecologists</p>
+                    </div>
+                </div>
+                </div>
+
+                <div id="page5p" style=" display : none;">
+                 <div class="responsive-banner pre-vitamins-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Prenatal Vitamins</h2>
+                	<p>While you are pregnant you need additional vitamins and minerals to support yourself and baby. Even if you regularly eat a varied, healthy diet, you need to take a prenatal vitamin every day.</p>
+                    <p>Folic acid is the synthetic form of the B vitamin folate, which is found in leafy greens and other foods. Many prenatal vitaminss have as much as 800 micrograms of folic acid, which is safe and helps prevent birth defects. Talk to your healthcare provider if you've had a pregnancy affected by a neural tube defect as you may need more folic acid than found in most prenatal vitamins.</p>
+                    <h5>Find a Vitamin Just Right for You</h5>
+                	<p>Does your throat close at the thought of swallowing a capsule? Look for a chewable, liquid or even gummy prenatal vitamin. Many pregnant women take the vitamin B6, particularly during the first trimester, to help with nausea and morning sickness. Most experts advise 50 milligrams of B6 daily if you're dealing with morning sickness. You may find a prenatal vitamin that includes this in your daily dose and then you can skip the extra supplements.</p>
+                    <p>If you're prone to iron deficiencies, look for a higher level of iron in the prenatal vitamin you choose, but be aware that iron supplements can cause stomach upset and constipation.</p>
+                    <p>Many makers of prenatal vitamins are now including omega-3 fatty acids in the form of DHA (docosahexaenoic acid). This healthy fat has been shown to promote brain and eye development in the fetus and experts are currently exploring other ways that essential fatty acids benefit both you and your baby during pregnancy.</p>
+                    <p class="italic">In partnership with Healthy Mom & Baby</p>
+                </div>
+                </div>
+
+                <div id="page6p" style=" display : none;">
+                <div class="responsive-banner folic-acid-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Folic Acid</h2>
+                	<p>Take a prenatal vitamin each day that has 600 micrograms of folic acid in it. This may help reduce baby's risk for birth defects of the brain and spine called neural tube defects (NTDs). The neural tube is the part of a developing baby that becomes the brain and spinal cord. Your health care provider can prescribe a prenatal vitamin for you. You can also get prenatal vitamins over the counter without a prescription.</p>
+                    <p class="italic">In partnership with March of Dimes</p>
+                </div>
+                </div>
+
+                <div id="page7p" style=" display : none;">
+                 <div class="responsive-banner breakfast-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Breakfast Ideas</h2>
+                	<p>During pregnancy, it is so important that you start each day with a healthy breakfast. Try these quick and easy healthy breakfast ideas:</p>
+                    <h5>Bake and freeze muffins</h5>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>High-fiber, low-fat bran muffins are a great way to start the day, and the fiber will keep you fuller longer. Bake a batch on the weekend and freeze them.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <h5>Make eggs ahead of time</h5>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Make a batch of scrambled eggs with diced onions, peppers and mushrooms and store in the fridge. Reheat a single portion of the egg mixture and put it in a whole-wheat wrap. Add salsa.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <h5>Keep frozen fruit on hand</h5>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>You can make a quick smoothie with frozen fruit like strawberries, blueberries and mangos. Combine frozen fruit with low-fat yogurt and orange juice in the blender and enjoy.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <h5>Make slow-cooker oatmeal</h5>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Make high-fiber steel-cut oats overnight in the slow cooker. Try adding dried fruits, nuts and cinnamon for flavor.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <h5>Keep a bowl of washed fruit in the refrigerator</h5>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Add the fruit to nonfat Greek yogurt and sprinkle with wheat germ or granola.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <h5>Make whole-grain pancakes ahead of time</h5>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Make the pancakes ahead of time and freeze them. Pop them in the microwave and top with yogurt and fruit.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <h5>Eat whole grains</h5>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Top a toasted whole-grain waffle with &frac12; cup low-fat cottage cheese, &frac12; cup fresh berries and a sprinkle of cinnamon.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <h5>Eat whole grain cereal</h5>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Top 1 cup whole-grain cereal with &frac12; sliced banana, 1 tablespoon chopped nuts and 1 cup low-fat milk.</p>
+                            </li>
+                        </ul>
+                        <p class="italic">In partnership with Healthy Mom & Baby</p>
+                    </div>
+                </div>
+                </div>
+
+                <div id="page8p" style=" display : none;">
+                <div class="responsive-banner food-safety-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Food Safety</h2>
+                	<p>Follow the following food safety guidelines below to help keep you and baby healthy during pregnancy:</p>
+                    <div class="topics-list-grid">
+                        <ul>
+                            <li>
+                            	<p><strong>Be careful with:</strong> Hot dogs, lunch meats, cold cuts, fermented or dry sausage, and other deli-style meat and poultry</p>
+                                <p><strong>Why?</strong> May contain Listeria.</p>
+                                <p><strong>What should I do?</strong> Even if the label says that the meat is precooked, reheat these meats to steaming hot or 165&deg;F before eating.</p>
+                            </li>
+                            <li>
+                            	<p><strong>Be careful with:</strong> Eggs and pasteurized egg products</p>
+                                <p><strong>Why?</strong> Undercooked eggs may contain Salmonella.</p>
+                                <p><strong>What should I do?</strong> Cook eggs until yolks are firm. Cook casseroles and other dishes containing eggs or egg products to 160&deg;F.</p>
+                            </li>
+                            <li>
+                            	<p><strong>Be careful with:</strong> Eggnog</p>
+                                <p><strong>Why?</strong> Homemade eggnog may contain uncooked eggs, which may contain Salmonella.</p>
+                                <p><strong>What should I do?</strong> Make eggnog with a pasteurized egg product or buy pasteurized eggnog. When you make eggnog or other egg drinks, cook to 160&deg;F</p>
+                            </li>
+                            <li>
+                            	<p><strong>Be careful with:</strong> Fish</p>
+                                <p><strong>Why?</strong> May contain parasites or bacteria.</p>
+                                <p><strong>What should I do?</strong> Cook fish to 145&deg;F.</p>
+                            </li>
+                            <li>
+                            	<p><strong>Be careful with:</strong> Meat: Beef, veal, lamb, and pork (including ground meat)</p>
+                                <p><strong>Why?</strong> Undercooked meat may contain E. coli.</p>
+                                <p><strong>What should I do?</strong> Cook beef, veal, and lamb steaks and roasts to 145&deg;F. Cook pork to 160&deg;F. Cook all ground meats to 160&deg;F.</p>
+                            </li>
+                            <li>
+                            	<p><strong>Be careful with:</strong> Meat spread or pate</p>
+                                <p><strong>Why?</strong> Unpasteurized refrigerated pates or meat spreads may contain Listeria.</p>
+                                <p><strong>What should I do?</strong> Eat canned versions, which are safe.</p>
+                            </li>
+                            <li>
+                            	<p><strong>Be careful with:</strong> Poultry and stuffing (including ground poultry)</p>
+                                <p><strong>Why?</strong> Undercooked meat may contain bacteria such as Campylobacter or Salmonella.</p>
+                                <p><strong>What should I do?</strong> Cook poultry to 165&deg;F. If the poultry is stuffed, cook the stuffing to 165&deg;F. It's even better to cook the stuffing separately.</p>
+                            </li>
+                            <li>
+                            	<p><strong>Be careful with:</strong> Smoked seafood</p>
+                                <p><strong>Why?</strong> Refrigerated versions are not safe, unless they have been cooked to 165&deg;F.</p>
+                                <p><strong>What should I do?</strong> Eat canned versions, which are safe, or cook.</p>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    
+                    
+                    
+                    
+                </div>
+                </div>
+
+                <div id="page9p" style=" display : none;">
+                 <div class="responsive-banner listeriosis-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Listeriosis</h2>
+                	<p>Listeria is a type of bacteria that is harmful and can spread to baby. You are much more likely to get the disease caused by Listeria - called listeriosis - when you are pregnant. It can be given to baby while you are pregnant even if you do not have symptoms.</p>
+                    <h5>To prevent listeriosis:</h5>
+                    <div class="topics-list-grid">
+                        <ul>
+                            <li>
+                            	<p>Do not eat hot dogs, luncheon meats, bologna, or other deli meat unless they are reheated until steaming hot.</p>
+                            </li>
+                            <li>
+                            	<p>Do not eat refrigerated pâté, meat spreads from a meat counter, or smoked seafood found in the refrigerated section of the store.</p>
+                            </li>
+                            <li>
+                            	<p>Foods that don't need refrigeration, like canned tuna and canned salmon, are okay to eat. Refrigerate after opening.</p>
+                            </li>
+                            <li>
+                            	<p>Do not drink unpasteurized (raw) milk. Do not eat foods that have raw milk in them.</p>
+                            </li>
+                            <li>
+                            	<p>Do not eat salads made in the store such as ham salad, chicken salad, egg salad, tuna salad, or seafood salad.</p>
+                            </li>
+                            <li>
+                            	<p>Do not eat soft cheese such as Feta, queso blanco, queso fresco, Brie, Camembert cheeses, blue-veined cheeses, and Panela unless it is made with pasteurized milk. Check and make sure the label says, "Made with pasteurized milk."</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+
+                <div id="page10p" style=" display : none;">
+                <div class="responsive-banner eating-seafood-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Eating Seafood</h2>
+                	<p>The nutritional value of seafood is particularly important for pregnant or breastfeeding mothers. Seafood can be part of a healthy diet for pregnant and breastfeeding women Seafood provides important nutrients, including omega-3 fats that are good for your health and your baby's health. Omega-3 fats from seafood are healthy fats shown to improve the development of the nervous system of an unborn child or young baby.</p>
+                    <p>Eat at least 8 and up to 12 ounces of cooked seafood each week. Seafood choices that are higher in omega-3s include salmon, herring, mussels, trout, sardines, and pollock.</p>
+                    <h5>Mercury in Seafood</h5>
+                    <p>Seafood may contain unhealthy chemicals, like mercury. Mercury can harm the developing nervous system in an unborn child or young baby. Seafood has varying levels of mercury. Choose fish lower in mercury to get the health benefits of seafood with the least risk. Choices that are lower in mercury include salmon, flounder, tilapia, trout, pollock, and catfish. You should NOT eat fish high in mercury like shark, swordfish, tilefish, and King mackerel. Canned "white" tuna (albacore) is higher in mercury than the "light" variety; limit canned white tuna to less than 6 ounces per week.</p>
+                    <h5>Seafood From Local Waters</h5>
+                    <p>In addition to mercury, fish may contain other harmful chemicals, including fish caught in local waters. Check local advisories to learn about the safety of fish caught in your local lakes, rivers, and coastal areas. Advisories may recommend that people limit or avoid eating some types fish caught in certain places. If no advice is available, you may eat up to 1 meal (6 ounces) per week of fish from local waters, but don't eat any other fish during that week.</p>
+                </div>
+                </div>
+
+                <div id="page11p" style=" display : none;">
+                <div class="responsive-banner hbp-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>High Blood Pressure</h2>
+                	<p>There are different types of high blood pressure during pregnancy:</p>
+                    <h5>High Blood Pressure Before Pregnancy</h5>
+                    <p>High blood pressure that a mother has had before pregnancy is called chronic hypertension and needs to be controlled because it can lead to health problems such as heart failure or stroke. During pregnancy chronic hypertension may affect the growth of your baby. If you take medication to control your blood pressure, your health care provider will determine whether it is safe to use during pregnancy.</p>
+                    <h5>High Blood Pressure a Mother First Gets During the Second Half of Pregnancy</h5>
+                    <p>When high blood pressure first occurs during the second half of pregnancy it is known as gestational hypertension. This type of high blood pressure goes away soon after the baby is born. You may need to see your health care provider more often to have your blood pressure checked.</p>
+                    <p class="italic">In partnership with the American Congress of Obstetricians and Gynecologists</p>
+                </div>
+                </div>
+
+                <div id="page12p" style=" display : none;">
+                <div class="responsive-banner preeclampsia-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Preeclampsia</h2>
+                	<p>Preeclampsia is a serious medical condition affecting all organs of the body. Preeclampsia is gestational hypertension (high blood pressure) with additional findings. For example, preeclampsia causes stress on the kidneys, which results in increased amounts of protein in the woman's urine. Other signs of preeclampsia may include:</p>
+                    <div class="topics-list-grid">
+                        <ul>
+                            <li>
+                            	<p>Headaches</p>
+                            </li>
+                            <li>
+                            	<p>Visual problems</p>
+                            </li>
+                            <li>
+                            	<p>Rapid weight gain</p>
+                            </li>
+                            <li>
+                            	<p>Swelling of the hands and face</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>If preeclampsia develops, the only real cure is to have the baby. A mother with preeclampsia may need to stay in the hospital so that she and her baby can be monitored. In some cases the baby may be delivered early. The decision to deliver the baby depends on the risks to the woman and the baby. When preeclampsia becomes severe, the woman's organs can be damaged, including the kidneys, liver, brain, heart, and eyes. In some cases, seizures will occur. This is called eclampsia.</p>
+                    <p class="italic">In partnership with the American Congress of Obstetricians and Gynecologists</p>
+                </div>
+                </div>
+
+                <div id="page13p" style=" display : none;">
+                <div class="responsive-banner gestational-diabetes-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Gestational Diabetes</h2>
+                	<p>Gestational diabetes develops in women for the first time during pregnancy. Gestational diabetes is caused by a change in the way the mother's body responds to insulin during pregnancy.</p>
+                    <p>Insulin is a hormone. It moves glucose out of the blood and into the body's cells where it can be turned into energy. During pregnancy a woman's cells naturally become slightly more resistant to insulin's effects. This change is designed to increase the mother's blood glucose level to make more nutrients available to the baby. The mother's body makes more insulin to keep the blood glucose level normal.</p>
+                    <p>In a small number of women, even this increase is not enough to keep their blood glucose levels in the normal range. As a result, they develop gestational diabetes. Gestational diabetes increases the risk of having a very large baby and possible cesarean delivery. High blood pressure and preeclampsia are more common as well. Babies born to mothers with gestational diabetes may have problems with breathing, low glucose levels and jaundice. With proper prenatal care and careful control of glucose levels, the risk of these problems decreases.</p>
+                    <p>If you have gestational diabetes you will need to keep your blood glucose level under control. Controlling your blood glucose level may require daily tracking of your glucose level, eating healthy foods, exercising regularly and sometimes taking medications.</p>
+                    <p>For most women, gestational diabetes goes away after childbirth. However, they remain at high risk of having diabetes later in life. For women who had mild diabetes before pregnancy, it is a lifelong condition. Mothers with gestational diabetes will need to have regular diabetes testing after pregnancy (6-12 weeks after birth)-if the result is normal than you need to be tested for diabetes every 3 years.</p>
+                    <p class="italic">In partnership with the American Congress of Obstetricians and Gynecologists</p>
+                </div>
+                </div>
+
+                <div id="page14p" style=" display : none;">
+                <div class="responsive-banner morning-sickness-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Morning Sickness</h2>
+                	<p>If you're going to experience it, morning sickness usually begins not long after you first become pregnant and lasts until the end of the first trimester. Morning sickness can occur at any time of the day. It can be mild or severe and includes everything from feeling nauseated to severe daily vomiting. It can be annoying, but it shouldn't interfere with your everyday activities.</p>
+                    <h5>Getting a Break</h5>
+                    <p>For most pregnant women, morning sickness gets better by the 12th week of pregnancy. For others, a break doesn't come until around the 20th week, and a very small percentage of women experience it throughout pregnancy. While you definitely don't enjoy it, morning sickness is actually considered a good sign of a healthy pregnancy as it's triggered by the rising levels of the pregnancy hormone hCG.</p>
+                    <p>Here are some tips to help with morning sickness</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Eat saltine crackers when you wake up</p>
+                            </li>
+                            <li>
+                                <p>Wait to brush your teeth until you've been up for a while or immediately after eating any food</p>
+                            </li>
+                            <li>
+                                <p>Space apart your eating from any drinking</p>
+                            </li>
+                            <li>
+                                <p>Eat small, frequent meals (high protein, high carbohydrate) or snacks every 2-3 hours</p>
+                            </li>
+                            <li>
+                                <p>Only drink small amounts of liquids at a time</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>If none of these things work and you're losing weight, vomiting more than once or twice a day, or the vomiting is interfering with your normal daily activities, your healthcare provider may be able to prescribe anti-nausea medications for you.</p>
+                   <p class="italic">In partnership with Healthy Mom & Baby</p>
+                </div>
+                </div>
+
+                <div id="page15p" style=" display : none;">
+                <div class="responsive-banner uti-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Urinary Tract Infection</h2>
+                	<p>Urinary Tract Infections (UTI) are bacterial infections along your urinary tract.</p>
+                    <p>A simple bladder infection often has no symptoms at all, and you'll only find out you have one when your practitioner runs a routine urine test at your monthly visit. Other UTIs symptoms can include:</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Pain or burning when urinating</p>
+                            </li>
+                            <li>
+                                <p>More frequent, and more urgent, urination</p>
+                            </li>
+                            <li>
+                                <p>Cramps and pain in the lower part of your abdomen</p>
+                            </li>
+                            <li>
+                                <p>Cloudy urine, or urine that has a strong or nasty smell</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>Treating a UTI is done by taking a full course of prescribed antibiotics specific to the type of bacteria found in your urine sample.</p>
+                    <p>Here are steps to reduce your chances of developing a UTI during your pregnancy:</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Drink plenty of water</p>
+                            </li>
+                            <li>
+                                <p>Check out your urine color often - if it's dark, not straw-colored, you're not getting enough fluids and could be setting yourself up for a UTI</p>
+                            </li>
+                            <li>
+                                <p>Don't hold it!</p>
+                            </li>
+                            <li>
+                                <p>Empty your bladder when you urinate (lean forward when peeing)</p>
+                            </li>
+                            <li>
+                                <p>Wipe from front to rear after you use the toilet</p>
+                            </li>
+                            <li>
+                                <p>Clean your genitals and the areas surrounding them, particularly after having sex</p>
+                            </li>
+                            <li>
+                                <p>Avoid using genital sprays, powders, and especially douches</p>
+                            </li>
+                            <li>
+                                <p>Wear all-cotton undergarments</p>
+                            </li>
+                            <li>
+                                <p>Take showers rather than baths whenever possible. Avoid bubble baths (which tend to irritate your urethral opening) and make sure that the tub is really clean (and rinsed thoroughly) before using it</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>Call your practitioner immediately if you have any symptoms of a UTI.</p>
+                </div>
+                </div>
+
+                <div id="page16p" style=" display : none;">
+                <div class="responsive-banner bleeding-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Bleeding</h2>
+                	<p>One of the scariest things that can happen to you when you are pregnant is to notice some vaginal bleeding or "spotting." Fortunately, not all bleeding and spotting means that something is wrong; but it is important to know what to do if it happens.</p>
+                    <p>Spotting is typically a small amount of often blood-tinged mucous that you only see when you wipe with tissue after going to the bathroom or you may see a few spots on your underwear. The earliest spotting that you may experience can actually be a sign that the embryo is implanting into the wall of the uterus. Known as implantation bleeding, this often occurs about 2 weeks after you have missed your period. This spotting is very short-lived and should not continue, or get heavier.</p>
+                    <p>Another kind of spotting can happen after you have sex. During your pregnancy the hormones that are keeping the pregnancy moving along also make the cervix very soft. The blood vessels in the cervix become engorged and can bleed easily. So after a romantic night with your partner you may notice a little pink or brown, mucous-like spotting up to 12 hours after the event. This is one of the most common reasons that moms call their practitioners in early pregnancy; but this can occur at any point. If you go to the hospital or call the office to tell them you have some spotting, don't think they are being nosey for asking you when was the last time you had sex!</p>
+                    <p>Obviously, sometimes bleeding in early pregnancy could be a sign that you might be starting to miscarry the pregnancy. This type of bleeding is bright red and heavier, more like the start of your period or your period itself. A persistent dark brown discharge may also be a sign that something is going on. Any bleeding that is also accompanied by cramping needs further evaluation and you should call your doctor or certified nurse midwife.</p>
+                    <p class="italic">In partnership with HealthyChildren.org</p>
+                </div>
+                </div>
+
+                <div id="page17p" style=" display : none;">
+                <div class="responsive-banner weight-gain-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Weight Gain</h2>
+                	<p>You should gain weight gradually during your pregnancy, with most of the weight gained in the last 3 months.</p>
+                    <p>Many doctors suggest women gain weight at the following rate:</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>1 to 4 pounds total during the first 3 months (first trimester)</p>
+                            </li>
+                            <li>
+                                <p>2 to 4 pounds per month during the 4th to 9th months (second and third trimesters)</p>
+                            </li>
+                            <li>
+                                <p>The total amount of weight you should gain during your pregnancy depends on your weight when you became pregnant</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+
+                <div id="page18p" style=" display : none;">
+                <div class="responsive-banner exercise-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Exercise</h2>
+                	<p>First, if you're experiencing any pregnancy complications or if you've been told you have a high-risk pregnancy, avoid exercise until you've had a chance to discuss it with your healthcare provider.</p>
+                    <p>If you've talked with your health care provider and you can exercise here are some benefits from exercise during pregnancy:</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Increases your muscle strength</p>
+                            </li>
+                            <li>
+                                <p>Boosts your immune system</p>
+                            </li>
+                            <li>
+                                <p>Reduces your risks of gestational diabetes</p>
+                            </li>
+                            <li>
+                                <p>Helps you maintain a better body image</p>
+                            </li>
+                            <li>
+                                <p>Can make labor and delivery easier</p>
+                            </li>
+                            <li>
+                                <p>Helps you recover faster from childbirth</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>Here are some exercises not to do while pregnant:</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Avoid exercises with any risk of falling on your abdomen or pelvic region: such as skiing, horseback riding, bicycling, and jumping, such as into a pool</p>
+                            </li>
+                            <li>
+                                <p>Skip exercises where you lie flat on your back (like abdominal crunches) or activities like boxing</p>
+                            </li>
+                            <li>
+                                <p>And skip the tennis or racquetball courts for now as the side-to-side movements in these sports put too much stress on the stretching and changing muscles and ligaments of your hips</p>
+                            </li>
+                            <li>
+                                <p>Do not scuba dive because of complications that can emerge from breathing compressed oxygen</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>As you baby grows you may have to change how long or hard you can exercise. Your healthcare provider may ask you to track your active heart rate and keep it at low-to moderate-intensity activity. For most pregnant women, your maximum heart rate during exercise shouldn't exceed 110-120 beats/minute (80 percent of your maximum heart rate). Avoid becoming short of breath-you should be able to carry on a conversation during exercise while pregnant.</p>
+                   <p class="italic">In partnership with Healthy Mom & Baby</p>
+                </div>
+                </div>
+
+                <div id="page19p" style=" display : none;">
+                <div class="responsive-banner signs-labor-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Signs of Labor</h2>
+                	<p>Your body may go through physical changes several days before labor starts. You may notice that the baby has dropped and given you more room for breathing. You may also notice that the baby is now pressing on your bladder, sending you running to the bathroom more often. You may pass a mucus plug that is gloppy in consistency-this plug was in your cervix and protected your baby from infections.</p>
+                    <h5>Signs of Labor</h5>
+                    <p>It helps to learn the signs and symptoms of labor; you may experience one or any of the following when your labor is preparing to start.</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Lower back ache</p>
+                            </li>
+                            <li>
+                                <p>Menstrual-like cramps (contractions, pains or waves) that become regular and stronger</p>
+                            </li>
+                            <li>
+                                <p>A sudden gush or slow trickle of clear vaginal fluid</p>
+                            </li>
+                            <li>
+                                <p>Pinkish vaginal discharge</p>
+                            </li>
+                            <li>
+                                <p>Passing a thick mucus plug</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>Sometimes people have these signs and rush to the hospital only to find out they are not in true labor, and get sent back home to wait more. With false labor, your contractions will be inconsistent and your nurses will notice that your cervix isn't opening or changing.</p>
+                    <h5>Get Checked</h5>
+                    <p>You should always go to where you'll give birth if you experience any of the following symptoms or changes.</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Your water breaks</p>
+                            </li>
+                            <li>
+                                <p>You have bright red vaginal bleeding that's more than spotting</p>
+                            </li>
+                            <li>
+                                <p>Contractions that last longer than a minute with little relief between</p>
+                            </li>
+                            <li>
+                                <p>Persistent headache, vision changes or heartburn that doesn't go away</p>
+                            </li>
+                            <li>
+                                <p>Your baby seems to be moving less than usual</p>
+                            </li>
+                        </ul>
+                        <p class="italic">In partnership with HealthyChildren.org</p>
+                    </div>
+                </div>
+                </div>
+
+                <div id="page20p" style=" display : none;">
+                <div class="responsive-banner contraction-types-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Contraction Types</h2>
+                    <h5>Braxton-Hicks (False Labor)</h5>
+                    <p>These contractions tend to increase in the weeks right before your due date. With Braxton-Hicks:</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>You may feel tightening of your uterus muscles at irregular intervals or a squeezing sensation in your lower abdomen and groin.</p>
+                            </li>
+                            <li>
+                                <p>Sometimes you can just barely feel these contractions at other times, the contractions can be strong or painful.</p>
+                            </li>
+                            <li>
+                                <p>These contractions tend to come and go unpredictably and tend to show up in the afternoon or evening. </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <h5>Labor Contractions</h5>
+                    <p>Labor contractions signal the beginning of childbirth. These contractions come at regular intervals, usually move from the back to the lower abdomen, last between 30-70 seconds, and get stronger and closer together over time. For some women, there is no advance sign that labor is near. Others experience cramps, contractions and discomfort for weeks before delivery.</p>
+                    <p>Nobody knows exactly what causes labor to begin, but the following signs may help signal that labor is near:</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>The feeling that the baby has settled lower in your belly. This can occur a few weeks or a few hours before labor.</p>
+                            </li>
+                            <li>
+                                <p>Increased vaginal discharge that is clear, pink or slightly bloody. This can occur a few days or immediately before labor.</p>
+                            </li>
+                            <li>
+                                <p>Your water "breaks" (fluid leaks or gushes from your vagina). This occurs at the start of or during labor.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>Contact your health care provider right away if you are having contractions that trouble you, especially if they become very painful or if you think you are having preterm labor (labor before the 37th week of pregnancy).</p>
+                    <p>Other signs to contact your health care provider:</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Your contractions are between 5 and 10 minutes apart</p>
+                            </li>
+                            <li>
+                                <p>Your water breaks, especially if the fluid is stained dark, greenish brown</p>
+                            </li>
+                            <li>
+                                <p>You experience vaginal bleeding</p>
+                            </li>
+                            <li>
+                                <p>You can no longer walk or talk during contractions</p>
+                            </li>
+                            <li>
+                                <p>You are concerned about your health or the health and well-being of the baby</p>
+                            </li>
+                        </ul>
+                        <p class="italic">In partnership with March of Dimes</p>
+                    </div>
+                </div>
+                </div>
+
+                <div id="page21p" style=" display : none;">
+                <div class="responsive-banner week39-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Why Wait 39 Weeks</h2>
+                	<p>Being pregnant 39 weeks gives your baby's body all the time it needs to grow.</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Important organs, like his brain, lungs and liver, get the time they need to develop.</p>
+                            </li>
+                            <li>
+                                <p>He is less likely to have vision and hearing problems after birth.</p>
+                            </li>
+                            <li>
+                                <p>He has time to gain more weight in the womb. Babies born at a healthy weight have an easier time staying warm than babies born too small.</p>
+                            </li>
+                            <li>
+                                <p>He can suck and swallow and stay awake long enough to eat after he's born. Babies born early sometimes can't do these things.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+
+                <div id="page22p" style=" display : none;">
+                <div class="responsive-banner preterm-labor-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Preterm Labor</h2>
+                	<p>Preterm labor is labor that happens too early, before 37 completed weeks of pregnancy. Sometimes we don't know for sure what causes preterm labor and birth. Any woman can have preterm labor and give birth early, even if she's done everything right during pregnancy.</p>
+                    <p>We do know some things make a woman more likely than others to have preterm labor and birth.</p>
+                    <p>The three risk factors make you most likely to have preterm labor and give birth early are:</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Having a premature baby in the past</p>
+                            </li>
+                            <li>
+                                <p>Being pregnant with multiples (twins, triplets or more)</p>
+                            </li>
+                            <li>
+                                <p>Having problems with your uterus or cervix now or in the past</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>Signs of preterm labor are often the same as those for regular labor, only they happen too early. Call your provider if you have even one of these signs:</p>
+                    <div class="topics-list-grid">
+                    	<ul>
+                        	<li>
+                                <p>Contractions that make your belly tighten up like a fist every 10 minutes or more often. Contractions are when the muscles of your uterus get tight and then relax. They help push your baby out of your uterus.</p>
+                            </li>
+                            <li>
+                                <p>Change in the color of your vaginal discharge, a lot of watery discharge, or bleeding from your vagina</p>
+                            </li>
+                            <li>
+                                <p>The feeling that your baby is pushing down. This is called pelvic pressure.</p>
+                            </li>
+                            <li>
+                                <p>Low, dull backache</p>
+                            </li>
+                            <li>
+                                <p>Cramps that feel like your period</p>
+                            </li>
+                            <li>
+                                <p>Belly cramps with or without diarrhea</p>
+                            </li>
+                            <li>
+                                <p>If the signs get worse or don't go away, call your provider again or go right to the hospital. Getting help quickly is the best thing you can do.</p>
+                            </li>
+                        </ul>
+                        <p class="italic">In partnership with March of Dimes</p>
+                    </div>
+                </div>
+                </div>
+
+                <div id="page23p" style=" display : none;">
+                <div class="responsive-banner help-support-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Help &amp; Support</h2>
+                    <div data-role="collapsible-set" data-theme="a" data-content-theme="d" data-iconpos="right">
+                        <div data-role="collapsible" data-collapsed-icon="accord-plus" data-expanded-icon="accord-minus">
+                            <h3>Domestic Violence</h3>
+                            <div class="timeline-grid-one">
+                            	<p class="italic">National Domestic Violence Hotline</p>
+                                <p>Provides crisis intervention, information and referral to victims of domestic violence, perpetrators, friends and families. The Hotline has access to more than 4,000 shelters and domestic violence programs across the United States, Puerto Rico and the U.S. Virgin Islands. The Hotline is toll-free, confidential and anonymous and operates 24 hours a day, 365 days a year.</p>
+                                <div class="btm-lnks">
+                                	<span class="accord-contact"><a href="tel:800-799-7233">800-799-7233</a></span>
+                                    <a id="a17" class="accord-site fl-lt">www.thehotline.org</a><!--onclick="window.open('http://www.thehotline.org/','_blank','location=yes,enableViewportScale=yes')" href="#">-->
+                                </div>
+                            </div>
+                        </div>
+                        <div data-role="collapsible" data-collapsed-icon="accord-plus" data-expanded-icon="accord-minus">
+                            <h3>Finding Child Care</h3>
+                            <div class="timeline-grid-one">
+                            	<p class="italic">Child Care Aware</p>
+                                <p>Helps families learn more about the elements of quality child care and how to locate programs in their communities.</p>
+                                <div class="btm-lnks">
+                                	<span class="accord-contact"><a href="tel:800-424-2246">800-424-2246</a></span>
+                                    <a id="a18" class="accord-site fl-lt">www.ChildCareAware.org</a> <!--onclick="window.open('http://www.childcareaware.org/','_blank','location=yes,enableViewportScale=yes')" href="#">-->
+                                </div>
+                            </div>
+                        </div>
+                        <div data-role="collapsible" data-collapsed-icon="accord-plus" data-expanded-icon="accord-minus">
+                            <h3>National Hunger</h3>
+                            <div class="timeline-grid-one">
+                            	<p class="italic">WHYHunger's National Hunger Hotline</p>
+                                <p>Connects individuals in need to emergency food in their community, government assistance programs, and various social services.</p>
+                                <div class="btm-lnks">
+                                	<span class="accord-contact"><a href="tel:866-348-6479">866-348-6479</a></span>
+                                    <a id="a19" class="accord-site fl-lt">www.WhyHunger.org/FindFood</a> <!--onclick="window.open('http://www.whyhunger.org/findfood','_blank','location=yes,enableViewportScale=yes')" href="#">-->
+                                </div>
+                            </div>
+                        </div>
+                        <div data-role="collapsible" data-collapsed-icon="accord-plus" data-expanded-icon="accord-minus">
+                            <h3>Postpartum Depression</h3>
+                            <div class="timeline-grid-one">
+                            	<p class="italic">Postpartum Support International (PSI)</p>
+                                <p>Dedicated to helping women suffering from perinatal mood and anxiety disorders, including postpartum depression. Family, friends and healthcare providers can also call so moms and moms-to-be can get the support they need and recover (toll-free in English and Spanish).</p>
+                                <div class="btm-lnks">
+                                	<span class="accord-contact"><a href="tel:800-994-4773">800-994-4773</a></span>
+                                    <a id="a20" class="accord-site fl-lt"> www.Postpartum.net</a><!--onclick="window.open('http://www.postpartum.net/','_blank','location=yes,enableViewportScale=yes')" href="#">-->
+                                </div>
+                            </div>
+                        </div>
+                        <div data-role="collapsible" data-collapsed-icon="accord-plus" data-expanded-icon="accord-minus">
+                            <h3>Quitting Smoking</h3>
+                            <div class="timeline-grid-one">
+                            	<p class="italic">Smokefree.gov</p>
+                                <p>Connects you to counseling and information about quitting smoking. Help is also available via live chat online.</p>
+                                <div class="btm-lnks">
+                                	<span class="accord-contact"><a href="tel:800-784-8669">800-784-8669</a></span>
+                                    <a id="a21" class="accord-site fl-lt"> www.Smokefree.gov</a><!--onclick="window.open('http://smokefree.gov/','_blank','location=yes,enableViewportScale=yes')" href="#">-->
+                                </div>
+                            </div>
+                        </div>
+                        <div data-role="collapsible" data-collapsed-icon="accord-plus" data-expanded-icon="accord-minus">
+                            <h3>Substance Abuse Help</h3>
+                            <div class="timeline-grid-one">
+                            	<p class="italic">U.S. Substance Abuse and Mental Health Services Administration's National Helpline</p>
+                                <p> A confidential, free, 24-hour-a-day, 365-day-a-year, information service, in English and Spanish, for individuals and family members facing substance abuse issues.</p>
+                                <div class="btm-lnks">
+                                	<span class="accord-contact"><a href="tel:800-662-4357">800-662-4357</a></span>
+                                    <a id="a22" class="accord-site fl-lt">www.samhsa.gov/treatment</a> <!--onclick="window.open('http://www.samhsa.gov/treatment/','_blank','location=yes,enableViewportScale=yes')" href="#">-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div id="page24p" style=" display : none;">
+                <div class="responsive-banner health-banner"></div>
+                <div class="grid-container topics-block">
+                	<h2>Free & Low Cost Health Care</h2>
+                    <div data-role="collapsible-set" data-theme="a" data-content-theme="d" data-iconpos="right">
+                        <div data-role="collapsible" data-collapsed-icon="accord-plus" data-expanded-icon="accord-minus">
+                            <h3>Health Insurance</h3>
+                            <div class="timeline-grid-one">
+                            	<p class="italic">InsureKidsNow.gov</p>
+                                <p>Provides information about Medicaid and CHIP services for families who need affordable health insurance coverage.</p>
+                                <div class="btm-lnks">
+                                	<span class="accord-contact"><a href="tel:877-543-7669">877-543-7669</a></span>
+                                    <a id="a23" class="accord-site fl-lt"> www.InsureKidsNow.gov</a><!--onclick="window.open('http://m.insurekidsnow.gov/','_blank','location=yes,enableViewportScale=yes')" href="#">-->
+                                </div>
+                            </div>
+                        </div>
+                        <div data-role="collapsible" data-collapsed-icon="accord-plus" data-expanded-icon="accord-minus">
+                            <h3>Vaccines</h3>
+                            <div class="timeline-grid-one">
+                            	<p class="italic">CDC INFO/Vaccines for Children</p>
+                                <p>For info on immunizations and to connect to the Vaccines for Children (VFC) Program, which helps provide vaccines to children whose parents or guardians may not be able to afford them.</p>
+                                <div class="btm-lnks">
+                                	<span class="accord-contact"><a href="tel:800-232-4636">800-232-4636</a></span>
+                                    <a id="a24" class="accord-site fl-lt"> www.cdc.gov/vaccines/programs/vfc/index.html</a><!--onclick="window.open('http://www.cdc.gov/vaccines/programs/vfc/index.html','_blank','location=yes,enableViewportScale=yes')" href="#">-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <!-- content of pregnancy topics pages ends -->
+
+				<!-- InstanceEndEditable -->
+			</div>
+            </div>
+            <!--Content Section Ends Here-->
+            
+            <!--Footer Section Starts Here-->
+            <div data-role="footer" data-theme="a" data-position="fixed">
+                <div data-role="navbar" data-grid="c">
+                <ul>
+                    <li><a href="javascript:void(0);" onClick="timelinePage()" id="timeline-icon" rel="external" data-icon="custom">Timeline</a></li>
+                    <li><a href="calendar.html" onClick="calendarPage()" id="calender-icon" rel="external" data-icon="custom">Appts</a></li>
+                    <li><a href="topics.html" id="topics-icon" rel="external" class="active" data-icon="custom">Topics</a></li>
+                    <li><a href="more.html" id="more-icon" rel="external" data-icon="custom">More</a></li>
+                </ul>
+                </div>
+            </div>
+            <!--Footer Section Ends Here-->    
+		</div>
+        
+        <input type="hidden" id="prev" value="" />
+        <input type="hidden" id="prevpreg" value="" />
+
+        <!--<script src="js/update-url.js"></script>-->
+
+	</body>
+<!-- InstanceEnd --></html>

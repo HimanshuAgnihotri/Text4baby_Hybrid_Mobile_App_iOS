@@ -1,0 +1,1218 @@
+﻿@charset "utf-8";
+/* Custom CSS */
+
+body#splash-one{background: #f9c4db url(../images/splash-bg.png) no-repeat center center !important;}
+body{height: 99.9% !important;}
+.ui-mobile, .ui-mobile body{height: 99.9% !important;}
+#splash-one, #splash-one .ui-page{height: 100% !important;}
+#splash-one .ui-content{height: 100% !important;}
+.ui-content{padding: 0px 0px 0px 0px; position: relative; letter-spacing: 1px;}
+#sign_in_content, #sign_up_content{ padding: 0px 0px 0px 0px;}
+h1{font-family: normal 18px Arial, Helvetica, sans-serif; text-transform: uppercase; text-align: center;}
+.link-txt{color: #ED008C !important; font-weight: normal !important; text-decoration: none !important;}
+p{text-align: left !important;}
+p strong{font-family: 'VAG Rounded Std bold';}
+.fl-rt{ float:right;}
+.fl-lt{ float:left;}
+/* Splash Page Starts here */
+.t4b-splashgrid{height: 100%; width: 100%;}
+.t4b-splashblock{position: relative; height: 100%; width: 100%;}
+
+/* Splash Animation Starts here */
+@media all and (orientation:portrait) {
+.hide{display: none;}
+.show{display: block;}
+.txt-logo-initial{bottom: 34%; height: 150px; position: absolute; width: 100%; text-align: center; -webkit-animation: 2500ms flash alternate ease-in-out; -moz-animation: 2500ms flash alternate ease-in-out; -ms-animation: 2500ms flash alternate ease-in-out; -o-animation: 2500ms flash alternate ease-in-out; animation: 2500ms flash alternate ease-in-out; opacity: 1; filter: alpha(opacity=100); z-index: 99; -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1);}
+@keyframes flash{
+0% {opacity: 0; filter: alpha(opacity=0); -webkit-transform: scale(0); -moz-transform: scale(0); -ms-transform: scale(0); -o-transform: scale(0); transform: scale(0);}
+100% {opacity: 1; filter: alpha(opacity=100); -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1);}
+}
+@-webkit-keyframes flash{
+0% {opacity: 0; filter: alpha(opacity=0); -webkit-transform: scale(0); -moz-transform: scale(0); -ms-transform: scale(0); -o-transform: scale(0); transform: scale(0);}
+100% {opacity: 1; filter: alpha(opacity=100); -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1);}
+}
+@-moz-keyframes flash{
+0% {opacity: 0; filter: alpha(opacity=0); -webkit-transform: scale(0); -moz-transform: scale(0); -ms-transform: scale(0); -o-transform: scale(0); transform: scale(0);}
+100% {opacity: 1; filter: alpha(opacity=100); -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1);}
+}
+@-ms-keyframes flash{
+0% {opacity: 0; filter: alpha(opacity=0); -webkit-transform: scale(0); -moz-transform: scale(0); -ms-transform: scale(0); -o-transform: scale(0); transform: scale(0);}
+100% {opacity: 1; filter: alpha(opacity=100); -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1);}
+}
+@-o-keyframes flash{
+0% {opacity: 0; filter: alpha(opacity=0); -webkit-transform: scale(0); -moz-transform: scale(0); -ms-transform: scale(0); -o-transform: scale(0); transform: scale(0);}
+100% {opacity: 1; filter: alpha(opacity=100); -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1);}
+}
+.t4b-logo-initial{bottom: 31%; height: 180px; position: absolute; width: 100%; text-align: center;}
+@keyframes bg-anim{
+0% { -webkit-transform: scale(0.3); }
+50% { -webkit-transform: scale(2); }
+100% { -webkit-transform: scale(1); }
+}
+@-webkit-keyframes bg-anim{
+0% { -webkit-transform: scale(0.3); }
+50% { -webkit-transform: scale(2); }
+100% { -webkit-transform: scale(1); }
+}
+@-moz-keyframes bg-anim{
+0% { -moz-transform: scale(0.3); }
+50% { -moz-transform: scale(2); }
+100% { -moz-transform: scale(1); }  
+}
+@-ms-keyframes bg-anim{
+0% { -ms-transform: scale(0.3); }
+50% { -ms-transform: scale(2); }
+100% { -ms-transform: scale(1); }  
+}
+@-o-keyframes bg-anim{
+0% { -o-transform: scale(0.3); }
+50% { -o-transform: scale(2); }
+100% { -o-transform: scale(1); }  
+}
+
+#logo-glow-grid{position: absolute; left: 0; top: 0; z-index: -1; width: 100%; height: 100%;}
+.t4b-glow-initial{height: 100%; position: absolute; width: 100%; text-align: center; -webkit-animation: 1000ms glow alternate ease-in-out; -moz-animation: 1000ms glow alternate ease-in-out; -ms-animation: 1000ms glow alternate ease-in-out; -o-animation: 1000ms glow alternate ease-in-out; animation: 1000ms glow alternate ease-in-out;}
+@keyframes glow{
+  0% { -webkit-transform: scale(0.3); }
+  50% { -webkit-transform: scale(4); }
+  100% { -webkit-transform: scale(1); }
+}
+@-webkit-keyframes glow{
+  0% { -webkit-transform: scale(0.3); }
+  50% { -webkit-transform: scale(4); }
+  100% { -webkit-transform: scale(1); }
+}
+@-moz-keyframes glow{
+  0% { -moz-transform: scale(0.3); }
+  50% { -moz-transform: scale(4); }
+  100% { -moz-transform: scale(1); }  
+}
+@-ms-keyframes glow{
+  0% { -ms-transform: scale(0.3); }
+  50% { -ms-transform: scale(4); }
+  100% { -ms-transform: scale(1); }  
+}
+@-o-keyframes glow{
+  0% { -o-transform: scale(0.3); }
+  50% { -o-transform: scale(4); }
+  100% { -o-transform: scale(1); }  
+}
+    }
+
+/* Splash Page Ends here */
+
+#header{border: 1px solid #ec008c; background: #ec008c; color: #ffffff; font-weight: bold; text-shadow: 0 0 0 #ffffff; background-image: -webkit-gradient(linear, left top, left bottom, from( #ec008c ), to( #ec008c )); background-image: -webkit-linear-gradient( #ec008c , #ec008c ); background-image: -moz-linear-gradient( #ec008c , #ec008c ); background-image: -ms-linear-gradient( #ec008c , #ec008c ); background-image: -o-linear-gradient( #ec008c , #ec008c ); background-image: linear-gradient( #ec008c , #ec008c ); height: 44px; position: fixed !important; top: 0 !important; width: 100%; z-index: 9990;}
+.ui-header-fixed{padding-top: 0 !important; top: 0 !important;}
+
+/* Content Section CSS Starts Here */
+.banner{padding: 0px; min-width: 320px; max-width: 385px; height: 167px; position: relative;}
+.banner-text {padding: 20px;min-width: 285px; max-width: 385px; height: 127px;background:#E3E3E3;}
+
+#baby-btn, .baby-flip{position: absolute; right: 8px; top: 8px; z-index: 9999;}
+#baby-btn a, .baby-flip a{background: #12c2e9; width: 86px; text-align: center; display: block; padding: 5px 0px; border-radius: 4px; color: #ffffff !important; text-shadow: none; text-decoration: none; font-size: 14px; font-weight: normal !important;}
+#pregnancy-btn, .pregnancy-flip{position: absolute; right: 8px; top: 8px;}
+#pregnancy-btn a, .pregnancy-flip a{background: #FFFFFF; border-radius: 4px; color: #EC008C !important; display: block; font-size: 14px; font-weight: normal !important; padding: 5px 0; text-align: center; text-decoration: none; text-shadow: none; width: 86px;}
+/* Content Section CSS Ends Here */
+
+/* Sign Up CSS Starts Here */
+.ui-field-contain .ui-input-text input.mobile-icon{background: #FEE8F4 url(../images/mobile-icon.png) no-repeat 13px 6px; padding-left: 15%;}
+.ui-field-contain .ui-icon-video, .ui-field-contain .ui-icon-video:hover{background: #50cbed url(../images/video-icon.png) no-repeat 10px 10px !important; font-size: 17px !important; font-weight: normal; text-align: center; width: 100% !important; display: block; text-decoration: none; text-shadow: none; color: #ffffff; margin: 0px; padding: 10px 0; border-radius: 7px;}
+
+.ui-field-contain .ui-btn{width: 97px; margin: 0 auto; background: #ed078e; border: none;}
+.two-btn-block{ width:90%; margin:0 auto; overflow:hidden;}
+.btn-width{width: 40%;}
+.btn-width-new{width: 53%;}
+.two-btn-block .ui-btn, .two-btn-block .ui-btn input, .ui-mobile .ui-footer .two-btn-block .ui-btn-up-a{ background: #ed078e !important; border: none;}
+.two-btn-block .ui-btn:hover, .two-btn-block .ui-btn input:hover, .ui-mobile .ui-footer .two-btn-block .ui-btn-hover-a{ background: #ed078e !important; border: none;}
+
+
+.ui-mobile .ui-footer .two-btn-block .ui-btn-up-a .ui-btn-inner .ui-btn-text, .ui-mobile .ui-footer .two-btn-block .ui-focus .ui-btn-inner .ui-btn-text, .ui-mobile .ui-footer .two-btn-block .ui-btn-hover-a .ui-btn-inner .ui-btn-text, .ui-mobile .ui-footer .two-btn-block .ui-btn-active .ui-btn-inner .ui-btn-text{color: #FFFFFF;}
+
+.ui-field-contain .ui-btn .ui-btn-inner{ padding: 10px 0; border: none;}
+.ui-field-contain .ui-btn .ui-btn-inner .ui-btn-text{font-size: 17px; color: #ffffff; text-transform: uppercase; text-align: center; text-shadow: none; font-weight: normal;}
+.ui-field-contain .ui-btn .ui-btn-inner button.ui-btn{border: 0px none;  display: block;}
+
+.ui-field-contain .ui-input-text input.fname-icon{background: #FEE8F4 url(../images/first-name.png) no-repeat 9px 10px; padding-left: 15%;}
+.ui-field-contain .ui-input-text input.babyname-icon{background: #FEE8F4 url(../images/baby-name.png) no-repeat 11px 11px; padding-left: 15%;}
+.ui-field-contain .ui-input-text input.email-icon{background: #FEE8F4 url(../images/email.png) no-repeat 8px 11px; padding-left: 15%;}
+.ui-select .ui-btn .ui-btn-inner .ui-btn-text{opacity: 0.6; filter: alpha(opacity=60);}
+
+.select-visible{opacity: 1 !important; filter: alpha(opacity=100) !important;}
+.ui-field-contain .ui-input-text input.password-icon{background: #FEE8F4 url(../images/password.png) no-repeat 10px 10px; padding-left: 15%;}
+.ui-field-contain .ui-input-text input.confirm-password-icon{background: #FEE8F4 url(../images/confirm-password.png) no-repeat 9px 6px; padding-left: 15%;}
+
+.ui-field-contain p{font-size: 15px; margin: 0px; padding: 0px; line-height: 22px; color: #8b9298;}
+.ui-field-contain .ui-input-text input.code-icon{background: #FEE8F4 url(../images/code.png) no-repeat 10px 10px; padding-left: 15%;}
+.ui-field-contain a.resend-code{font-size: 15px; margin: 0px; padding: 0px; line-height: 22px; color: #ed008c; text-align: center; font-family: "VAG Rounded Std light"; text-shadow: none; font-weight: normal;}
+
+.flip-due-date-block{background: #FEE8F4; box-shadow: 0 1px 2px rgba(242, 68, 168, 0.23) inset; border-radius: 7px; padding: 10px; overflow: hidden;}
+.flip-due-date-block label.ui-slider{width: 55%; float: left; color: #574F54; font-size: 15px; padding-top: 7px;}
+
+.ui-field-contain .ui-input-text input.due-date-icon{background: #FEE8F4 url(../images/due-date.png) no-repeat 10px 8px; padding-left: 15%;}
+.ui-field-contain .ui-input-text input.period-icon{background: #FEE8F4 url(../images/period.png) no-repeat 10px 8px; padding-left: 15%;}
+.ui-field-contain .ui-input-text input.baby-birthday-icon{background: #FEE8F4 url(../images/baby.png) no-repeat 10px 5px; padding-left: 15%;}
+.ui-field-contain .ui-input-text input.birthday-icon{background: #FEE8F4 url(../images/baby-birthday.png) no-repeat 10px 6px; padding-left: 15%;}
+.ui-field-contain .ui-input-text input.zip-icon{background: #FEE8F4 url(../images/zip-code.png) no-repeat 10px 7px; padding-left: 15%;}
+
+.pink-bg{background: #f683c6; border-radius: 7px; padding: 10px !important; margin-top: 12px;}
+.pink-bg p{color: #ffffff !important; font-size: 14px !important; text-align: left !important;}
+.grey-bg{background: #f2f2f2; border-radius: 7px; padding: 10px !important; margin-top: 12px;}
+.grey-bg ul{margin: 0px; padding: 0px;}
+.grey-bg ul li{list-style-type: none; background: url(../images/topics-bullet.png) no-repeat 3px 8px; padding-left: 28px; font-size: 14px; color: #8b9298; line-height: 20px; font-weight: normal; text-shadow: 0px; padding-bottom: 22px;}
+.grey-bg p{text-align: left; font-size: 14px !important;}
+.grey-bg p span{color: #ec008c;}
+.grey-bg .flip-terms-block{overflow: hidden; padding-bottom: 10px;}
+.grey-bg p a, .grey-bg a, p a{color: #EC008C !important; text-decoration: none !important; font-weight: normal !important;}
+/* Sign Up CSS Ends Here */
+
+/* Sign In CSS Starts Here */
+.ui-field-contain .ui-input-text input.signin-password-icon{background: #FEE8F4 url(../images/sign-in-password.png) no-repeat 10px 6px; padding-left: 15%;}
+.ui-field-contain .ui-input-text input.repeat-password-icon{background: #FEE8F4 url(../images/repeat-passward.png) no-repeat 5px 8px; padding-left: 15%;}
+.ui-field-contain .ui-input-btn{background: #ed078e; font-size: 17px; border: 0px none; color: #ffffff; text-transform: uppercase; text-align: center; width: 97px; padding: 10px 0; display: block; margin: 11px auto 0px auto;}
+.ui-field-contain .ui-submit{width: 97px; margin: 0px auto 0px auto !important; display: block;}
+.ui-field-contain .ui-submit .ui-btn-inner{display: inline; padding: 0;}
+.ui-field-contain .ui-submit .ui-btn-text{background: #ed078e; font-size: 17px; border: 0px none; color: #ffffff; text-transform: uppercase; text-align: center; width: 97px; padding: 10px 0; display: block; border-radius: 7px;}
+/* Sign In CSS Ends Here */
+
+/* Timeline Banner */
+/* Banner Curl */
+.container{min-width: 320px; max-width: 385px; height: 167px; position: relative; margin: 0px auto; overflow: hidden;}
+
+/* Timeline Responsive Banners */
+
+.textcontent{ position:absolute; left:20px; top:0px;width: 100% !important; height: 210px !important; margin: 0px auto 20px;} /* IOS Slider */
+.iosSlider {position: relative; top: 0; left: 0; overflow: hidden; width: 100% !important; height: 210px !important;-webkit-backface-visibility: hidden;}
+.iosSlider .prevButton {position: absolute; top: 186px; left: 30px; width: 35px; height: 35px;z-index: 2;-webkit-backface-visibility: hidden;}
+.iosSlider .nextButton {position: absolute; top: 186px; right: 10px; width: 35px; height: 35px;z-index: 2;-webkit-backface-visibility: hidden;}
+.iosSlider .slider {width: 100% !important; height: 100%;-webkit-backface-visibility: hidden;}
+.iosSlider .slider .item {position: absolute; top: 0; left: 0; width: 100% !important; height: 210px !important; margin: 0px;-webkit-backface-visibility: hidden;}
+.iosSlider i {display: none !important;}
+.iosSlider h4 {padding: 20px 19px 20px 10px;}
+.slide_wrapper{margin-bottom: 0px;}
+.slide_wrapper .ui-collapsible-set{ margin: 0 15px 40px !important; padding-top: 18px;}
+.ui-collapsible-heading-toggle{border: 1px solid #ec008c; color: #fff; font-weight: 700; text-shadow: 0 -1px 0 #000; background: rgb(254,102,192); background: -moz-linear-gradient(top, rgba(254,102,192,1) 0%, rgba(251,64,175,1) 50%, rgba(249,40,164,1) 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,102,192,1)), color-stop(50%,rgba(251,64,175,1)), color-stop(100%,rgba(249,40,164,1))); background: -webkit-linear-gradient(top, rgba(254,102,192,1) 0%,rgba(251,64,175,1) 50%,rgba(249,40,164,1) 100%); background: -o-linear-gradient(top, rgba(254,102,192,1) 0%,rgba(251,64,175,1) 50%,rgba(249,40,164,1) 100%); background: -ms-linear-gradient(top, rgba(254,102,192,1) 0%,rgba(251,64,175,1) 50%,rgba(249,40,164,1) 100%); background: linear-gradient(to bottom, rgba(254,102,192,1) 0%,rgba(251,64,175,1) 50%,rgba(249,40,164,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe66c0', endColorstr='#f928a4',GradientType=0 );}
+
+.baby-grid .ui-collapsible-heading-toggle{border: 1px solid #12c2e9; color: #fff; font-weight: 700; text-shadow: 0 -1px 0 #000; background: rgb(115,221,243); background: -moz-linear-gradient(top, rgba(115,221,243,1) 20%, rgba(18,194,233,1) 80%); background: -webkit-gradient(linear, left top, left bottom, color-stop(20%,rgba(115,221,243,1)), color-stop(80%,rgba(18,194,233,1))); background: -webkit-linear-gradient(top, rgba(115,221,243,1) 20%,rgba(18,194,233,1) 80%); background: -o-linear-gradient(top, rgba(115,221,243,1) 20%,rgba(18,194,233,1) 80%); background: -ms-linear-gradient(top, rgba(115,221,243,1) 20%,rgba(18,194,233,1) 80%); background: linear-gradient(to bottom, rgba(115,221,243,1) 20%,rgba(18,194,233,1) 80%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73ddf3', endColorstr='#12c2e9',GradientType=0 );}
+
+.ui-icon-timeline-icon-one{background: url(../images/timeline-icon-one.png) no-repeat center center; height: 48px !important;}
+.ui-icon-timeline-icon-two{background: url(../images/timeline-icon-two.png) no-repeat center center; height: 48px !important;}
+.ui-icon-timeline-icon-three{background: url(../images/timeline-icon-three.png) no-repeat center center; height: 48px !important;}
+.ui-icon-timeline-icon-four{background:  url(../images/timeline-icon-four.png) no-repeat center center; height: 48px !important;}
+
+.ui-collapsible-content{padding: 0 6px 20px !important;}
+.timeline-grid-one{/*width: 100%;*/ padding-left: 10px; padding-right: 10px;}
+/*.timeline-grid-one{width: 100%;}*/
+.ui-collapsible-content h2{font-size: 17px; color: #6e2c8d; font-family: "VAG Rounded Std light"; text-align: left; margin: 0px; padding: 0px; font-weight: normal; padding: 10px 0px 15px 0px; letter-spacing: 1px;}
+.timeline-block-one{width: 100%; overflow: hidden;}
+.timeline-block-one .timeline-block-one-pic{float: left; width: 35%;}
+.timeline-block-one ul{background: #DBDDE0; border: 1px solid #B8BABD; border-radius: 8px; color: #535859; float: right; font-size: 14px; font-weight: normal !important; list-style-type: none; margin: 0; padding: 0; text-align: left; width: 63%; font-family: "VAG Rounded Std light";}
+.timeline-block-one ul li{padding: 11px 0 6px 7px;}
+.timeline-block-one ul li:first-child{border-bottom: 1px solid #c8cacc;}
+.timeline-block-one ul li:last-child{border-top: 1px solid #e9ebec;}
+
+.sign-up-content p{font-size: 13px; color: #000; font-family: "VAG Rounded Std light"; text-align: center !important; letter-spacing: 1px; margin-bottom:5px !important;}
+.ui-collapsible-content p{font-size: 13px; color: #000; margin: 0px; padding: 0px; line-height: 21px; font-family: "VAG Rounded Std light"; text-align: left; letter-spacing: 1px; font-weight: normal; text-shadow: none;}
+#checklist-grid .ui-checkbox input{margin: -2px 0 0; top: 18px;}
+#checklist-grid .ui-checkbox .ui-btn-inner{padding: 10px 5px 5px 54px !important;}
+#checklist-grid .ui-checkbox .ui-btn-inner .ui-btn-text{font-size: 16px; color: #585858; font-family: "VAG Rounded Std light"; text-shadow: none;}
+#checklist-grid .ui-checkbox .ui-btn{background: none; border: none;}
+#checklist-grid .ui-checkbox .ui-icon-checkbox-off{background: url(../images/checklist-checkbox.png) no-repeat scroll 0 -29px rgba(0, 0, 0, 0); border-radius: 0; height: 27px; top: 18px; width: 29px;}
+#checklist-grid .ui-checkbox .ui-icon-checkbox-on{background: url(../images/checklist-checkbox.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0) !important; border-radius: 0; height: 27px; top: 15px; width: 29px;}
+
+.star-rating{overflow: hidden; width: 192px; margin: 0px auto; padding: 20px 0px;}
+.star-rating span:last-child{margin-right: 0px;}
+.star-rating span{width: 30px; height: 28px; background: url(../images/stars.png) no-repeat scroll left bottom rgba(0, 0, 0, 0); display: block; text-indent: -9999px; margin-right: 10px; float: left; cursor: pointer;}
+.star-active{background: url(../images/stars.png) no-repeat scroll left top rgba(0, 0, 0, 0) !important;}
+p.big-txt{font-size: 15px; font-weight: bold; color: #585858; text-align: center; padding-top: 20px;}
+
+/* Calendar Page Starts Here */
+.ui-icon-calendar-icon-one{background: url(../images/calendar-icon-one.png) no-repeat center center; width: 48px !important; height: 48px !important;}
+.ui-icon-calendar-icon-two{background: url(../images/calendar-icon-two.png) no-repeat center center; width: 48px !important; height: 48px !important;}
+.ui-icon-calendar-icon-three{background: url(../images/calendar-icon-three.png) no-repeat center center; width: 48px !important; height: 48px !important;}
+.ui-icon-calendar-icon-four{background: url(../images/calendar-0-4-months.png) no-repeat center center; width: 48px !important; height: 48px !important;}
+.ui-icon-calendar-icon-five{background: url(../images/calendar-5-8-months.png) no-repeat center center; width: 48px !important; height: 48px !important;}
+.ui-icon-calendar-icon-six{background: url(../images/calendar-9-12-months.png) no-repeat center center; width: 48px !important; height: 48px !important;}
+ul#calendar-grid{margin: 0px; padding: 0px; border-radius: 0px;}
+ul#calendar-grid li{border-bottom: 2px solid #ec008c; padding: 12px 0px;}
+ul#calendar-grid li.ui-down, ul#calendar-grid li.ui-active, ul#calendar-grid li.ui-focus{border-bottom: 2px solid #ec008c; padding: 12px 0px; border-top: none;}
+ul#calendar-grid li.ui-down h2.ui-li-heading, ul#calendar-grid li.ui-active h2.ui-li-heading, ul#calendar-grid li.ui-focus h2.ui-li-heading{text-shadow: none;}
+ul#calendar-grid li.ui-btn-up-d, ul#calendar-grid li.ui-btn-hover-d, ul#calendar-grid li.ui-btn-down-d, ul#calendar-grid li.ui-focus, ul#calendar-grid li.ui-btn-active-d{background: none !important; border-left: none !important; border-right: none !important;}
+ul#calendar-grid li:first-child.ui-btn-up-d, ul#calendar-grid li:first-child.ui-btn-hover-d, ul#calendar-grid li:first-child.ui-btn-down-d, ul#calendar-grid li:first-child.ui-focus, ul#calendar-grid li:first-child.ui-btn-active-d{border-top: none;}
+ul#calendar-grid li:last-child{border-bottom: none;}
+ul#calendar-grid li a{padding: 0px;}
+ul#calendar-grid li h2{padding: 0px; width: 67%; float: left;}
+ul#calendar-grid li p{color: #585858; width: 67%; float: left;}
+ul#calendar-grid li span{width: 32%; text-indent: -9999px; height: 44px; display: block; float: right;}
+.add-appointment{background: url(../images/appointment.png) no-repeat 0px 0px;}
+.add-info{background: url(../images/info-icon.png) no-repeat 0px 0px;}
+.add-checklist{background: url(../images/add-checklist.png) no-repeat 0px 0px;}
+.add-checklist-gray{background: url(../images/disabled-checklist.png) no-repeat 0px 0px;}
+.add-checklist-item{background: url(../images/checklist-icon.png) no-repeat 0px 0px;}
+ul#calendar-grid li .ui-icon, ul#calendar-grid li .ui-icon-searchfield:after{background: url(../images/arrow.png) no-repeat scroll right 0 #FFFFFF !important; border-radius: 0px; height: 25px !important; width: 16px !important;}
+
+#pregpage2h2 {border-bottom: 2px solid #ec008c;}
+#prenatal-visit-grid span{width: 43px; height: 44px; text-indent: -9999px; margin-right: 0px; display: block; float: left;}
+#nbpage2h2 {border-bottom: 2px solid #ec008c;}
+#addinfo {margin-top: 9px;}
+
+#baby_calendar span {width: 43px; height: 44px; text-indent: -9999px; margin-right: 10px; display: block; float: left;}
+#baby_calendar p{font-size: 13px; color: #585858; font-family: "VAG Rounded Std light"; margin: 0px; padding: 5px 0px 15px 0px; line-height: 21px;}
+#preg_calendar span {width: 43px; height: 44px; text-indent: -9999px; margin-right: 10px; display: block; float: left;}
+#preg_calendar p{font-size: 13px; color: #585858; font-family: "VAG Rounded Std light"; margin: 0px; padding: 5px 0px 15px 0px; line-height: 21px;}
+
+#prenatal-visit-grid ul li.ui-focus, ul#calendar-grid li.ui-focus, #calendar-checklist-grid ul li{-moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;}
+#prenatal-visit-grid h2{font-size: 19px; color: #6e2c8d; font-family: "VAG Rounded Std light"; text-align: center; margin: 0px; font-weight: normal; padding: 13px 0px 15px 0px; letter-spacing: 1px;}
+#prenatal-visit-grid p{font-size: 14px; color: #585858; font-family: "VAG Rounded Std light"; margin: 0px; padding: 8px 0px 15px 0px; line-height: 21px;}
+#prenatal-visit-grid ul{margin: 0px; padding: 0px; border-radius: 0px; border-top: 2px solid #ec008c;}
+#prenatal-visit-grid ul li{border: none; border-bottom: 2px solid #ec008c; padding: 12px 0px; background: none;}
+#prenatal-visit-grid ul li a{padding: 0px;}
+#prenatal-visit-grid ul li h2{padding: 0px; width: 67%; float: left; text-align: left; font-size: 18px;}
+#prenatal-visit-grid ul li p{color: #585858; width: 67%; float: left; padding: 0px;}
+#prenatal-visit-grid ul li span{width: 20%; text-indent: -9999px; height: 44px; display: block; float: left;}
+#prenatal-visit-grid ul li .ui-icon, #prenatal-visit-grid ul li .ui-icon-searchfield:after{background: url(../images/arrow.png) no-repeat scroll right 0 #FFFFFF !important; border-radius: 0px; height: 25px !important; width: 16px !important;}
+
+#appointment-grid h2{font-size: 19px; color: #6e2c8d; font-family: "VAG Rounded Std light"; text-align: center; margin: 0 0 15px; font-weight: normal; padding: 10px 0px 0px 0px; letter-spacing: 1px; border-bottom: 2px solid #ec008c; min-height: 55px;}
+#appointment-grid h2 span{width: 43px; height: 44px; text-indent: -9999px; margin-right: 10px; display: block; float: left;}
+#appointment-grid p{font-size: 14px; color: #585858; font-family: "VAG Rounded Std light"; margin: 0px; padding: 10px 0px 0px 0px; line-height: 21px;}
+#appointment-grid .pink-bg{margin: 15px 0px 0px 0px;}
+#appointment-grid .pink-bg p{padding: 0px;}
+#appointment-grid .ui-field-contain{padding: 17px 0 0 !important}
+
+#calendar-checklist-grid h2{font-size: 19px; color: #6e2c8d; font-family: "VAG Rounded Std light"; text-align: center; margin: 0 0 15px; font-weight: normal; padding: 10px 0px 0px 0px; letter-spacing: 1px; border-bottom: 2px solid #ec008c; min-height: 55px; line-height: 44px;}
+#calendar-checklist-grid h2 span{width: 43px; height: 44px; text-indent: -9999px; margin-right: 10px; display: block; float: left;}
+#calendar-checklist-grid p{font-size: 14px; color: #585858; font-family: "VAG Rounded Std light"; margin: 0px; padding: 10px 0px 0px 0px; line-height: 21px;}
+
+#calendar-checklist-grid ul{margin: 25px 0 0; padding: 0px; border-radius: 0px; border-top: 2px solid #ec008c;}
+#calendar-checklist-grid ul li{border: none; padding: 15px 0 0; background: none;}
+#calendar-checklist-grid ul li a{padding: 0px;}
+#calendar-checklist-grid ul li h2{padding: 0px; width: 67%; text-align: left; font-size: 18px; border-bottom: none; margin: 0px; min-height: 28px !important; line-height: 25px;}
+#calendar-checklist-grid ul li h2.ui-li-heading, #calendar-checklist-grid ul li h2.ui-li-heading, #calendar-checklist-grid ul li h2.ui-li-heading{text-shadow: none;}
+#calendar-checklist-grid ul li .ui-icon, #calendar-checklist-grid ul li .ui-icon-searchfield:after{background: url(../images/arrow.png) no-repeat scroll right 0 #FFFFFF !important; border-radius: 0px; height: 25px !important; width: 16px !important; margin-top: -16px;}
+
+#calendar-checklist-grid #checklist-grid{margin-top: 15px;}
+#calendar-checklist-grid #checklist-grid .ui-checkbox .ui-btn-inner .ui-btn-text{font-size: 14px; color: #585858; font-family: "VAG Rounded Std light"; text-shadow: none; font-weight: normal;}
+
+.ui-field-contain .ui-input-text input.appointment-fld-icon{background: #FEE8F4 url(../images/appointment-fld.png) no-repeat 10px 9px; padding-left: 15%;}
+.ui-field-contain .ui-input-text input.appointment-title-icon{background: #FEE8F4 url(../images/appointment-fld.png) no-repeat 10px -42px; padding-left: 15%;}
+
+#additional-checklist .ui-checkbox input{margin: -2px 0 0; top: 18px;}
+#additional-checklist .ui-checkbox .ui-btn-inner{padding: 10px 5px 5px 54px !important;}
+#additional-checklist .ui-checkbox .ui-btn-inner .ui-btn-text{color: #585858; font-family: "VAG Rounded Std light"; font-size: 14px; font-weight: normal; text-shadow: none;}
+#additional-checklist .ui-checkbox .ui-btn{background: none; border: none;}
+#additional-checklist .ui-checkbox .ui-icon-checkbox-off{background: url(../images/add-checkbox.png) no-repeat scroll 0 -29px rgba(0, 0, 0, 0); border-radius: 0; height: 27px; top: 18px; width: 29px;}
+#additional-checklist .ui-checkbox .ui-icon-checkbox-on{background: url(../images/add-checkbox.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0) !important; border-radius: 0; height: 27px; top: 15px; width: 29px;}
+
+/* Topics Page Starts Here */
+.ui-icon-topics-icon-one{background: url(../images/prenatal-care.png) no-repeat center center; height: 48px !important;}
+.ui-icon-topics-icon-two{background: url(../images/food-nutrition.png) no-repeat center center; height: 48px !important;}
+.ui-icon-topics-icon-three{background: url(../images/weight-exercise.png) no-repeat center center; height: 48px !important;}
+.ui-icon-topics-icon-four{background:  url(../images/health-issues.png) no-repeat center center; height: 48px !important;}
+.ui-icon-topics-icon-five{background:  url(../images/labor-delivery.png) no-repeat center center; height: 48px !important;}
+.ui-icon-topics-icon-hotline{background: url(../images/hotline.png) no-repeat center center; height: 48px !important;}
+
+.ui-icon-topics-icon-baby-one{background: url(../images/topics-icon-baby-one.png) no-repeat center center; height: 48px !important;}
+.ui-icon-topics-icon-baby-two{background: url(../images/topics-icon-baby-two.png) no-repeat center center; height: 48px !important;}
+.ui-icon-topics-icon-baby-three{background: url(../images/topics-icon-baby-three.png) no-repeat center center; height: 48px !important;}
+.ui-icon-topics-icon-baby-four{background: url(../images/topics-icon-baby-four.png) no-repeat center center; height: 48px !important;}
+.ui-icon-topics-icon-baby-five{background: url(../images/topics-icon-baby-five.png) no-repeat center center; height: 48px !important;}
+
+.ui-icon-accord-plus{background: url(../images/plus.png) no-repeat center center; width: 50px !important; height: 50px !important;}
+.ui-icon-accord-minus{background: url(../images/minus.png) no-repeat center center; width: 48px !important;  height: 48px !important;}
+
+.top-left-corner{border-radius: 8px 0px 0px 0px;}
+.top-right-corner{border-radius: 0px 8px 0px 0px; border-right: none !important;}
+.bottom-right-corner{border-radius: 0px 0px 8px 0px; border-bottom: none !important; border-right: none !important;}
+.bottom-left-corner{border-radius: 0px 0px 0px 8px; border-bottom: none !important;}
+
+.no-corner{border-radius: 0px !important;}
+.right-corner{border-radius: 0px 8px 8px 0px; border-bottom: none !important; border-right: none !important;}
+.left-corner{border-radius: 8px 0px 0px 8px; border-bottom: none !important;}
+
+/* Pregnancy Topics */
+#prenatal-care-block ul, #food-nutrition-block ul, #weight-exercise-block ul, #health-issues-block ul, #labor-delivery-block ul, #hotlines-block ul{ border: 2px solid #bab7b7; border-radius: 8px; margin-top: 15px;}
+#prenatal-care-block ul li, #food-nutrition-block ul li, #weight-exercise-block ul li, #health-issues-block ul li, #labor-delivery-block ul li, #hotlines-block ul li{background: url(../images/topics-menu-bg.png) repeat-x 0px 0px; width: 50%; height: 105px; border-top: 1px solid #ffffff; border-bottom: 1px solid #bab7b7; border-right: 1px solid #bab7b7; border-left: 1px solid #ffffff;}
+#prenatal-care-block ul li a, #food-nutrition-block ul li a, #weight-exercise-block ul li a, #health-issues-block ul li a, #labor-delivery-block ul li a, #hotlines-block ul li a{text-decoration: none;}
+#prenatal-care-block ul li a .ui-btn-inner, #food-nutrition-block ul li a .ui-btn-inner, #weight-exercise-block ul li a .ui-btn-inner, #health-issues-block ul li a .ui-btn-inner, #labor-delivery-block ul li a .ui-btn-inner, #hotlines-block ul li a .ui-btn-inner{padding: 0px; white-space: normal;}
+#prenatal-care-block ul li a .ui-btn-text, #food-nutrition-block ul li a .ui-btn-text, #weight-exercise-block ul li a .ui-btn-text, #health-issues-block ul li a .ui-btn-text, #labor-delivery-block ul li a .ui-btn-text, #hotlines-block ul li a .ui-btn-text{color: #434344; display: block; font-size: 13px; font-weight: normal; padding-top: 83px; line-height: 16px;}
+#prenatal-care-block ul li a.ui-focus, #food-nutrition-block ul li a.ui-focus, #weight-exercise-block ul li a.ui-focus, #health-issues-block ul li a.ui-focus, #labor-delivery-block ul li a.ui-focus, #hotlines-block ul li a.ui-focus{box-shadow: none;}
+
+#prenatal-care-block ul li a.visit-icon.ui-btn-active, #prenatal-care-block ul li a.ultrasound-icon.ui-btn-active, #prenatal-care-block ul li a.vaccines-icon.ui-btn-active, #prenatal-care-block ul li a.test-icon.ui-btn-active{background: none; border: none;}
+#prenatal-care-block ul li a.visit-icon .ui-btn-text{background: url(../images/topics/pregnancy/prenatal-care-menu.png) no-repeat center 5px;}
+#prenatal-care-block ul li a.ultrasound-icon .ui-btn-text{background: url(../images/topics/pregnancy/prenatal-care-menu.png) no-repeat center -84px;}
+#prenatal-care-block ul li a.vaccines-icon .ui-btn-text{background: url(../images/topics/pregnancy/prenatal-care-menu.png) no-repeat center -175px;}
+#prenatal-care-block ul li a.test-icon .ui-btn-text{background: url(../images/topics/pregnancy/prenatal-care-menu.png) no-repeat center -268px;}
+/*#prenatal-care-block ul li a.visit-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/pregnancy/prenatal-care-menu.png) no-repeat center -365px;}
+#prenatal-care-block ul li a.ultrasound-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/pregnancy/prenatal-care-menu.png) no-repeat center -454px;}
+#prenatal-care-block ul li a.vaccines-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/pregnancy/prenatal-care-menu.png) no-repeat center -545px;}
+#prenatal-care-block ul li a.test-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/pregnancy/prenatal-care-menu.png) no-repeat center -638px;}*/
+
+#food-nutrition-block ul li a.pre-vitamin-icon.ui-btn-active, #food-nutrition-block ul li a.folic-acid-icon.ui-btn-active, #food-nutrition-block ul li a.breakfast-icon.ui-btn-active, #food-nutrition-block ul li a.food-safety-icon.ui-btn-active, #food-nutrition-block ul li a.listeriosis-icon.ui-btn-active, #food-nutrition-block ul li a.seafood-icon.ui-btn-active{background: none; border: none;}
+#food-nutrition-block ul li a.pre-vitamin-icon .ui-btn-text{background: url(../images/topics/pregnancy/food-nutrition-menu.png) no-repeat center 2px; padding-bottom: 4px; padding-top: 65px;}
+#food-nutrition-block ul li a.folic-acid-icon .ui-btn-text{background: url(../images/topics/pregnancy/food-nutrition-menu.png) no-repeat center -98px; padding-bottom: 7px; padding-top: 78px;}
+#food-nutrition-block ul li a.breakfast-icon .ui-btn-text{background: url(../images/topics/pregnancy/food-nutrition-menu.png) no-repeat center -207px; padding-bottom: 6px; padding-top: 75px;}
+#food-nutrition-block ul li a.food-safety-icon .ui-btn-text{background: url(../images/topics/pregnancy/food-nutrition-menu.png) no-repeat center -302px; padding-bottom: 10px; padding-top: 75px;}
+#food-nutrition-block ul li a.listeriosis-icon .ui-btn-text{background: url(../images/topics/pregnancy/food-nutrition-menu.png) no-repeat center -376px; padding-bottom: 8px; padding-top: 75px;}
+#food-nutrition-block ul li a.seafood-icon .ui-btn-text{background: url(../images/topics/pregnancy/food-nutrition-menu.png) no-repeat center -468px; padding-bottom: 10px; padding-top: 74px;}
+/*#food-nutrition-block ul li a.pre-vitamin-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/pregnancy/food-nutrition-menu.png) no-repeat center -568px;}
+#food-nutrition-block ul li a.folic-acid-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/pregnancy/food-nutrition-menu.png) no-repeat center -669px;}
+#food-nutrition-block ul li a.breakfast-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/pregnancy/food-nutrition-menu.png) no-repeat center -769px;}
+#food-nutrition-block ul li a.food-safety-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/pregnancy/food-nutrition-menu.png) no-repeat center -859px;}
+#food-nutrition-block ul li a.listeriosis-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/pregnancy/food-nutrition-menu.png) no-repeat center -929px;}
+#food-nutrition-block ul li a.seafood-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/pregnancy/food-nutrition-menu.png) no-repeat center -1026px;}*/
+
+#health-issues-block ul li a.hbp-icon.ui-btn-active, #health-issues-block ul li a.preeclampsia-icon.ui-btn-active, #health-issues-block ul li a.diabetes-icon.ui-btn-active, #health-issues-block ul li a.morning-sickness-icon.ui-btn-active, #health-issues-block ul li a.uti-icon.ui-btn-active, #health-issues-block ul li a.bleeding-icon.ui-btn-active{background: none; border: none;}
+#health-issues-block ul li a.hbp-icon .ui-btn-text{background: url(../images/topics/pregnancy/health-issues-menu.png) no-repeat scroll center 7px; padding-top: 68px;}
+#health-issues-block ul li a.preeclampsia-icon .ui-btn-text{background: url(../images/topics/pregnancy/health-issues-menu.png) no-repeat center -108px; padding-bottom: 6px; padding-top: 79px;}
+#health-issues-block ul li a.diabetes-icon .ui-btn-text{background: url(../images/topics/pregnancy/health-issues-menu.png) no-repeat center -223px; padding-bottom: 2px; padding-top: 68px;}
+#health-issues-block ul li a.morning-sickness-icon .ui-btn-text{background: url(../images/topics/pregnancy/health-issues-menu.png) no-repeat center -329px; padding-bottom: 3px; padding-top: 64px;}
+#health-issues-block ul li a.uti-icon .ui-btn-text{background: url(../images/topics/pregnancy/health-issues-menu.png) no-repeat center -423px; padding-top: 68px;}
+#health-issues-block ul li a.bleeding-icon .ui-btn-text{background: url(../images/topics/pregnancy/health-issues-menu.png) no-repeat center -517px; padding-bottom: 8px; padding-top: 78px;}
+/*#health-issues-block ul li a.hbp-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/pregnancy/health-issues-menu.png) no-repeat center -627px;}
+#health-issues-block ul li a.preeclampsia-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/pregnancy/health-issues-menu.png) no-repeat center -742px;}
+#health-issues-block ul li a.diabetes-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/pregnancy/health-issues-menu.png) no-repeat center -857px;}
+#health-issues-block ul li a.morning-sickness-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/pregnancy/health-issues-menu.png) no-repeat center -963px;}
+#health-issues-block ul li a.uti-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/pregnancy/health-issues-menu.png) no-repeat center -1057px;}
+#health-issues-block ul li a.bleeding-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/pregnancy/health-issues-menu.png) no-repeat center -1151px;}*/
+
+#weight-exercise-block ul li a.weight-gain-icon.ui-btn-active, #weight-exercise-block ul li a.exercise-icon.ui-btn-active{background: none; border: none;}
+#weight-exercise-block ul li a.weight-gain-icon .ui-btn-text{background: url(../images/topics/pregnancy/weight-exercise-menu.png) no-repeat center 20px;}
+#weight-exercise-block ul li a.exercise-icon .ui-btn-text{background: url(../images/topics/pregnancy/weight-exercise-menu.png) no-repeat center -75px;}
+/*#weight-exercise-block ul li a.weight-gain-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/pregnancy/weight-exercise-menu.png) no-repeat center -165px;}
+#weight-exercise-block ul li a.exercise-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/pregnancy/weight-exercise-menu.png) no-repeat center -260px;}*/
+
+#labor-delivery-block ul li a.signs-labor-icon.ui-btn-active, #labor-delivery-block ul li a.contraction-icon.ui-btn-active, #labor-delivery-block ul li a.weeks39-icon.ui-btn-active, #labor-delivery-block ul li a.preterm-labor-icon.ui-btn-active{background: none; border: none;}
+#labor-delivery-block ul li a.signs-labor-icon .ui-btn-text{background: url(../images/topics/pregnancy/labor-delivery-menu.png) no-repeat scroll center 7px;}
+#labor-delivery-block ul li a.contraction-icon .ui-btn-text{background: url(../images/topics/pregnancy/labor-delivery-menu.png) no-repeat center -109px; line-height: 20px; padding-top: 62px;}
+#labor-delivery-block ul li a.weeks39-icon .ui-btn-text{background: url(../images/topics/pregnancy/labor-delivery-menu.png) no-repeat center -207px; line-height: 20px; padding-top: 62px;}
+#labor-delivery-block ul li a.preterm-labor-icon .ui-btn-text{background: url(../images/topics/pregnancy/labor-delivery-menu.png) no-repeat center -321px;}
+/*#labor-delivery-block ul li a.signs-labor-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/pregnancy/labor-delivery-menu.png) no-repeat center -430px;}
+#labor-delivery-block ul li a.contraction-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/pregnancy/labor-delivery-menu.png) no-repeat center -546px;}
+#labor-delivery-block ul li a.weeks39-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/pregnancy/labor-delivery-menu.png) no-repeat center -644px;}
+#labor-delivery-block ul li a.preterm-labor-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/pregnancy/labor-delivery-menu.png) no-repeat center -758px;}*/
+
+#hotlines-block ul li a.baby-safety-icon.ui-btn-active, #hotlines-block ul li a.help-support-icon.ui-btn-active, #hotlines-block ul li a.health-icon.ui-btn-active{background: none; border: none;}
+#hotlines-block ul li a.help-support-icon .ui-btn-text{background: url(../images/topics/hotlines.png) no-repeat center 10px; padding-bottom: 12px; padding-top: 75px;}
+#hotlines-block ul li a.health-icon .ui-btn-text{background: url(../images/topics/hotlines.png) no-repeat center -95px; padding-bottom: 11px; padding-top: 75px;}
+#hotlines-block ul li a.baby-safety-icon .ui-btn-text{background: url(../images/topics/hotlines.png) no-repeat center -213px; padding-bottom: 12px; padding-top: 75px;}
+/*#hotlines-block ul li a.help-support-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/hotlines.png) no-repeat center -320px;}
+#hotlines-block ul li a.health-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/hotlines.png) no-repeat center -425px;}
+#hotlines-block ul li a.baby-safety-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/hotlines.png) no-repeat center -539px; padding-bottom: 12px; padding-top: 75px;}*/
+
+#baby-hotlines-block ul li a.baby-safety-icon.ui-btn-active, #hotlines-block ul li a.help-support-icon.ui-btn-active, #hotlines-block ul li a.health-icon.ui-btn-active{background: none; border: none;}
+#baby-hotlines-block ul li a.help-support-icon .ui-btn-text{background: url(../images/topics/hotlines.png) no-repeat center 10px; padding-bottom: 12px; padding-top: 75px;}
+#baby-hotlines-block ul li a.health-icon .ui-btn-text{background: url(../images/topics/hotlines.png) no-repeat center -95px; padding-bottom: 11px; padding-top: 75px;}
+/*#baby-hotlines-block ul li a.baby-safety-icon .ui-btn-text{background: url(../images/topics/hotlines.png) no-repeat center -213px; padding-bottom: 12px; padding-top: 75px;}
+#baby-hotlines-block ul li a.help-support-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/hotlines.png) no-repeat center -320px;}
+#baby-hotlines-block ul li a.health-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/hotlines.png) no-repeat center -425px;}
+#baby-hotlines-block ul li a.baby-safety-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/hotlines.png) no-repeat center -539px; padding-bottom: 12px; padding-top: 75px;}*/
+
+.topics-list-grid ul{border: none; list-style-type: none; margin-top: 0;}
+.topics-list-grid ul li{background: url(../images/topics-bullet.png) no-repeat 5px 6px; border: none; padding: 0 0 15px 20px;}
+.topics-list-grid ul li p{float: none; width: 100%; padding: 0;}
+.topics-list-grid ul li ul{list-style-type: none; margin: 15px 0 0; overflow: hidden; padding: 0;}
+.topics-list-grid ul li ul li{color: #585858; font-family: "VAG Rounded Std light"; font-size: 14px; line-height: 21px; margin: 0; padding: 0 0 15px 20px; background: url(../images/topics-bullet.png) no-repeat scroll 5px 6px rgba(0, 0, 0, 0); border: medium none;}
+.topics-list-grid ul li ul li:last-child{padding-bottom: 0px;}
+.topics-list-grid ul li ul li p{float: none; padding: 0; width: 100%; color: #585858; font-size: 14px; line-height: 21px; margin: 0;}
+
+/* Baby Topics */
+#baby-care-block ul, #baby-health-safety-block ul, #teething-block ul, #issues-concerns-block ul, #feeding-baby-block ul, #baby-hotlines-block ul{ border: 2px solid #bab7b7; border-radius: 8px; margin-top: 15px;}
+#baby-care-block ul li, #baby-health-safety-block ul li, #teething-block ul li, #issues-concerns-block ul li, #feeding-baby-block ul li, #baby-hotlines-block ul li{background: url(../images/topics-menu-bg.png) repeat-x 0px 0px; width: 50%; height: 105px; border-top: 1px solid #ffffff; border-bottom: 1px solid #bab7b7; border-right: 1px solid #bab7b7; border-left: 1px solid #ffffff;}
+#baby-care-block ul li a, #baby-health-safety-block ul li a, #teething-block ul li a, #issues-concerns-block ul li a, #feeding-baby-block ul li a, #baby-hotlines-block ul li a{text-decoration: none; background:none !important;}
+#baby-care-block ul li a .ui-btn-inner, #baby-health-safety-block ul li a .ui-btn-inner, #teething-block ul li a .ui-btn-inner, #issues-concerns-block ul li a .ui-btn-inner, #feeding-baby-block ul li a .ui-btn-inner, #baby-hotlines-block ul li a .ui-btn-inner{padding: 0px; white-space: normal;}
+#baby-care-block ul li a .ui-btn-text, #baby-health-safety-block ul li a .ui-btn-text, #teething-block ul li a .ui-btn-text, #issues-concerns-block ul li a .ui-btn-text, #feeding-baby-block ul li a .ui-btn-text, #baby-hotlines-block ul li a .ui-btn-text{color: #434344; display: block; font-size: 13px; font-weight: normal; padding-top: 83px; line-height: 16px;}
+#baby-care-block ul li a.ui-focus, #baby-health-safety-block ul li a.ui-focus, #teething-block ul li a.ui-focus, #issues-concerns-block ul li a.ui-focus, #feeding-baby-block ul li a.ui-focus, #baby-hotlines-block ul li a.ui-focus{box-shadow: none;}
+
+#baby-care-block ul li a.safe-sleep-icon.ui-btn-active, #baby-care-block ul li a.no-tv-baby-icon.ui-btn-active, #baby-care-block ul li a.crying-baby-icon.ui-btn-active, #baby-care-block ul li a.bathing-baby-icon.ui-btn-active, #baby-care-block ul li a.reading-baby-icon.ui-btn-active, #baby-care-block ul li a.bedtime-routine-icon.ui-btn-active{background: none; border: none;}
+#baby-care-block ul li a.safe-sleep-icon .ui-btn-text{background: url(../images/topics/baby/baby-care.png) no-repeat center 7px; padding-bottom: 5px;}
+#baby-care-block ul li a.no-tv-baby-icon .ui-btn-text{background: url(../images/topics/baby/baby-care.png) no-repeat center -94px; padding-bottom: 5px;}
+#baby-care-block ul li a.crying-baby-icon .ui-btn-text{background: url(../images/topics/baby/baby-care.png) no-repeat center -207px; padding-bottom: 5px;}
+#baby-care-block ul li a.bathing-baby-icon .ui-btn-text{background: url(../images/topics/baby/baby-care.png) no-repeat center -331px; padding-bottom: 5px;}
+#baby-care-block ul li a.reading-baby-icon .ui-btn-text{background: url(../images/topics/baby/baby-care.png) no-repeat center -454px; padding-bottom: 5px;}
+#baby-care-block ul li a.bedtime-routine-icon .ui-btn-text{background: url(../images/topics/baby/baby-care.png) no-repeat center -562px; padding-bottom: 5px;}
+/*#baby-care-block ul li a.safe-sleep-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/baby/baby-care.png) no-repeat center -687px;}
+#baby-care-block ul li a.no-tv-baby-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/baby/baby-care.png) no-repeat center -788px;}
+#baby-care-block ul li a.crying-baby-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/baby/baby-care.png) no-repeat center -901px;}
+#baby-care-block ul li a.bathing-baby-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/baby/baby-care.png) no-repeat center -1025px;}
+#baby-care-block ul li a.reading-baby-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/baby/baby-care.png) no-repeat center -1148px;}
+#baby-care-block ul li a.bedtime-routine-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/baby/baby-care.png) no-repeat center -1255px;}*/
+
+#baby-health-safety-block ul li a.baby-vaccines-icon.ui-btn-active, #baby-health-safety-block ul li a.sun-safety-icon.ui-btn-active, #baby-health-safety-block ul li a.car-seat-safety-icon.ui-btn-active, #baby-health-safety-block ul li a.baby-walkers-icon.ui-btn-active{background: none; border: none;}
+#baby-health-safety-block ul li a.baby-vaccines-icon .ui-btn-text{background: url(../images/topics/baby/baby-health-safety.png) no-repeat center 4px; padding-bottom: 6px;}
+#baby-health-safety-block ul li a.sun-safety-icon .ui-btn-text{background: url(../images/topics/baby/baby-health-safety.png) no-repeat center -108px; padding-bottom: 6px;}
+#baby-health-safety-block ul li a.car-seat-safety-icon .ui-btn-text{background: url(../images/topics/baby/baby-health-safety.png) no-repeat center -213px; padding-bottom: 6px;}
+#baby-health-safety-block ul li a.baby-walkers-icon .ui-btn-text{background: url(../images/topics/baby/baby-health-safety.png) no-repeat center -322px; padding-bottom: 6px;}
+/*#baby-health-safety-block ul li a.baby-vaccines-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/baby/baby-health-safety.png) no-repeat center -445px;}
+#baby-health-safety-block ul li a.sun-safety-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/baby/baby-health-safety.png) no-repeat center -557px;}
+#baby-health-safety-block ul li a.car-seat-safety-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/baby/baby-health-safety.png) no-repeat center -662px;}
+#baby-health-safety-block ul li a.baby-walkers-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/baby/baby-health-safety.png) no-repeat center -771px;}*/
+
+#teething-block ul li a.tips-icon.ui-btn-active, #teething-block ul li a.cavities-icon.ui-btn-active{background: none; border: none;}
+#teething-block ul li a.tips-icon .ui-btn-text{background: url(../images/topics/baby/teething.png) no-repeat center 5px; padding-bottom: 7px;}
+#teething-block ul li a.cavities-icon .ui-btn-text{background: url(../images/topics/baby/teething.png) no-repeat center -118px; padding-bottom: 7px;}
+/*#teething-block ul li a.tips-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/baby/teething.png) no-repeat center -256px;}
+#teething-block ul li a.cavities-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/baby/teething.png) no-repeat center -379px;}*/
+
+#issues-concerns-block ul li a.jaundice-icon.ui-btn-active, #issues-concerns-block ul li a.fever-icon.ui-btn-active, #issues-concerns-block ul li a.preemies-correct-age-icon.ui-btn-active, #issues-concerns-block ul li a.iron-deficiency-icon.ui-btn-active, #issues-concerns-block ul li a.rsv-icon.ui-btn-active, #issues-concerns-block ul li a.flu-icon.ui-btn-active{background: none; border: none;}
+#issues-concerns-block ul li a.jaundice-icon .ui-btn-text{background: url(../images/topics/baby/issue-concerns.png) no-repeat center 9px; padding-bottom: 6px;}
+#issues-concerns-block ul li a.fever-icon .ui-btn-text{background: url(../images/topics/baby/issue-concerns.png) no-repeat center -111px; padding-bottom: 6px;}
+#issues-concerns-block ul li a.preemies-correct-age-icon .ui-btn-text{background: url(../images/topics/baby/issue-concerns.png) no-repeat center -243px; padding-bottom: 2px; padding-top: 68px;}
+#issues-concerns-block ul li a.iron-deficiency-icon .ui-btn-text{background: url(../images/topics/baby/issue-concerns.png) no-repeat center -358px; padding-bottom: 6px;}
+#issues-concerns-block ul li a.rsv-icon .ui-btn-text{background: url(../images/topics/baby/issue-concerns.png) no-repeat center -472px; padding-bottom: 6px;}
+#issues-concerns-block ul li a.flu-icon .ui-btn-text{background: url(../images/topics/baby/issue-concerns.png) no-repeat center -591px; padding-bottom: 6px;}
+/*#issues-concerns-block ul li a.jaundice-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/baby/issue-concerns.png) no-repeat center -702px;}
+#issues-concerns-block ul li a.fever-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/baby/issue-concerns.png) no-repeat center -822px;}
+#issues-concerns-block ul li a.preemies-correct-age-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/baby/issue-concerns.png) no-repeat center -954px;}
+#issues-concerns-block ul li a.iron-deficiency-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/baby/issue-concerns.png) no-repeat center -1069px;}
+#issues-concerns-block ul li a.rsv-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/baby/issue-concerns.png) no-repeat center -1183px;}
+#issues-concerns-block ul li a.flu-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/baby/issue-concerns.png) no-repeat center -1302px;}*/
+
+#feeding-baby-block ul li a.breastfeeding-icon.ui-btn-active, #feeding-baby-block ul li a.how-much-icon.ui-btn-active, #feeding-baby-block ul li a.baby-weight-gain-icon.ui-btn-active, #feeding-baby-block ul li a.starting-solids-icon.ui-btn-active, #feeding-baby-block ul li a.first-foods-icon.ui-btn-active, #feeding-baby-block ul li a.self-feeding-icon.ui-btn-active{background: none; border: none;}
+#feeding-baby-block ul li a.breastfeeding-icon .ui-btn-text{background: url(../images/topics/baby/feeding-baby.png) no-repeat center 4px; padding-bottom: 5px;}
+#feeding-baby-block ul li a.how-much-icon .ui-btn-text{background: url(../images/topics/baby/feeding-baby.png) no-repeat center -106px; padding-bottom: 5px;}
+#feeding-baby-block ul li a.baby-weight-gain-icon .ui-btn-text{background: url(../images/topics/baby/feeding-baby.png) no-repeat center -232px; padding-bottom: 5px; padding-top: 66px;}
+#feeding-baby-block ul li a.starting-solids-icon .ui-btn-text{background: url(../images/topics/baby/feeding-baby.png) no-repeat center -352px; padding-bottom: 5px;}
+#feeding-baby-block ul li a.first-foods-icon .ui-btn-text{background: url(../images/topics/baby/feeding-baby.png) no-repeat center -470px; padding-bottom: 5px;}
+#feeding-baby-block ul li a.self-feeding-icon .ui-btn-text{background: url(../images/topics/baby/feeding-baby.png) no-repeat center -584px; padding-bottom: 5px;}
+/*#feeding-baby-block ul li a.breastfeeding-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/baby/feeding-baby.png) no-repeat center -713px;}
+#feeding-baby-block ul li a.how-much-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/baby/feeding-baby.png) no-repeat center -823px;}
+#feeding-baby-block ul li a.baby-weight-gain-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/baby/feeding-baby.png) no-repeat center -949px;}
+#feeding-baby-block ul li a.starting-solids-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/baby/feeding-baby.png) no-repeat center -1069px;}
+#feeding-baby-block ul li a.first-foods-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/baby/feeding-baby.png) no-repeat center -1187px;}
+#feeding-baby-block ul li a.self-feeding-icon.ui-btn-active .ui-btn-text{background: url(../images/topics/baby/feeding-baby.png) no-repeat center -1301px;}*/
+
+
+/* More Page Starts Here */
+.width-midium{width: 80% !important; margin: 0px auto !important; padding-bottom: 25px; overflow: hidden;}
+.out-block{width: 97px; float: left;}
+.in-block{width: 97px; float: right;}
+
+.about-block ul{overflow: hidden; list-style-type: none; padding: 0; margin: 10px 0 0 0;}
+.about-block ul li{/*margin-bottom: 10px;*/ overflow: hidden; background: url(../images/topics-bullet.png) no-repeat 2px 6px; border: none; padding: 0 0 12px 19px;}
+.about-block ul li span{background: url(../images/about-list.png) no-repeat scroll 0 1px transparent; color: #FFFFFF; display: inline-block; float: left; font-size: 14px; height: 17px; margin-right: 10px; padding-top: 4px; text-align: center; width: 20px; line-height: 17px;}
+.about-block ul li div{display: inline-block; float: left; width: 88%; font-size: 13px; color: #000000;  font-family: "VAG Rounded Std light"; text-align: left; line-height: 21px;}
+
+.ui-icon-account-setting-icon{background: url(../images/account-setting.png) no-repeat center center; height: 48px !important;}
+.ui-icon-message-setting-icon{background: url(../images/message-setting.png) no-repeat center center; height: 48px !important;}
+.ui-icon-contact-us-icon{background: url(../images/contact-us.png) no-repeat center center; height: 48px !important;}
+.ui-icon-about-txt4baby-icon{background: url(../images/about-t4b.png) no-repeat center center; height: 48px !important;}
+.ui-icon-terms-conditions-icon{background: url(../images/terms-&-condition.png) no-repeat center center; height: 48px !important;}
+.ui-icon-privacy-policy-icon{background: url(../images/terms-&-condition.png) no-repeat center center; height: 48px !important;}
+.ui-icon-clear-data-icon{background: url(../images/clear-data-icon.png) no-repeat center center; height: 48px !important;}
+.ui-icon-logout-icon{background: url(../images/log-out.png) no-repeat center center; height: 48px !important;}
+.ui-icon-badges-icon{background: url(../images/badges1.png) no-repeat center center; height: 48px !important;}
+/* More Page Ends Here */
+
+/* Select box CSS Starts Here */
+.ui-select .ui-btn{width: 100%; background: none repeat scroll 0 0 #FEE8F4; border: 0 none; box-shadow: 0 1px 2px rgba(242, 68, 168, 0.23) inset;}
+.ui-select .ui-btn .ui-btn-inner .ui-btn-text{color: #574F54; text-align: left; padding-left: 15px; font-size: 15px; text-transform: none;}
+.ui-select .ui-btn .ui-btn-inner .ui-icon-down-arrow{background: url(../images/select-arrow.png) no-repeat scroll 0 0 #FEE8F4 !important; height: 11px; margin-top: -4px; width: 16px !important; border-radius: 0 !important; box-shadow: none !important;}
+.ui-icon-down-arrow{background-position: 0px 0px !important;}
+/* Select box CSS Ends Here */
+
+.ui-datepicker{ z-index: 9999 !important;}
+
+/* Badges */
+.icon1, .icon2, .icon3, .icon4, .icon5, .icon6, .icon7, .icon8, .icon9, .icon10, .icon11, .icon12, .icon13, .icon14, .icon15, .icon16, .icon17, .icon18{width: 80px; height: 80px; text-indent: -9999px; margin: 0 auto 8px;}
+
+.icon1{background: url(../images/badges.png) no-repeat right -880px;}
+.icon2{background: url(../images/badges.png) no-repeat right -560px;}
+.icon3{background: url(../images/badges.png) no-repeat right -320px;}
+.icon4{background: url(../images/badges.png) no-repeat right -720px;}
+.icon5{background: url(../images/badges.png) no-repeat right -240px;}
+.icon6{background: url(../images/badges.png) no-repeat right -800px;}
+.icon7{background: url(../images/badges.png) no-repeat right -160px;}
+.icon8{background: url(../images/badges.png) no-repeat right -400px;}
+.icon9{background: url(../images/badges.png) no-repeat right -480px;}
+.icon10{background: url(../images/badges.png) no-repeat right -640px;}
+.icon11{background: url(../images/badges.png) no-repeat right 0;}
+.icon12{background: url(../images/badges.png) no-repeat right -80px;}
+
+.icon1-active{background: url(../images/badges.png) no-repeat 0 -880px;}
+.icon2-active{background: url(../images/badges.png) no-repeat 0 -560px;}
+.icon3-active{background: url(../images/badges.png) no-repeat 0 -320px;}
+.icon4-active{background: url(../images/badges.png) no-repeat 0 -720px;}
+.icon5-active{background: url(../images/badges.png) no-repeat 0 -240px;}
+.icon6-active{background: url(../images/badges.png) no-repeat 0 -800px;}
+.icon7-active{background: url(../images/badges.png) no-repeat 0 -160px;}
+.icon8-active{background: url(../images/badges.png) no-repeat 0 -400px;}
+.icon9-active{background: url(../images/badges.png) no-repeat 0 -480px;}
+.icon10-active{background: url(../images/badges.png) no-repeat 0 -640px;}
+.icon11-active{background: url(../images/badges.png) no-repeat 0 0;}
+.icon12-active{background: url(../images/badges.png) no-repeat 0 -80px;}
+
+.hide{display: none;}
+.show{display: block;}
+.visible{visibility: hidden;}
+.mom-block{text-align: center; padding: 15px 0;}
+
+.ui-loader-background{width:100%; height:100%; top:0; margin: 0; background: rgba(0, 0, 0, 0) !important; display:none; position: fixed; z-index:9999;}
+.ui-loading .ui-loader-background{display:block;}
+
+.star-badge-grid{width: 100%; overflow: hidden;}
+.badge-latest{width: 80px; height: 80px; text-indent: -9999px; display: block; margin: 0px auto 15px auto;}
+.badge-name{font-size: 14px; text-align: center; font-weight: normal; color: #6E2C8D;}
+
+/* Responsive Banners */
+.responsive-banner{padding: 0px; height: 167px; max-width: 385px; min-width: 320px; text-align: center;}
+
+.sign-up-banner{background: url(../images/sign-up.jpg) no-repeat center center;}
+.sign-up-2-banner{background: url(../images/sign-up2.jpg) no-repeat center center;}
+.sign-up-3-banner{background: url(../images/sign-up3.jpg) no-repeat center center;}
+.sign-in-banner{background: url(../images/sign-up.jpg) no-repeat center center;}
+
+.calendar-banner{background: url(../images/calendar/calendar.jpg) no-repeat center center;}
+.calendar-banner-preg{background: url(../images/calendar/calendar_new.jpg) no-repeat center center;}
+.more-banner{background: url(../images/more-banner.jpg) no-repeat center center;}
+
+.pregnancy-topics-banner{background: url(../images/topics/pregnancy/pregnancy-topics.jpg) no-repeat center center;}
+.breakfast-banner{background: url(../images/topics/pregnancy/breakfast-ideas.jpg) no-repeat center center;}
+.weight-gain-banner{background: url(../images/topics/pregnancy/weight-gain.jpg) no-repeat center center;}
+.week39-banner{background: url(../images/topics/pregnancy/weeks39.jpg) no-repeat center center;}
+.morning-sickness-banner{background: url(../images/topics/pregnancy/morning-sickness.jpg) no-repeat center center;}
+.visits-banner{background: url(../images/topics/pregnancy/visits.jpg) no-repeat center center;}
+.ultrasound-banner{background: url(../images/topics/pregnancy/ultrasound.jpg) no-repeat center center;}
+.vaccine-banner{background: url(../images/topics/vaccines.jpg) no-repeat center center;}
+.tests-banner{background: url(../images/topics/pregnancy/tests.jpg) no-repeat center center;}
+.pre-vitamins-banner{background: url(../images/topics/pregnancy/prenatal-vitamins.jpg) no-repeat center center;}
+.folic-acid-banner{background: url(../images/topics/pregnancy/folic-acid.jpg) no-repeat center center;}
+.food-safety-banner{background: url(../images/topics/pregnancy/food-safety.jpg) no-repeat center center;}
+.listeriosis-banner{background: url(../images/topics/pregnancy/listeriosis.jpg) no-repeat center center;}
+.eating-seafood-banner{background: url(../images/topics/pregnancy/eating-seafood.jpg) no-repeat center center;}
+.hbp-banner{background: url(../images/topics/pregnancy/high-blood-pressure.jpg) no-repeat center center;}
+.preeclampsia-banner{background: url(../images/topics/pregnancy/preeclampsia.jpg) no-repeat center center;}
+.gestational-diabetes-banner{background: url(../images/topics/pregnancy/gestational-diabetes.jpg) no-repeat center center;}
+.uti-banner{background: url(../images/topics/pregnancy/uti.jpg) no-repeat center center;}
+.bleeding-banner{background: url(../images/topics/pregnancy/bleeding.jpg) no-repeat center center;}
+.exercise-banner{background: url(../images/topics/pregnancy/exercise.jpg) no-repeat center center;}
+.signs-labor-banner{background: url(../images/topics/pregnancy/signs-labor.jpg) no-repeat center center;}
+.contraction-types-banner{background: url(../images/topics/pregnancy/contraction-types.jpg) no-repeat center center;}
+.preterm-labor-banner{background: url(../images/topics/pregnancy/preterm-labor.jpg) no-repeat center center;}
+.help-support-banner{background: url(../images/topics/help-support.jpg) no-repeat center center;}
+.health-banner{background: url(../images/topics/health.jpg) no-repeat center center;}
+
+.baby-topics-banner{background: url(../images/topics/baby/baby-topics.jpg) no-repeat center center;}
+.safe-sleep-banner{background: url(../images/topics/baby/safe-sleep.jpg) no-repeat center center;}
+.no-tv-baby-banner{background: url(../images/topics/baby/no-tv-baby.jpg) no-repeat center center;}
+.crying-baby-banner{background: url(../images/topics/baby/crying-baby.jpg) no-repeat center center;}
+.bathing-baby-banner{background: url(../images/topics/baby/bathing-baby.jpg) no-repeat center center;}
+.reading-baby-banner{background: url(../images/topics/baby/reading-baby.jpg) no-repeat center center;}
+.bedtime-routine-banner{background: url(../images/topics/baby/bedtime-routine.jpg) no-repeat center center;}
+.baby-vaccines-banner{background: url(../images/topics/baby/vaccines.jpg) no-repeat center center;}
+.sun-safety-banner{background: url(../images/topics/baby/sun-safety.jpg) no-repeat center center;}
+.car-seat-safety-banner{background: url(../images/topics/baby/car-seat-safety.jpg) no-repeat center center;}
+.baby-walkers-banner{background: url(../images/topics/baby/baby-walkers.jpg) no-repeat center center;}
+.tips-banner{background: url(../images/topics/baby/tips.jpg) no-repeat center center;}
+.cavities-banner{background: url(../images/topics/baby/cavities.jpg) no-repeat center center;}
+.jaundice-banner{background: url(../images/topics/baby/jaundice.jpg) no-repeat center center;}
+.fever-banner{background: url(../images/topics/baby/fever.jpg) no-repeat center center;}
+.preemies-correct-age-banner{background: url(../images/topics/baby/preemies-correct-age.jpg) no-repeat center center;}
+.iron-deficiency-banner{background: url(../images/topics/baby/iron-deficiency.jpg) no-repeat center center;}
+.rsv-banner{background: url(../images/topics/baby/rsv.jpg) no-repeat center center;}
+.flu-banner{background: url(../images/topics/baby/flu.jpg) no-repeat center center;}
+.breastfeeding-banner{background: url(../images/topics/baby/breastfeeding.jpg) no-repeat center center;}
+.how-much-banner{background: url(../images/topics/baby/how-much.jpg) no-repeat center center;}
+.baby-weight-gain-banner{background: url(../images/topics/baby/weight-gain.jpg) no-repeat center center;}
+.starting-solids-banner{background: url(../images/topics/baby/starting-solids.jpg) no-repeat center center;}
+.first-foods-banner{background: url(../images/topics/baby/first-foods.jpg) no-repeat center center;}
+.self-feeding-banner{background: url(../images/topics/baby/self-feeding.jpg) no-repeat center center;}
+.baby-safety-banner{background: url(../images/topics/baby/baby-safety.jpg) no-repeat center center;}
+.baby-help-support-banner{background: url(../images/topics/help-support.jpg) no-repeat center center;}
+.baby-health-banner{background: url(../images/topics/health.jpg) no-repeat center center;}
+
+/* Topics */
+.topics-block h2{color: #6E2C8D; font-family: "VAG Rounded Std light"; font-size: 19px; font-weight: normal; letter-spacing: 1px; margin: 0; padding: 10px 0 15px; text-align: center;}
+.topics-block p{color: #585858; font-family: "VAG Rounded Std light"; font-size: 14px; line-height: 21px; margin: 0; padding: 8px 0 15px;}
+.topics-block ul{overflow: hidden; list-style-type: none; padding: 0; margin: 10px 0 0 0;}
+.topics-block ul li{margin-bottom: 15px; overflow: hidden;}
+.topics-block ul li span{background: url(../images/about-list.png) no-repeat scroll 0 1px transparent; color: #FFFFFF; display: inline-block; float: left; font-size: 14px; height: 17px; margin-right: 10px; padding-top: 4px; text-align: center; width: 20px; line-height: 17px;}
+.topics-block ul li div{display: inline-block; float: left; width: 88%; line-height: 21px; text-align: left;}
+.topics-block ul li div p{padding: 0;}
+.topics-list-grid ul li{font-size: 14px; color: #585858; font-family: "VAG Rounded Std light"; margin: 0px; padding: 0 0 15px 20px; line-height: 21px;}
+
+/* Hotlines */
+.topics-block .ui-collapsible-set{margin: 15px 0 0 !important;}
+.topics-block .ui-collapsible-content{background: #ffffff; margin-top: 10px;}
+.topics-block .ui-collapsible-content p{padding: 0 0 15px;}
+.topics-block .btm-lnks{overflow: hidden;}
+.topics-block span.accord-contact{background: url(../images/phone.png) no-repeat 0 0; font-size: 12px; color: #2E2EFE; padding-bottom: 1px; padding-left: 30px; padding-top: 7px; display: block; text-shadow: none; margin-bottom:8px;}
+.topics-block span.accord-contact .ui-link{color: #2E2EFE !important;}
+.topics-block a.accord-site{background: url(../images/site.png) no-repeat 0 2px; font-size: 12px; color: #f41f8d !important; padding-left: 30px; text-decoration: none; padding-bottom: 1px; padding-top: 7px; display: block; text-shadow: none; font-weight: normal;}
+
+.ui-checkbox .ui-focus{box-shadow: none;}
+
+.badge-txt{color: #666666; font-family: "VAG Rounded Std light"; font-size: 13px; font-weight: normal; letter-spacing: 1px; line-height: 14px; margin: 0 auto; padding: 0; text-align: center; text-shadow: none; width: 85%;}
+.badge-txt-active{color: #EC008C; font-family: "VAG Rounded Std light"; font-size: 13px; font-weight: normal; letter-spacing: 1px; line-height: 14px; margin: 0 auto; padding: 0; text-align: center; text-shadow: none; width: 85%;}
+.more-badge-grid .ui-block-a, .more-badge-grid .ui-block-b, .more-badge-grid .ui-block-c{margin-bottom: 15px;}
+
+.survey-spacer{margin-bottom: 10px !important; margin-top: 10px !important;}
+.graph-grid .jqplot-table-legend{color: #000000; font-family: "VAG Rounded Std light"; font-size: 13px; font-weight: normal; letter-spacing: 1px; line-height: 21px; margin: 0; padding: 0; text-align: left; text-shadow: none;}
+
+.title-fontSize{font-family: "VAG Rounded Std light" !important; font-size: 17px !important;}
+
+#terms-privacy-grid h2{color: #6E2C8D; font-family: "VAG Rounded Std light"; font-size: 19px; font-weight: normal; letter-spacing: 1px; margin: 0; padding: 10px 0 15px; text-align: center;}
+#terms-conditions-block p, #privacy-policy-block p{color: #585858; font-family: "VAG Rounded Std light"; font-size: 13px; font-weight: normal; letter-spacing: 1px; line-height: 21px; margin: 0; padding: 8px 0 15px; text-align: left; text-shadow: none;}
+#terms-privacy-grid p {color: #585858; font-family: "VAG Rounded Std light"; font-size: 13px; font-weight: normal; letter-spacing: 1px; line-height: 21px; margin: 0; padding: 8px 0 15px; text-align: left; text-shadow: none;}
+
+span.password-info{color: #585858; display: block; font-family: "VAG Rounded Std light"; font-size: 12px; font-weight: normal; letter-spacing: 1px; line-height: 12px; margin: 0; padding: 5px 0 0; text-align: left; text-shadow: none;}
+
+@media screen and (min-width: 0px) and (max-width: 320px){
+#ui-datepicker-div{width: 88% !important; left: 16px !important;}
+}
+
+@media screen and (min-width: 321px) and (max-width: 385px){
+#ui-datepicker-div{width: 90% !important; left: 16px !important;}
+}
+
+/*body.phonegap-ios-7{margin-top: 20px;}*/
+
+/* Custom Graph Starts Here */
+.graph-shadow{padding-bottom: 13px;}
+.custom-graph-grid{width: 270px; height: 175px; padding: 0; border: 1px solid #d8d8d8; border-radius: 10px; margin: 0px auto; background: rgb(252,252,252); background: -moz-linear-gradient(top, rgba(252,252,252,1) 0%, rgba(240,240,240,1) 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(240,240,240,1))); background: -webkit-linear-gradient(top, rgba(252,252,252,1) 0%,rgba(240,240,240,1) 100%); background: -o-linear-gradient(top, rgba(252,252,252,1) 0%,rgba(240,240,240,1) 100%); background: -ms-linear-gradient(top, rgba(252,252,252,1) 0%,rgba(240,240,240,1) 100%); background: linear-gradient(to bottom, rgba(252,252,252,1) 0%,rgba(240,240,240,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#f0f0f0',GradientType=0 ); text-align:center !important;}
+h3.graph-title{color: #6E2C8D; font-family: "VAG Rounded Std light"; font-size: 15px; font-weight: normal; letter-spacing: 1px; margin-top: 8px !important; text-align: center; border-bottom: 1px solid #dadbdc; clear: both;}
+.custom-graph-grid .graph-block{float: left; width: 229px; height: 100px; position: relative; /*margin: 0px 0px 0px 12px;*/}
+.bar1{background: #10c0e9; width: 30px; position: absolute; bottom: 0px; left: 10px; height: 0%; -webkit-transition: height 1s; transition: height 1s;}
+.bar2{background: #eb0183; width: 30px; position: absolute; bottom: 0px; left: 45px; height: 0%; -webkit-transition: height 1s; transition: height 1s;}
+.bar3{background: #541d6f; width: 30px; position: absolute; bottom: 0px; left: 81px; height: 0%; -webkit-transition: height 1s; transition: height 1s;}
+/* Pregnancy Graph Values */
+.preganim-week4-bar-1{height: 27%;}
+.preganim-week4-bar-2{height: 69%;}
+.preganim-week4-bar-3{height: 4%;}
+
+.preganim-week5-bar-1{height: 65%;}
+.preganim-week5-bar-2{height: 26%;}
+.preganim-week5-bar-3{height: 9%;}
+
+.preganim-week6-bar-1{height: 25%;}
+.preganim-week6-bar-2{height: 42%;}
+.preganim-week6-bar-3{height: 33%;}
+
+.preganim-week7-bar-1{height: 65%;}
+.preganim-week7-bar-2{height: 25%;}
+.preganim-week7-bar-3{height: 10%;}
+
+.preganim-week8-bar-1{height: 49%;}
+.preganim-week8-bar-2{height: 19%;}
+.preganim-week8-bar-3{height: 32%;}
+
+.preganim-week9-bar-1{height: 30%;}
+.preganim-week9-bar-2{height: 65%;}
+.preganim-week9-bar-3{height: 5%;}
+
+.preganim-week10-bar-1{height: 4%;}
+.preganim-week10-bar-2{height: 29%;}
+.preganim-week10-bar-3{height: 67%;}
+
+.preganim-week11-bar-1{height: 31%;}
+.preganim-week11-bar-2{height: 60%;}
+.preganim-week11-bar-3{height: 9%;}
+
+.preganim-week12-bar-1{height: 55%;}
+.preganim-week12-bar-2{height: 12%;}
+.preganim-week12-bar-3{height: 33%;}
+
+.preganim-week13-bar-1{height: 25%;}
+.preganim-week13-bar-2{height: 43%;}
+.preganim-week13-bar-3{height: 32%;}
+
+.preganim-week14-bar-1{height: 44%;}
+.preganim-week14-bar-2{height: 19%;}
+.preganim-week14-bar-3{height: 37%;}
+
+.preganim-week15-bar-1{height: 14%;}
+.preganim-week15-bar-2{height: 52%;}
+.preganim-week15-bar-3{height: 34%;}
+
+.preganim-week16-bar-1{height: 72%;}
+.preganim-week16-bar-2{height: 11%;}
+.preganim-week16-bar-3{height: 17%;}
+
+.preganim-week17-bar-1{height: 81%;}
+.preganim-week17-bar-2{height: 8%;}
+.preganim-week17-bar-3{height: 11%;}
+
+.preganim-week18-bar-1{height: 24%;}
+.preganim-week18-bar-2{height: 42%;}
+.preganim-week18-bar-3{height: 34%;}
+
+.preganim-week19-bar-1{height: 55%;}
+.preganim-week19-bar-2{height: 35%;}
+.preganim-week19-bar-3{height: 9%;}
+
+.preganim-week20-bar-1{height: 55%;}
+.preganim-week20-bar-2{height: 37%;}
+.preganim-week20-bar-3{height: 8%;}
+
+.preganim-week21-bar-1{height: 32%;}
+.preganim-week21-bar-2{height: 60%;}
+.preganim-week21-bar-3{height: 8%;}
+
+.preganim-week22-bar-1{height: 76%;}
+.preganim-week22-bar-2{height: 13%;}
+.preganim-week22-bar-3{height: 11%;}
+
+.preganim-week23-bar-1{height: 41%;}
+.preganim-week23-bar-2{height: 45%;}
+.preganim-week23-bar-3{height: 14%;}
+
+.preganim-week24-bar-1{height: 16%;}
+.preganim-week24-bar-2{height: 52%;}
+.preganim-week24-bar-3{height: 32%;}
+
+.preganim-week25-bar-1{height: 6%;}
+.preganim-week25-bar-2{height: 84%;}
+.preganim-week25-bar-3{height: 10%;}
+
+.preganim-week26-bar-1{height: 76%;}
+.preganim-week26-bar-2{height: 20%;}
+.preganim-week26-bar-3{height: 4%;}
+
+.preganim-week27-bar-1{height: 52%;}
+.preganim-week27-bar-2{height: 33%;}
+.preganim-week27-bar-3{height: 15%;}
+
+.preganim-week28-bar-1{height: 40%;}
+.preganim-week28-bar-2{height: 13%;}
+.preganim-week28-bar-3{height: 47%;}
+
+.preganim-week29-bar-1{height: 65%;}
+.preganim-week29-bar-2{height: 23%;}
+.preganim-week29-bar-3{height: 12%;}
+
+.preganim-week30-bar-1{height: 45%;}
+.preganim-week30-bar-2{height: 25%;}
+.preganim-week30-bar-3{height: 30%;}
+
+.preganim-week31-bar-1{height: 46%;}
+.preganim-week31-bar-2{height: 13%;}
+.preganim-week31-bar-3{height: 41%;}
+
+.preganim-week32-bar-1{height: 64%;}
+.preganim-week32-bar-2{height: 13%;}
+.preganim-week32-bar-3{height: 33%;}
+
+.preganim-week33-bar-1{height: 71%;}
+.preganim-week33-bar-2{height: 11%;}
+.preganim-week33-bar-3{height: 18%;}
+
+.preganim-week34-bar-1{height: 38%;}
+.preganim-week34-bar-2{height: 40%;}
+.preganim-week34-bar-3{height: 22%;}
+
+.preganim-week35-bar-1{height: 59%;}
+.preganim-week35-bar-2{height: 13%;}
+.preganim-week35-bar-3{height: 28%;}
+
+.preganim-week36-bar-1{height: 55%;}
+.preganim-week36-bar-2{height: 41%;}
+.preganim-week36-bar-3{height: 4%;}
+
+.preganim-week37-bar-1{height: 26%;}
+.preganim-week37-bar-2{height: 56%;}
+.preganim-week37-bar-3{height: 18%;}
+
+.preganim-week38-bar-1{height: 16%;}
+.preganim-week38-bar-2{height: 38%;}
+.preganim-week38-bar-3{height: 46%;}
+
+.preganim-week39-bar-1{height: 6%;}
+.preganim-week39-bar-2{height: 53%;}
+.preganim-week39-bar-3{height: 41%;}
+
+.preganim-week40-bar-1{height: 4%;}
+.preganim-week40-bar-2{height: 66%;}
+.preganim-week40-bar-3{height: 30%;}
+
+.preganim-week41-bar-1{height: 34%;}
+.preganim-week41-bar-2{height: 25%;}
+.preganim-week41-bar-3{height: 41%;}
+
+.preganim-week42-bar-1{height: 64%;}
+.preganim-week42-bar-2{height: 22%;}
+.preganim-week42-bar-3{height: 14%;}
+
+
+/* Baby Graph Values */
+.babyanim-week1-bar-1{height: 8%;}
+.babyanim-week1-bar-2{height: 39%;}
+.babyanim-week1-bar-3{height: 53%;}
+
+.babyanim-week2-bar-1{height: 81%;}
+.babyanim-week2-bar-2{height: 15%;}
+.babyanim-week2-bar-3{height: 4%;}
+
+.babyanim-week3-bar-1{height: 36%;}
+.babyanim-week3-bar-2{height: 23%;}
+.babyanim-week3-bar-3{height: 41%;}
+
+.babyanim-week4-bar-1{height: 37%;}
+.babyanim-week4-bar-2{height: 22%;}
+.babyanim-week4-bar-3{height: 41%;}
+
+.babyanim-week5-bar-1{height: 22%;}
+.babyanim-week5-bar-2{height: 64%;}
+.babyanim-week5-bar-3{height: 14%;}
+
+.babyanim-week6-bar-1{height: 38%;}
+.babyanim-week6-bar-2{height: 40%;}
+.babyanim-week6-bar-3{height: 22%;}
+
+.babyanim-week7-bar-1{height: 16%;}
+.babyanim-week7-bar-2{height: 11%;}
+.babyanim-week7-bar-3{height: 73%;}
+
+.babyanim-week8-bar-1{height: 37%;}
+.babyanim-week8-bar-2{height: 24%;}
+.babyanim-week8-bar-3{height: 39%;}
+
+.babyanim-week9-bar-1{height: 35%;}
+.babyanim-week9-bar-2{height: 42%;}
+.babyanim-week9-bar-3{height: 23%;}
+
+.babyanim-week10-bar-1{height: 40%;}
+.babyanim-week10-bar-2{height: 32%;}
+.babyanim-week10-bar-3{height: 28%;}
+
+.babyanim-week11-bar-1{height: 45%;}
+.babyanim-week11-bar-2{height: 16%;}
+.babyanim-week11-bar-3{height: 39%;}
+
+.babyanim-week12-bar-1{height: 24%;}
+.babyanim-week12-bar-2{height: 63%;}
+.babyanim-week12-bar-3{height: 13%;}
+
+.babyanim-week13-bar-1{height: 52%;}
+.babyanim-week13-bar-2{height: 34%;}
+.babyanim-week13-bar-3{height: 37%;}
+
+.babyanim-week14-bar-1{height: 8%;}
+.babyanim-week14-bar-2{height: 71%;}
+.babyanim-week14-bar-3{height: 21%;}
+
+.babyanim-week15-bar-1{height: 30%;}
+.babyanim-week15-bar-2{height: 45%;}
+.babyanim-week15-bar-3{height: 25%;}
+
+.babyanim-week16-bar-1{height: 39%;}
+.babyanim-week16-bar-2{height: 21%;}
+.babyanim-week16-bar-3{height: 40%;}
+
+.babyanim-week17-bar-1{height: 9%;}
+.babyanim-week17-bar-2{height: 58%;}
+.babyanim-week17-bar-3{height: 33%;}
+
+.babyanim-week18-bar-1{height: 58%;}
+.babyanim-week18-bar-2{height: 12%;}
+.babyanim-week18-bar-3{height: 30%;}
+
+.babyanim-week19-bar-1{height: 26%;}
+.babyanim-week19-bar-2{height: 40%;}
+.babyanim-week19-bar-3{height: 34%;}
+
+.babyanim-week20-bar-1{height: 14%;}
+.babyanim-week20-bar-2{height: 28%;}
+.babyanim-week20-bar-3{height: 58%;}
+
+.babyanim-week21-bar-1{height: 55%;}
+.babyanim-week21-bar-2{height: 8%;}
+.babyanim-week21-bar-3{height: 37%;}
+
+.babyanim-week22-bar-1{height: 13%;}
+.babyanim-week22-bar-2{height: 79%;}
+.babyanim-week22-bar-3{height: 8%;}
+
+.babyanim-week23-bar-1{height: 25%;}
+.babyanim-week23-bar-2{height: 61%;}
+.babyanim-week23-bar-3{height: 14%;}
+
+.babyanim-week24-bar-1{height: 7%;}
+.babyanim-week24-bar-2{height: 81%;}
+.babyanim-week24-bar-3{height: 12%;}
+
+.babyanim-week25-bar-1{height: 22%;}
+.babyanim-week25-bar-2{height: 42%;}
+.babyanim-week25-bar-3{height: 36%;}
+
+.babyanim-week26-bar-1{height: 38%;}
+.babyanim-week26-bar-2{height: 40%;}
+.babyanim-week26-bar-3{height: 22%;}
+
+.babyanim-week27-bar-1{height: 67%;}
+.babyanim-week27-bar-2{height: 27%;}
+.babyanim-week27-bar-3{height: 6%;}
+
+.babyanim-week28-bar-1{height: 20%;}
+.babyanim-week28-bar-2{height: 71%;}
+.babyanim-week28-bar-3{height: 9%;}
+
+.babyanim-week29-bar-1{height: 64%;}
+.babyanim-week29-bar-2{height: 24%;}
+.babyanim-week29-bar-3{height: 12%;}
+
+.babyanim-week30-bar-1{height: 41%;}
+.babyanim-week30-bar-2{height: 34%;}
+.babyanim-week30-bar-3{height: 25%;}
+
+.babyanim-week31-bar-1{height: 30%;}
+.babyanim-week31-bar-2{height: 38%;}
+.babyanim-week31-bar-3{height: 32%;}
+
+.babyanim-week32-bar-1{height: 11%;}
+.babyanim-week32-bar-2{height: 72%;}
+.babyanim-week32-bar-3{height: 17%;}
+
+.babyanim-week33-bar-1{height: 56%;}
+.babyanim-week33-bar-2{height: 27%;}
+.babyanim-week33-bar-3{height: 17%;}
+
+.babyanim-week34-bar-1{height: 8%;}
+.babyanim-week34-bar-2{height: 69%;}
+.babyanim-week34-bar-3{height: 23%;}
+
+.babyanim-week35-bar-1{height: 26%;}
+.babyanim-week35-bar-2{height: 32%;}
+.babyanim-week35-bar-3{height: 42%;}
+
+.babyanim-week36-bar-1{height: 42%;}
+.babyanim-week36-bar-2{height: 36%;}
+.babyanim-week36-bar-3{height: 22%;}
+
+.babyanim-week37-bar-1{height: 38%;}
+.babyanim-week37-bar-2{height: 45%;}
+.babyanim-week37-bar-3{height: 17%;}
+
+.babyanim-week38-bar-1{height: 66%;}
+.babyanim-week38-bar-2{height: 13%;}
+.babyanim-week38-bar-3{height: 21%;}
+
+.babyanim-week39-bar-1{height: 31%;}
+.babyanim-week39-bar-2{height: 25%;}
+.babyanim-week39-bar-3{height: 44%;}
+
+.babyanim-week40-bar-1{height: 21%;}
+.babyanim-week40-bar-2{height: 17%;}
+.babyanim-week40-bar-3{height: 62%;}
+
+.babyanim-week41-bar-1{height: 19%;}
+.babyanim-week41-bar-2{height: 69%;}
+.babyanim-week41-bar-3{height: 12%;}
+
+.babyanim-week42-bar-1{height: 51%;}
+.babyanim-week42-bar-2{height: 39%;}
+.babyanim-week42-bar-3{height: 10%;}
+
+.babyanim-week43-bar-1{height: 45%;}
+.babyanim-week43-bar-2{height: 51%;}
+.babyanim-week43-bar-3{height: 4%;}
+
+.babyanim-week44-bar-1{height: 10%;}
+.babyanim-week44-bar-2{height: 46%;}
+.babyanim-week44-bar-3{height: 44%;}
+
+.babyanim-week45-bar-1{height: 25%;}
+.babyanim-week45-bar-2{height: 40%;}
+.babyanim-week45-bar-3{height: 35%;}
+
+.babyanim-week46-bar-1{height: 28%;}
+.babyanim-week46-bar-2{height: 34%;}
+.babyanim-week46-bar-3{height: 38%;}
+
+.babyanim-week47-bar-1{height: 43%;}
+.babyanim-week47-bar-2{height: 42%;}
+.babyanim-week47-bar-3{height: 15%;}
+
+.babyanim-week48-bar-1{height: 22%;}
+.babyanim-week48-bar-2{height: 57%;}
+.babyanim-week48-bar-3{height: 21%;}
+
+.babyanim-week49-bar-1{height: 48%;}
+.babyanim-week49-bar-2{height: 42%;}
+.babyanim-week49-bar-3{height: 10%;}
+
+.babyanim-week50-bar-1{height: 26%;}
+.babyanim-week50-bar-2{height: 36%;}
+.babyanim-week50-bar-3{height: 38%;}
+
+.babyanim-week51-bar-1{height: 55%;}
+.babyanim-week51-bar-2{height: 37%;}
+.babyanim-week51-bar-3{height: 8%;}
+
+.babyanim-week52-bar-1{height: 78%;}
+.babyanim-week52-bar-2{height: 18%;}
+.babyanim-week52-bar-3{height: 4%;}
+
+.custom-graph-grid ul{float: right; width: 140px; list-style-type: none; margin: 0 -3px !important; padding: 40px 0 0 0;}
+.custom-graph-grid ul li{padding-left: 20px; color: #000000; font-family: "VAG Rounded Std light"; font-size: 11px; font-weight: normal; letter-spacing: 1px; line-height: 16px; margin: 0; text-align: left; text-shadow: none;}
+.custom-graph-grid ul li.bar-one{background: url(../images/bar-one.png) no-repeat left 4px;}
+.custom-graph-grid ul li.bar-two{background: url(../images/bar-two.png) no-repeat left 4px;}
+.custom-graph-grid ul li.bar-three{background: url(../images/bar-three.png) no-repeat left 4px;}
+.clear{clear: both; width: 100%; line-height: 1px; height: 1px;}
+.labels{float: right; /*width: 130px; height: 100px;*/ position: relative; margin: -112px -37px 0px 0px;}
+
+.graph-bar-value-grid{/*width: 150px;*/ position: relative; color: #000000; font-family: "VAG Rounded Std light"; font-size: 11px; font-weight: normal; letter-spacing: 1px; line-height: 21px; margin: 0; text-align: center; text-shadow: none; margin: 119px 0 0 1px;}
+.graph-bar1-value{width: 30px; position: absolute; bottom: 0px; left: 10px;}
+.graph-bar2-value{width: 30px; position: absolute; bottom: 0px; left: 45px;}
+.graph-bar3-value{width: 30px; position: absolute; bottom: 0px; left: 81px;}
+/* Custom Graph Starts Here */
+
+
+/* Additional Classes */			
+
+#cf2 img {
+   position:absolute;
+   left:0;
+   top:0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out; 
+}			
+
+.transparent {
+		opacity:0;
+}
+
+.moveinfront {
+		z-index:999;		
+}
+#textcontent
+{
+  position:absolute;top:30px;left:0px;height:175px;
+  background:#E3E3E3;
+  z-index: -1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+}
+.banner-text p{color: #585959; font-family: "VAG Rounded Std light"; font-size: 12px; letter-spacing: 1px; line-height: 16px; margin: 0px 0px 0px 0px; padding: 10px; text-align: left !important; text-shadow: none;}
+.banner-text h5{color:#585959; font-family: "VAG Rounded Std light"; font-size: 16px; letter-spacing: 1px; padding: 0; text-align: center;  margin-bottom: -5px; margin-top: -11px !important;}	
+				
+	html {
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	 -webkit-tap-highlight-color: rgba(0,0,0,0);
+     -webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+.flipped {
+      
+         -webkit-transform: rotateY( 90deg );		
+         -moz-transform: rotateY( 90deg );
+           -o-transform: rotateY( 90deg );
+              transform: rotateY( 90deg );
+ } 
+ 
+ #timeline {
+      -webkit-transition: -webkit-transform .50s;
+         -moz-transition: -moz-transform .50s;
+           -o-transition: -o-transform .50s;
+              transition: transform .50s;    
+    }
+	
+ #timeline2 {
+      -webkit-transition: -webkit-transform .50s;
+         -moz-transition: -moz-transform .50s;
+           -o-transition: -o-transform .50s;
+              transition: transform .50s;    
+    }
+	
+	
+	
+#video{width: 100%; padding-top: 100px !important;}
+.player .controls{ bottom: -5px !important;}
+.video-content{ text-align:center !important; font-size:20px;}
+
+.carrier ul{ font-size:16px; line-height:20px; color:#868686; margin: 21px 0 0 -16px;}
+.carrier ul li{background: url(../images/topics-bullet.png) no-repeat 5px 6px; border: none; padding: 0 0 20px 28px; list-style-type:none !important;}
+
+.graph{ text-align:center; width: 229px; height:145px;}
+
+/*timeline pop-up added*/
+.timeline-pop-up-overlay{position:fixed; background-color:rgba(0, 0, 0, 0.7); width: 100%; left:0; top: 0; z-index: 9998; height:100%;}
+.timeline-pop-up-grid{ position:fixed; background: #6e2c8d; width: 88%; left:6%; top: 108px; z-index: 9999; height: 245px;}
+.timeline-pop-up-grid .timeline-pop-up-block{ position:relative; padding: 15px;}
+.timeline-pop-up-grid .timeline-pop-up-block a{ position:absolute; top: 18px; right: 18px; background: url(../images/close.png) no-repeat 0px 0px; border-radius: 15px; height: 39px; text-indent: -9999px; width: 39px; display:block;}
+.timeline-pop-up-grid .timeline-pop-up-block p{ text-shadow:none; font-size: 16px; text-decoration:none; color: #ffffff; padding: 37px 10px 10px 16px; line-height:18px; letter-spacing:1px;}
+
+/* alignment of heading of validation msg*/
+.error-header{display:table; height:48px !important; width: 100% !important;}
+#error-pop-up h3{display:table-cell; vertical-align:middle !important; color:#ffffff !important; text-align: center; width: 100% !important; padding:18px;}
+#error-pop-up a{ display:none !important;}
+
+/* italic class to make text italic */
+p.italic{font-family:Verdana, Geneva, sans-serif; !important; font-size:13px; font-style:italic; !important;}
+
+/*contact-us*/
+.contact-us p{ text-align:center !important; margin-top: 25px !important;}
+.contact-us a{ color: #4f81bd !important;}
+#contact_grid{ padding: 0px 15px 0px 15px;}
+
+#contact_grid .ui-field-contain, #contact_grid .ui-mobile fieldset.ui-field-contain {
+    margin: 0;
+    padding: 0 0 25px 0 !important;
+}
+#contact_grid label{color: #574f54; letter-spacing: 1px;}
+#contact_grid label span, #contact_grid p span{color: #fb3030;}
+#contact_grid .ui-radio .ui-btn {
+    background: none repeat scroll 0 0 #FEE8F4;
+    border: 1px solid #d8dbdd;
+    margin: 0 0 4px;
+	width: 100%;
+}
+#contact_grid .ui-radio .ui-btn-icon-left .ui-btn-inner {
+    padding: 8px 0 8px 45px !important;
+}
+
+#contact_grid .ui-radio .ui-btn-icon-left .ui-btn-inner .ui-btn-text {
+    color: #80878c;
+    font-size: 15px;
+	text-transform: none;
+	letter-spacing: 1px;
+}
+#contact_grid .ui-input-text{margin-top: 12px;}
+#contact_grid p {
+    color: #574f54;
+    font-family: "VAG Rounded Std bold";
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 21px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    text-shadow: none;
+	margin-bottom: 10px;
+    margin-top: 10px;
+	font-size: 16px;
+}
+#contact_grid textarea{height: 110px;}
+
+
+/* for native container of more*/
+.more-container h2{font-size: 18px; color: #ec0088; font-weight: normal; text-align: center; margin: 0px; padding: 12px 0px 0px;}
+#babyname-more { padding: 12px 10px 0 10px; margin: 0px;}
+#date-more { padding: 12px 10px 0 10px; margin: 0px;}
+.more-text {font-size: 13px; color: #000; margin: 0px; padding: 12px 0px 10px 10px; line-height: 21px; font-family: "VAG Rounded Std light"; text-align: left; letter-spacing: 1px; font-weight: normal; text-shadow: none;}
+#message-toggle { padding: 12px 10px 0 10px; margin: 0px;}
+.about-text {font-size: 13px; color: #000; margin: 6px; padding: 12px 0px 10px 10px; line-height: 21px; font-family: "VAG Rounded Std light"; text-align: left; letter-spacing: 1px; font-weight: normal; text-shadow: none;}
+
+.about-more-block ul{overflow: hidden; list-style-type: none; padding: 0px 0px 0px 15px; margin: 10px 0 0 0;}
+.about-more-block ul li{/*margin-bottom: 10px;*/ background: url(../images/topics-bullet.png) no-repeat 2px 6px; border: none; padding: 0 0 12px 19px;}
+.about-more-block ul li span{background: url(../images/about-list.png) no-repeat scroll 0 1px transparent; color: #FFFFFF; display: inline-block; float: left; font-size: 14px; height: 17px; margin-right: 10px; padding-top: 4px; text-align: center; width: 20px; line-height: 17px;}
+.about-more-block ul li div{display: inline-block; float: left; width: 88%; font-size: 13px; color: #000000;  font-family: "VAG Rounded Std light"; text-align: left; line-height: 21px;}
+.about-more-block ul li p {font-size: 13px; color: #000; margin: 6px; line-height: 21px; font-family: "VAG Rounded Std light"; text-align: left; letter-spacing: 1px; font-weight: normal; text-shadow: none;}
+#tnc {color: #585858; font-family: "VAG Rounded Std light"; font-size: 13px; font-weight: normal; letter-spacing: 1px; line-height: 21px; margin: 0; padding: 8px 0 15px; text-align: left; text-shadow: none;}
+#clear-toggle { padding: 12px 10px 0 10px; margin: 0px;}
+.logout-text {font-size: 13px; color: #000; margin: 0px; padding: 12px 0px 10px 32px; line-height: 21px; font-family: "VAG Rounded Std light"; text-align: left; letter-spacing: 1px; font-weight: normal; text-shadow: none;}
+#contact-text p{font-size: 13px; color: #000; margin: 0px; padding: 12px 0px 10px 2px; line-height: 21px; font-family: "VAG Rounded Std light"; text-align: left; letter-spacing: 1px; font-weight: normal; text-shadow: none;}
+.contact-container{padding: -1px 16px 20px 16px;}
+.contact-container h2{font-size: 18px; color: #ec0088; font-weight: normal; text-align: center; margin: 0px; padding: 13px 0px 0px;}
+
+.add-arrow-account{background: url(../images/arrow.png) no-repeat 0px 0px; width:16px; text-indent: -9999px; position: relative; right: -116px; height: 41px; color: transparent;}
+.add-arrow-message{background: url(../images/arrow.png) no-repeat 0px 0px; width:16px; text-indent: -9999px; position: relative; right: -111px; height: 41px; color: transparent;}
+.add-arrow-badges{background: url(../images/arrow.png) no-repeat 0px 0px; width:16px; text-indent: -9999px; position: relative; right: -194px; height: 41px; color: transparent;}
+.add-arrow-contact{background: url(../images/arrow.png) no-repeat 0px 0px; width:16px; text-indent: -9999px; position: relative; right: -165px; height: 41px; color: transparent;}
+.add-arrow-about{background: url(../images/arrow.png) no-repeat 0px 0px; width:16px; text-indent: -9999px; position: relative; right: -119px; height: 41px; color: transparent;}
+.add-arrow-terms{background: url(../images/arrow.png) no-repeat 0px 0px; width:16px; text-indent: -9999px; position: relative; right: -94px; height: 41px; color: transparent;}
+.add-arrow-privacy{background: url(../images/arrow.png) no-repeat 0px 0px; width:16px; text-indent: -9999px; position: relative; right: -136px; height: 41px; color: transparent;}
+.add-arrow-clear{background: url(../images/arrow.png) no-repeat 0px 0px; width:16px; text-indent: -9999px; position: relative; right: -167px; height: 41px; color: transparent;}
+.add-arrow-logout{background: url(../images/arrow.png) no-repeat 0px 0px; width:16px; text-indent: -9999px; position: relative; right: -191px; height: 41px; color: transparent;}
+
+
+

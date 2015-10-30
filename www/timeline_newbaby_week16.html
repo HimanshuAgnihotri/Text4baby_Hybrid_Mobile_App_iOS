@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+		<title>:: Text4baby :: Timeline ::</title>
+		<link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css" />		
+	    <link rel="stylesheet" href="themes/css/t4b-style.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body onload="RegisterPagehit('timeline/baby/week-16');">
+    	<div class="ui-loader-background"> </div>
+		<div data-role="page" data-theme="a">
+        
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery.mobile-1.3.2.min.js"></script>	
+         <script src="js/nativeeventhandler.js"></script>
+		<script src = "js/process.js"></script> 
+		<script src = "js/exec.js"></script> 		
+		<script src="js/analytics.js"></script>
+		<script src="js/pageinfo.js"></script>	
+
+         <!--<script>
+             $(document).on("expand", "[data-role=collapsible]", function () {
+                 var topoffset = 50;
+                 var position = $(this).offset().top - topoffset;
+                 window.localStorage.setItem("to_position", position);
+                 $.mobile.silentScroll(position);
+             });
+            </script>-->
+
+         <script>
+             function toggleMoreInfo(val) {
+				 document.getElementById("textid-4").style.display = "block";
+                 var elementId = "#cf2 img.top" + (val);
+                 //toggleMoveInFront();
+                 $(elementId).toggleClass("transparent");
+             }
+         </script>
+                          
+                        <!--Content Section Starts Here-->
+                        <div data-role="content" data-theme="a" id="timeline-pregnancy-content">  
+								<div id="timeline2">						
+                                                       <div id='cf2' class='banner'>
+                                                         <span class='banner-text' id='textid-4' style='display: none;'>
+                                                         <h5>Mom this Week</h5>
+                                                         <p>The first few months are really hard! It is normal to feel like it&#39;s taking longer to bond with your baby than you expected. It&#39;s a tough and exhausting time. Talk to your partner, family, and friends and ask for help when you need it.</p>
+                                                         </span>
+                                                       <img class='top16' src='images/timeline/baby/baby-week16.jpg' onClick='toggleMoreInfo(16);' />						
+												</div>
+																	
+										<!-- Baby Accordion Information Starts Here -->
+										<div id="baby_week_info" class="slide_wrapper">
+												<div data-role="collapsible-set" data-theme="a" data-content-theme="d" data-iconpos="right">
+													<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="timeline-icon-four" data-expanded-icon="timeline-icon-four" id="baby1">
+														<h3>Baby's Development</h3>
+														<div class="timeline-grid-baby-one">
+															<div class='timeline-block-one top-margin20'> 
+                                                            <div class='timeline-block-one-pic'>
+                                                            <img src="images/timeline/baby-tab1/week13-16.jpg" alt=''>
+                                                            </div> 
+                                                            <ul class='top-margin20'> 
+                                                             <li class='no-border'>Baby at 3 Months</li> 
+                                                            </ul> 
+                                                            </div> 
+                                                            <p>Your baby has personality! By 3 to 4 months most baby&#39;s can focus on a variety of smaller objects and can tell the difference between colors (especially red and green). Your baby still needs tummy time to strengthen baby&#39;s neck. Putting a toy in front of baby, for baby to reach for, helps baby&#39;s hand and eye coordination get better. Be sure to schedule baby&#39;s 4 month appointment.</p>
+														</div>
+													</div>
+													<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="timeline-icon-two" data-expanded-icon="timeline-icon-two" id="baby2">
+														<h3 onclick="ShowResultBaby(16);">How You Compare</h3>
+														<div class="timeline-grid-baby-two">
+															<div id="poll-baby-quiz16"> 
+                                                                <h2 class='txt-center'>Take our poll and see what other Text4baby moms have to say!</h2> 
+                                                                <div class='radio-grid'> 
+                                                                   <p class='survey-spacer title-fontSize'>I can&#39;t believe that baby:</p> 
+                                                                      <label for="radio-choice-baby-poll16-a">Is no longer a newborn</label> 
+                                                                      <input name="radio-choice-baby-poll16" id="radio-choice-baby-poll16-a" value='on' checked='checked' type='radio'> 
+                                                                      <label for="radio-choice-baby-poll16-b">Has gone up a onesie size</label> 
+                                                                      <input name="radio-choice-baby-poll16" id="radio-choice-baby-poll16-b" value='off' type='radio'> 
+                                                                      <label for="radio-choice-baby-poll16-c">Has his/her own personality</label> 
+                                                                      <input name="radio-choice-baby-poll16" id="radio-choice-baby-poll16-c" value='other' type='radio'> 
+                                                                </div> 
+                                                              <div class='ui-field-contain'> 
+                                                                 <input id='submit-radio' value='Submit' type='submit' onClick="NewBabyAccorTwo(16)"> 
+                                                              </div> 
+                                                            </div> 
+                                                              <div id="poll-baby-result16" style='display: none;'> 
+                                                                 <p class='survey-spacer'>Isn&#39;t it amazing how fast babies grow up!</p> 
+                                                                    <div class='graph-shadow'> 
+                                                                       <div class='custom-graph-grid'> 
+                                                                          <h3 class='graph-title'>Other Text4baby Moms Said:</h3>
+                                                                          <div class='graph' style='padding: 0 0 0 5%;'>
+                                                                          <div class='graph-block'> <div class='graph-bar-value-grid'> 
+                                                                          <div class='graph-bar1-value'>39%</div> 
+                                                                          <div class='graph-bar2-value'>21%</div> 
+                                                                          <div class='graph-bar3-value'>40%</div> 
+                                                                       </div>
+                                                                <div class='bar1 baby-week16-bar-1'>
+                                                                </div> 
+                                                                <div class='bar2 baby-week16-bar-2'>
+                                                                </div> 
+                                                                <div class='bar3 baby-week16-bar-3'>
+                                                                </div>  
+                                                             <div class='labels'>
+                                                                <ul> 
+                                                                     <li class='bar-one'>Not a newborn</li> 
+                                                                     <li class='bar-two'>Gone up a size</li> 
+                                                                     <li class='bar-three'>Own personality</li> 
+                                                                </ul>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                 </div> 
+                                           </div> 
+                                   </div>
+							                         </div>
+													</div>
+													<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="timeline-icon-three" data-expanded-icon="timeline-icon-three" id="baby3">
+														<h3 onclick="ShowCheckListBaby(16);">To-Dos This Week</h3>
+														<div class="timeline-grid-baby-three">
+															<h2 class='txt-center'>Weekly Checklist</h2> 
+                                                               <p class='bottom-margin20'>Get a star every time you complete a total of three tasks. When you collect 5 stars, you'll get a Text4baby badge</p> 
+                                                               <p class='bottom-margin20'>In &quot;More&quot; you can see all your badges!</p> 
+                                                            <div id='checklist-grid'> 
+                                                               <input name="checkbox-week16-baby-c1" id="checkbox-week16-baby-c1" type='checkbox' onClick="CheckboxBabySelect(16);"> 
+                                                               <label for="checkbox-week16-baby-c1">Go to baby&#39;s 4 month visit. Talk to baby&#39;s Dr. about how baby is sleeping and starting solid food at 6 months</label> 
+                                                               <input name="checkbox-week16-baby-c2" id="checkbox-week16-baby-c2" type='checkbox' onClick="CheckboxBabySelect2(16);"> 
+                                                               <label for="checkbox-week16-baby-c2">Don&#39;t forget to take care of yourself and get back into exercising - start slow</label> 
+                                                            </div> 
+                                                               <div class='star-badge-grid'> 
+                                                                  <div class='star-rating'> 
+                                                                      <span id='star1nb'>Star</span> 
+                                                                      <span id='star2nb'>Star</span> 
+                                                                      <span id='star3nb'>Star</span> 
+                                                                      <span id='star4nb'>Star</span> 
+                                                                      <span id='star5nb'>Star</span> 
+                                                                   </div> 
+                                                            <div class='timeline-grid-one txt-center' id='badgedivnb'> 
+                                                               <span id='badgespannb'>
+                                                                </span> 
+                                                                <span id='badgetextnb' class='badge-name'>
+                                                                </span>
+                                                                </div>
+                                                              </div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Baby Accordion Information Ends Here -->
+										
+							</div>
+						</div>
+                        <!--Content Section Ends Here-->
+                        
+		</div>
+				
+	</body>
+</html>
+

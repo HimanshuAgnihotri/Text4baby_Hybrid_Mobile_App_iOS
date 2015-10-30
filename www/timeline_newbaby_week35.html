@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+		<title>:: Text4baby :: Timeline ::</title>
+		<link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css" />		
+	    <link rel="stylesheet" href="themes/css/t4b-style.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body onload="RegisterPagehit('timeline/baby/week-35');">
+    	<div class="ui-loader-background"> </div>
+		<div data-role="page" data-theme="a">
+        
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery.mobile-1.3.2.min.js"></script>	
+         <script src="js/nativeeventhandler.js"></script>
+		<script src = "js/process.js"></script> 
+		<script src = "js/exec.js"></script> 		
+		<script src="js/analytics.js"></script>
+		<script src="js/pageinfo.js"></script>	
+
+         <!--<script>
+             $(document).on("expand", "[data-role=collapsible]", function () {
+                 var topoffset = 50;
+                 var position = $(this).offset().top - topoffset;
+                 window.localStorage.setItem("to_position", position);
+                 $.mobile.silentScroll(position);
+             });
+            </script>-->
+
+         <script>
+             function toggleMoreInfo(val) {
+				 document.getElementById("textid-4").style.display = "block";
+                 var elementId = "#cf2 img.top" + (val);
+                 //toggleMoveInFront();
+                 $(elementId).toggleClass("transparent");
+             }
+         </script>
+                          
+                        <!--Content Section Starts Here-->
+                        <div data-role="content" data-theme="a" id="timeline-pregnancy-content">  
+								<div id="timeline2">						
+                                                       <div id='cf2' class='banner'>
+                                                         <span class='banner-text' id='textid-4' style='display: none;'>
+                                                         <h5>Mom this Week</h5>
+                                                         <p>Hopefully you&#39;re getting more sleep these days, since your baby is probably snoozing for long stretches at night. You should still try to get naps in though. If you work during the day, go to sleep as early as you can, so you can still get rest when baby does.</p>
+                                                         </span>
+                                                       <img class='top35' src='images/timeline/baby/baby-week35.jpg' onClick='toggleMoreInfo(35);' />						
+												</div>
+																	
+										<!-- Baby Accordion Information Starts Here -->
+										<div id="baby_week_info" class="slide_wrapper">
+												<div data-role="collapsible-set" data-theme="a" data-content-theme="d" data-iconpos="right">
+													<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="timeline-icon-four" data-expanded-icon="timeline-icon-four" id="baby1">
+														<h3>Baby's Development</h3>
+														<div class="timeline-grid-baby-one">
+															<div class='timeline-block-one top-margin20'> 
+                                                            <div class='timeline-block-one-pic'>
+                                                            <img src="images/timeline/baby-tab1/week33-36.jpg" alt=''>
+                                                            </div> 
+                                                            <ul class='top-margin20'> 
+                                                             <li class='no-border'>Baby at 8 Months</li> 
+                                                            </ul> 
+                                                            </div> 
+                                                            <p>Develop a quiet soothing bedtime routine with your baby to introduce sleep at a regular time each night. Routines will help baby feel secure and will help you get the rest you need! Keep baby safe in a crib with slats no more than 2 and 3/8 inches apart. Now baby needs less naptime - 2 naps a day for 1 to 3 hours each.  It is normal for baby to wake up 1 to 3 times a night.</p>
+														</div>
+													</div>
+													<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="timeline-icon-two" data-expanded-icon="timeline-icon-two" id="baby2">
+														<h3 onclick="ShowResultBaby(35);">How You Compare</h3>
+														<div class="timeline-grid-baby-two">
+															<div id="poll-baby-quiz35"> 
+                                                                <h2 class='txt-center'>Take our poll and see what other Text4baby moms have to say!</h2> 
+                                                                <div class='radio-grid'> 
+                                                                   <p class='survey-spacer title-fontSize'>How do you get your baby to laugh? By:</p> 
+                                                                      <label for="radio-choice-baby-poll35-a">Playing peek-a-boo</label> 
+                                                                      <input name="radio-choice-baby-poll35" id="radio-choice-baby-poll35-a" value='on' checked='checked' type='radio'> 
+                                                                      <label for="radio-choice-baby-poll35-b">Acting silly</label> 
+                                                                      <input name="radio-choice-baby-poll35" id="radio-choice-baby-poll35-b" value='off' type='radio'> 
+                                                                      <label for="radio-choice-baby-poll35-c">Tickling baby</label> 
+                                                                      <input name="radio-choice-baby-poll35" id="radio-choice-baby-poll35-c" value='other' type='radio'> 
+                                                                </div> 
+                                                              <div class='ui-field-contain'> 
+                                                                 <input id='submit-radio' value='Submit' type='submit' onClick="NewBabyAccorTwo(35)"> 
+                                                              </div> 
+                                                            </div> 
+                                                              <div id="poll-baby-result35" style='display: none;'> 
+                                                                 <p class='survey-spacer'>Playing peek-a-boo and tickling are two fun ways to make baby laugh! Sometimes though, baby will laugh when mom and dad are laughing or just acting silly!</p> 
+                                                                    <div class='graph-shadow'> 
+                                                                       <div class='custom-graph-grid'> 
+                                                                          <h3 class='graph-title'>Other Text4baby Moms Said:</h3>
+                                                                          <div class='graph' style='padding: 0 0 0 8%;'>
+                                                                          <div class='graph-block'> <div class='graph-bar-value-grid'> 
+                                                                          <div class='graph-bar1-value'>26%</div> 
+                                                                          <div class='graph-bar2-value'>32%</div> 
+                                                                          <div class='graph-bar3-value'>42%</div> 
+                                                                       </div>
+                                                                <div class='bar1 baby-week35-bar-1'>
+                                                                </div> 
+                                                                <div class='bar2 baby-week35-bar-2'>
+                                                                </div> 
+                                                                <div class='bar3 baby-week35-bar-3'>
+                                                                </div>  
+                                                             <div class='labels'>
+                                                                <ul> 
+                                                                     <li class='bar-one'>Peek-a-boo</li> 
+                                                                     <li class='bar-two'>Acting silly</li> 
+                                                                     <li class='bar-three'>Tickling baby</li> 
+                                                                </ul>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                 </div> 
+                                           </div> 
+                                   </div>
+							                         </div>
+													</div>
+													<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="timeline-icon-three" data-expanded-icon="timeline-icon-three" id="baby3">
+														<h3 onclick="ShowCheckListBaby(35);">To-Dos This Week</h3>
+														<div class="timeline-grid-baby-three">
+															<h2 class='txt-center'>Weekly Checklist</h2> 
+                                                               <p class='bottom-margin20'>Get a star every time you complete a total of three tasks. When you collect 5 stars, you'll get a Text4baby badge</p> 
+                                                               <p class='bottom-margin20'>In &quot;More&quot; you can see all your badges!</p> 
+                                                            <div id='checklist-grid'> 
+                                                               <input name="checkbox-week35-baby-c1" id="checkbox-week35-baby-c1" type='checkbox' onClick="CheckboxBabySelect(35);"> 
+                                                               <label for="checkbox-week35-baby-c1">Write down what words/sounds your baby is saying so you can tell your baby&#39;s  Dr. at the next visit</label> 
+                                                               <input name="checkbox-week35-baby-c2" id="checkbox-week35-baby-c2" type='checkbox' onClick="CheckboxBabySelect2(35);"> 
+                                                               <label for="checkbox-week35-baby-c2">Make a list of things you&#39;d like to talk to the Dr. about at baby&#39;s next visit</label> 
+                                                            </div> 
+                                                               <div class='star-badge-grid'> 
+                                                                  <div class='star-rating'> 
+                                                                      <span id='star1nb'>Star</span> 
+                                                                      <span id='star2nb'>Star</span> 
+                                                                      <span id='star3nb'>Star</span> 
+                                                                      <span id='star4nb'>Star</span> 
+                                                                      <span id='star5nb'>Star</span> 
+                                                                   </div> 
+                                                            <div class='timeline-grid-one txt-center' id='badgedivnb'> 
+                                                               <span id='badgespannb'>
+                                                                </span> 
+                                                                <span id='badgetextnb' class='badge-name'>
+                                                                </span>
+                                                                </div>
+                                                              </div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Baby Accordion Information Ends Here -->
+										
+							</div>
+						</div>
+                        <!--Content Section Ends Here-->
+                        
+		</div>
+				
+	</body>
+</html>
+

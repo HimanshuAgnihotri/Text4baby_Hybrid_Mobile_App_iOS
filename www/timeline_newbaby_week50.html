@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+		<title>:: Text4baby :: Timeline ::</title>
+		<link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css" />		
+	    <link rel="stylesheet" href="themes/css/t4b-style.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body onload="RegisterPagehit('timeline/baby/week-50');">
+    	<div class="ui-loader-background"> </div>
+		<div data-role="page" data-theme="a">
+        
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery.mobile-1.3.2.min.js"></script>	
+         <script src="js/nativeeventhandler.js"></script>
+		<script src = "js/process.js"></script> 
+		<script src = "js/exec.js"></script> 		
+		<script src="js/analytics.js"></script>
+		<script src="js/pageinfo.js"></script>	
+
+         <!--<script>
+             $(document).on("expand", "[data-role=collapsible]", function () {
+                 var topoffset = 50;
+                 var position = $(this).offset().top - topoffset;
+                 window.localStorage.setItem("to_position", position);
+                 $.mobile.silentScroll(position);
+             });
+            </script>-->
+
+         <script>
+             function toggleMoreInfo(val) {
+				 document.getElementById("textid-4").style.display = "block";
+                 var elementId = "#cf2 img.top" + (val);
+                 //toggleMoveInFront();
+                 $(elementId).toggleClass("transparent");
+             }
+         </script>
+                          
+                        <!--Content Section Starts Here-->
+                        <div data-role="content" data-theme="a" id="timeline-pregnancy-content">  
+								<div id="timeline2">						
+                                                       <div id='cf2' class='banner'>
+                                                         <span class='banner-text' id='textid-4' style='display: none;'>
+                                                         <h5>Mom this Week</h5>
+                                                         <p>Having a baby is stressful, but if you feel very sad, anxious, angry, or have negative emotions about baby, please reach out for help. Postpartum depression can start early or set in when baby is older. You are not alone; professionals are available for free. Call 800-944-4773.</p>
+                                                         </span>
+                                                       <img class='top50' src='images/timeline/baby/baby-week50.jpg' onClick='toggleMoreInfo(50);' />						
+												</div>
+																	
+										<!-- Baby Accordion Information Starts Here -->
+										<div id="baby_week_info" class="slide_wrapper">
+												<div data-role="collapsible-set" data-theme="a" data-content-theme="d" data-iconpos="right">
+													<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="timeline-icon-four" data-expanded-icon="timeline-icon-four" id="baby1">
+														<h3>Baby's Development</h3>
+														<div class="timeline-grid-baby-one">
+															<div class='timeline-block-one top-margin20'> 
+                                                            <div class='timeline-block-one-pic'>
+                                                            <img src="images/timeline/baby-tab1/week49-52.jpg" alt=''>
+                                                            </div> 
+                                                            <ul class='top-margin20'> 
+                                                             <li class='no-border'>Baby at 12 Months</li> 
+                                                            </ul> 
+                                                            </div> 
+                                                            <p>Don&#39;t forget to schedule baby&#39;s 1 year check-up and baby&#39;s first dentist appointment. Brushing baby&#39;s teeth twice a day with plain water and a soft toothbrush is important for baby&#39;s teeth health. Talk to your dentist about a flouride supplement for baby and tips to keep baby&#39;s mouth clean.</p>
+														</div>
+													</div>
+													<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="timeline-icon-two" data-expanded-icon="timeline-icon-two" id="baby2">
+														<h3 onclick="ShowResultBaby(50);">How You Compare</h3>
+														<div class="timeline-grid-baby-two">
+															<div id="poll-baby-quiz50"> 
+                                                                <h2 class='txt-center'>Take our poll and see what other Text4baby moms have to say!</h2> 
+                                                                <div class='radio-grid'> 
+                                                                   <p class='survey-spacer title-fontSize'>How long did it take you to lose your pregnancy weight?</p> 
+                                                                      <label for="radio-choice-baby-poll50-a">0 to 5 months</label> 
+                                                                      <input name="radio-choice-baby-poll50" id="radio-choice-baby-poll50-a" value='on' checked='checked' type='radio'> 
+                                                                      <label for="radio-choice-baby-poll50-b">5 to 10 months</label> 
+                                                                      <input name="radio-choice-baby-poll50" id="radio-choice-baby-poll50-b" value='off' type='radio'> 
+                                                                      <label for="radio-choice-baby-poll50-c">Still working on it!</label> 
+                                                                      <input name="radio-choice-baby-poll50" id="radio-choice-baby-poll50-c" value='other' type='radio'> 
+                                                                </div> 
+                                                              <div class='ui-field-contain'> 
+                                                                 <input id='submit-radio' value='Submit' type='submit' onClick="NewBabyAccorTwo(50)"> 
+                                                              </div> 
+                                                            </div> 
+                                                              <div id="poll-baby-result50" style='display: none;'> 
+                                                                 <p class='survey-spacer'>It&#39;s difficult to lose your pregnancy weight! If you haven&#39;t lost it yet, don&#39;t worry. It takes time for many women.</p> 
+                                                                    <div class='graph-shadow'> 
+                                                                       <div class='custom-graph-grid'> 
+                                                                          <h3 class='graph-title'>Other Text4baby Moms Said:</h3>
+                                                                          <div class='graph' style='padding: 0 0 0 3%;'>
+                                                                          <div class='graph-block'> <div class='graph-bar-value-grid'> 
+                                                                          <div class='graph-bar1-value'>26%</div> 
+                                                                          <div class='graph-bar2-value'>36%</div> 
+                                                                          <div class='graph-bar3-value'>38%</div> 
+                                                                       </div>
+                                                                <div class='bar1 baby-week50-bar-1'>
+                                                                </div> 
+                                                                <div class='bar2 baby-week50-bar-2'>
+                                                                </div> 
+                                                                <div class='bar3 baby-week50-bar-3'>
+                                                                </div>  
+                                                             <div class='labels'>
+                                                                <ul> 
+                                                                     <li class='bar-one'>0 to 5 months</li> 
+                                                                     <li class='bar-two'>5 to 10 months</li> 
+                                                                     <li class='bar-three'>Still working on it!</li> 
+                                                                </ul>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                 </div> 
+                                           </div> 
+                                   </div>
+							                         </div>
+													</div>
+													<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="timeline-icon-three" data-expanded-icon="timeline-icon-three" id="baby3">
+														<h3 onclick="ShowCheckListBaby(50);">To-Dos This Week</h3>
+														<div class="timeline-grid-baby-three">
+															<h2 class='txt-center'>Weekly Checklist</h2> 
+                                                               <p class='bottom-margin20'>Get a star every time you complete a total of three tasks. When you collect 5 stars, you'll get a Text4baby badge</p> 
+                                                               <p class='bottom-margin20'>In &quot;More&quot; you can see all your badges!</p> 
+                                                            <div id='checklist-grid'> 
+                                                               <input name="checkbox-week50-baby-c1" id="checkbox-week50-baby-c1" type='checkbox' onClick="CheckboxBabySelect(50);"> 
+                                                               <label for="checkbox-week50-baby-c1">Get baby to keep saying her favorite words for family and friends like mama, dada, and uh-oh. Get a video if you can</label> 
+                                                               <input name="checkbox-week50-baby-c2" id="checkbox-week50-baby-c2" type='checkbox' onClick="CheckboxBabySelect2(50);"> 
+                                                               <label for="checkbox-week50-baby-c2">Help baby get ready to walk by letting baby cruise on furniture and walk with you. If baby is walking, how fun!</label> 
+                                                            </div> 
+                                                               <div class='star-badge-grid'> 
+                                                                  <div class='star-rating'> 
+                                                                      <span id='star1nb'>Star</span> 
+                                                                      <span id='star2nb'>Star</span> 
+                                                                      <span id='star3nb'>Star</span> 
+                                                                      <span id='star4nb'>Star</span> 
+                                                                      <span id='star5nb'>Star</span> 
+                                                                   </div> 
+                                                            <div class='timeline-grid-one txt-center' id='badgedivnb'> 
+                                                               <span id='badgespannb'>
+                                                                </span> 
+                                                                <span id='badgetextnb' class='badge-name'>
+                                                                </span>
+                                                                </div>
+                                                              </div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Baby Accordion Information Ends Here -->
+										
+							</div>
+						</div>
+                        <!--Content Section Ends Here-->
+                        
+		</div>
+				
+	</body>
+</html>
+

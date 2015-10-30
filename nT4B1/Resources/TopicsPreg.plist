@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Visits</string>
+		<key>Title</key>
+		<string>Prenatal Care</string>
+		<key>Page</key>
+		<string>visits.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Ultrasound</string>
+		<key>Title</key>
+		<string>Prenatal Care</string>
+		<key>Page</key>
+		<string>ultrasound.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Vaccines</string>
+		<key>Title</key>
+		<string>Prenatal Care</string>
+		<key>Page</key>
+		<string>vaccines.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Tests</string>
+		<key>Title</key>
+		<string>Prenatal Care</string>
+		<key>Page</key>
+		<string>tests.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Prenatal Vitamins</string>
+		<key>Title</key>
+		<string>Food &amp; Nutrition</string>
+		<key>Page</key>
+		<string>prenatal-vitamins.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Folic Acid</string>
+		<key>Title</key>
+		<string>Food &amp; Nutrition</string>
+		<key>Page</key>
+		<string>folic-acid.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Breakfast Ideas</string>
+		<key>Title</key>
+		<string>Food &amp; Nutrition</string>
+		<key>Page</key>
+		<string>breakfast-ideas.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Food Safety</string>
+		<key>Title</key>
+		<string>Food &amp; Nutrition</string>
+		<key>Page</key>
+		<string>food-safety.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Listeriosis</string>
+		<key>Title</key>
+		<string>Food &amp; Nutrition</string>
+		<key>Page</key>
+		<string>listeriosis.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Eating Seafood</string>
+		<key>Title</key>
+		<string>Food &amp; Nutrition</string>
+		<key>Page</key>
+		<string>eating-seafood.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>High Blood Pressure</string>
+		<key>Title</key>
+		<string>Health Issues</string>
+		<key>Page</key>
+		<string>hbp.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Preeclampsia</string>
+		<key>Title</key>
+		<string>Health Issues</string>
+		<key>Page</key>
+		<string>preeclampsia.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Gestational Diabetes</string>
+		<key>Title</key>
+		<string>Health Issues</string>
+		<key>Page</key>
+		<string>gestational-diabetes.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Morning Sickness</string>
+		<key>Title</key>
+		<string>Health Issues</string>
+		<key>Page</key>
+		<string>morning-sickness.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Urinary Tract Infection</string>
+		<key>Title</key>
+		<string>Health Issues</string>
+		<key>Page</key>
+		<string>uti.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Bleeding</string>
+		<key>Title</key>
+		<string>Health Issues</string>
+		<key>Page</key>
+		<string>bleeding.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Weight Gain</string>
+		<key>Title</key>
+		<string>Weight &amp; Exercise</string>
+		<key>Page</key>
+		<string>weight-gain.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Exercise</string>
+		<key>Title</key>
+		<string>Weight &amp; Exercise</string>
+		<key>Page</key>
+		<string>exercise.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Signs of Labor</string>
+		<key>Title</key>
+		<string>Labor &amp; Delivery</string>
+		<key>Page</key>
+		<string>signs-of-labor.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Contraction Types</string>
+		<key>Title</key>
+		<string>Labor &amp; Delivery</string>
+		<key>Page</key>
+		<string>contraction-types.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Why Wait 39 Weeks</string>
+		<key>Title</key>
+		<string>Labor &amp; Delivery</string>
+		<key>Page</key>
+		<string>weeks39.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Preterm Labor</string>
+		<key>Title</key>
+		<string>Labor &amp; Delivery</string>
+		<key>Page</key>
+		<string>preterm-labor.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Help &amp; Support</string>
+		<key>Title</key>
+		<string>Hotlines</string>
+		<key>Page</key>
+		<string>help-support.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Health</string>
+		<key>Title</key>
+		<string>Hotlines</string>
+		<key>Page</key>
+		<string>health.html</string>
+	</dict>
+</array>
+</plist>

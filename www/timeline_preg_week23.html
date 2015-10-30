@@ -1,0 +1,164 @@
+﻿
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+		<title>:: Text4baby :: Timeline ::</title>
+		<link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css" />		
+	    <link rel="stylesheet" href="themes/css/t4b-style.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body onload="RegisterPagehit('timeline/pregnancy/week-23');">
+    	<div class="ui-loader-background"> </div>
+		<div data-role="page" data-theme="a">
+
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery.mobile-1.3.2.min.js"></script>		
+	 <script src="js/nativeeventhandler.js"></script>
+		<script src = "js/process.js"></script> 
+		<script src = "js/exec.js"></script> 		
+		<script src="js/analytics.js"></script>
+		<script src="js/pageinfo.js"></script>	
+        
+         <!--<script>
+             $(document).on("expand", "[data-role=collapsible]", function () {
+                 var topoffset = 50;
+                 var position = $(this).offset().top - topoffset;
+                 window.localStorage.setItem("to_position", position);
+                 $.mobile.silentScroll(position);
+             });
+            </script>-->
+
+         <script>
+             function toggleMoreInfo(val) {
+				 document.getElementById("textid-4").style.display = "block";
+                 var elementId = "#cf2 img.top" + (val);
+                 //toggleMoveInFront();
+                 $(elementId).toggleClass("transparent");
+             }
+         </script>
+
+                        <!--Content Section Starts Here-->
+                        <div data-role="content" data-theme="a" id="timeline-pregnancy-content">  
+								<div id="timeline2">						
+                                                       <div id='cf2' class='banner'>
+                                                       <span class='banner-text' id='textid-4' style='display: none;'>
+                                                         <h5>Mom this Week</h5>
+                                                         <p>The risk of miscarriage is low now, but you should still call your healthcare provider (just to be safe!) if you have bleeding, severe headaches, sudden swelling, stomach pain, diarrhea, vomiting, or high fever for over 24 hours.</p>
+                                                       </span>
+                                                   <img class='top23' src='images/timeline/pregnancy/pregnancy-week23.jpg' onClick='toggleMoreInfo(23);' />							
+												</div>   
+												
+										<!-- Pregnancy Accordion Information Starts Here -->
+										<div id="pregnancy_week_info" class="slide_wrapper">
+											<div data-role="collapsible-set" data-theme="a" data-content-theme="d" data-iconpos="right">
+													<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="timeline-icon-one" data-expanded-icon="timeline-icon-one" id="preg1">
+														<h3>How Big is Baby?</h3>
+														<div class="timeline-grid-pregnancy-one">
+                                                            <h2 class='margin-spacer txt-center'>Your baby is the size of a cantaloupe!</h2>
+                                                          <div class='timeline-block-one'> 
+                                                           <div class='timeline-block-one-pic'>
+                                                            <img src="images/timeline/pregnancy-tab1/week23.jpg">
+                                                           </div> 
+                                                            <ul> 
+                                                            <li>12.7 oz</li> 
+                                                            <li>11 inches</li> 
+                                                            </ul>  
+                                                          </div> 
+                                                           <p>This week baby is working hard to gain weight and get chubby! Also, baby&#39;s lungs are developing and will continue to grow until birth.</p>
+														</div>
+													</div>
+													<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="timeline-icon-two" data-expanded-icon="timeline-icon-two" id="preg2">
+														<h3 onclick="ShowResult(23);">How You Compare</h3>
+														<div class="timeline-grid-pregnancy-two">
+														  <div id="poll-pregnancy-quiz23"> 
+                                                            <h2 class='txt-center'>Take our poll and see what other Text4baby moms have to say!</h2> 
+                                                              <div class='radio-grid'> 
+                                                                <p class='survey-spacer title-fontSize'>At my second trimester ultrasound, I discovered I&#39;m having:</p> 
+                                                                   <label for="radio-choice-pregnancy23-a">A boy!</label> 
+                                                                   <input name="radio-choice-pregnancy23" id="radio-choice-pregnancy23-a" value='on' checked='checked' type='radio'> 
+                                                                   <label for="radio-choice-pregnancy23-b">A girl!</label> 
+                                                                   <input name="radio-choice-pregnancy23" id="radio-choice-pregnancy23-b" value='off' type='radio'> 
+                                                                   <label for="radio-choice-pregnancy23-c">I want it to be a surprise!</label> 
+                                                                   <input name="radio-choice-pregnancy23" id="radio-choice-pregnancy23-c" value='other' type='radio'> 
+                                                              </div> 
+                                                           <div class='ui-field-contain'> 
+                                                             <input id='submit-radio' value='Submit' type='submit' onClick='PregAccorTwo(23)'> 
+                                                           </div> 
+                                                         </div> 
+                                                        <div id="poll-pregnancy-result23" style='display: none;'> 
+                                                          <p class='survey-spacer'>What an exciting time for you mom! Whether you found out the sex of your baby or are keeping it a surprise, we&#39;re thrilled for you!</p> 
+                                                            <div class='graph-shadow'> 
+                                                              <div class='custom-graph-grid'> 
+                                                                   <h3 class='graph-title'>Other Text4baby Moms Said:</h3>
+                                                                      <div class='graph' style='padding : 0 0 0 10%;'>
+                                                                         <div class='graph-block'>
+                                                                             <div class='graph-bar-value-grid'> 
+                                                                                <div class='graph-bar1-value'>41%</div> 
+                                                                                <div class='graph-bar2-value'>45%</div> 
+                                                                                <div class='graph-bar3-value'>14%</div> 
+                                                                              </div> 
+                                                                         <div class='bar1 pregnancy-week23-bar-1'>
+                                                                    </div> 
+                                                              <div class='bar2 pregnancy-week23-bar-2'>
+                                                         </div> 
+                                                            <div class='bar3 pregnancy-week23-bar-3'>
+                                                            </div> 
+                                                            <div class='labels'>
+                                                              <ul> 
+                                                                  <li class='bar-one'>Boy</li> 
+                                                                  <li class='bar-two'>Girl</li> 
+                                                                  <li class='bar-three'>Don&prime;t know</li> 
+                                                              </ul>
+                                                            </div>
+                                                          </div>
+                                                        </div> 
+                                                     </div> 
+                                                  </div> 
+                                              </div>	
+					                   </div>
+													</div>
+													<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="timeline-icon-three" data-expanded-icon="timeline-icon-three" id="preg3">
+														<h3 onclick="ShowCheckList(23);">To-Dos This Week</h3>
+														<div class="timeline-grid-pregnancy-three">
+														  <h2 class='txt-center'>Weekly Checklist</h2> 
+                                                            <p class='bottom-margin20'>Get a star every time you complete a total of three tasks. When you collect 5 stars, you'll get a Text4baby badge</p> 
+                                                            <p class='bottom-margin20'>In &quot;More&quot; you can see all your badges!</p> 
+                                                               <div id='checklist-grid'> 
+                                                                 <input name="checkbox-week23-pregnancy-c1" id="checkbox-week23-pregnancy-c1" type='checkbox' onClick='CheckboxSelect(23)'> 
+                                                                 <label for="checkbox-week23-pregnancy-c1">Make time to spend with your partner</label> 
+                                                                 <input name="checkbox-week23-pregnancy-c2" id="checkbox-week23-pregnancy-c2" type='checkbox' onClick='CheckboxSelect2(23)'> 
+                                                                 <label for="checkbox-week23-pregnancy-c2">Make a plan of who you will tell when baby is born</label> 
+                                                               </div> 
+                                                            <div class='star-badge-grid'> 
+                                                               <div class='star-rating'> 
+                                                                  <span id='star1'>Star</span> 
+                                                                  <span id='star2'>Star</span> 
+                                                                  <span id='star3'>Star</span> 
+                                                                  <span id='star4'>Star</span> 
+                                                                  <span id='star5'>Star</span> 
+                                                              </div> 
+                                                           <div class='timeline-grid-one txt-center' id='badgediv'> 
+                                                                  <span id='badgespan' >
+                                                                  </span> 
+                                                                  <span id='badgetext' class='badge-name'>
+                                                                  </span>
+                                                           </div>
+                                                        </div>	
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- Pregnancy Accordion Information Ends Here -->
+										  <!--Pregnancy Section Ends Here-->							
+							</div>
+						</div>
+                        <!--Content Section Ends Here-->   
+		</div>
+
+	</body>
+</html>
+
+

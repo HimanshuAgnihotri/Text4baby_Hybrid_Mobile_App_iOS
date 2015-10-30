@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>:: Text4baby :: Sign Up ::</title>
+		<link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css" />
+        <link rel="stylesheet" href="css/jquery-ui.css" />
+        <link rel="stylesheet" href="themes/css/t4b-style.css" />
+        <link rel="stylesheet" href="css/style.css" />
+
+      
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="phonegap.js"></script>
+        <script src="js/nativeeventhandler.js"></script>
+        <script src="js/databaseoperation.js"></script>
+        <script src="js/jquery-ui.js"></script>
+		<script src="js/jquery.mobile-1.3.2.min.js"></script>
+	    <script src="js/signup.js"></script>
+    	
+
+		
+        <script src="js/header-footer-fix.js"></script>
+        <script src="js/process.js"></script>
+		<script src="js/formvalidations.js"></script>
+		<script src="js/exec.js"></script>
+       
+        <script src="js/analytics.js"></script>
+		<script src="js/pageinfo.js"></script>
+		
+
+        <!--Device Back Button Handled Here-->
+
+        <script type="text/javascript">
+            $(document).on("tap", function () {
+                if (window.localStorage.getItem("session") == 'false') {
+                    window.location = "sign-in.html";
+                }
+
+            });
+        </script> 
+        
+	</head>
+    
+	<body onload="assignments('signup');">
+    	<div class="ui-loader-background"> </div>
+		<div data-role="page" data-theme="a" id="sign_up_page">
+            
+            <!--Header Section Starts Here-->
+            
+            <!--Header Section Ends Here-->
+            
+            <!--Content Section Starts Here-->
+			<div data-role="content" data-theme="a" id="sign_up_content">
+				<div class="responsive-banner sign-up-2-banner" id="signup_banner"></div>
+                
+                <div class="grid-container" id="sign-up-1">
+                	<h2>Welcome!</h2>
+                    <div class="ui-field-contain">
+                    <div class="sign-up-content">
+                     <p>Please enter your phone number below.</br> This will be your username.</p>
+                     </div>
+     					<input name="mobile-number" pattern="[0-9]*" id="mobile-number" class="mobile-icon" placeholder="Mobile Phone Number" value="" type="tel" onkeypress="return isNumber(event)">
+                    </div>
+                    <div class="ui-field-contain">
+						<a id="play-video" onclick="navigateTo('video','{}');" title="" class="ui-icon-video" target="_self">Take the Video Tour</a>
+                    </div>
+                    <div class="ui-field-contain">
+                    	<input value="Next" type="submit" id="signupsubmit-1">
+                        <div class="contact-us">
+                        <p><a onclick="contactusRedirect('sign-up.html');"  title="">Have a problem? Contact Us.</a></p>
+                        </div>
+                    </div>
+                </div>
+               
+              
+                
+               
+			</div>
+            <!--Content Section Ends Here-->
+            
+		</div>
+		
+        <script src="js/update-url.js"></script>
+	</body>
+</html>

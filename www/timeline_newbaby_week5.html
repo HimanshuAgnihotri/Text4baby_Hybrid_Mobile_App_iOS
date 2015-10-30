@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+		<title>:: Text4baby :: Timeline ::</title>
+		<link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css" />		
+	    <link rel="stylesheet" href="themes/css/t4b-style.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body onload="RegisterPagehit('timeline/baby/week-5');">
+    	<div class="ui-loader-background"> </div>
+		<div data-role="page" data-theme="a">
+        
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery.mobile-1.3.2.min.js"></script>	
+         <script src="js/nativeeventhandler.js"></script>
+		<script src = "js/process.js"></script> 
+		<script src = "js/exec.js"></script> 		
+		<script src="js/analytics.js"></script>
+		<script src="js/pageinfo.js"></script>	
+
+         <!--<script>
+             $(document).on("expand", "[data-role=collapsible]", function () {
+                 var topoffset = 50;
+                 var position = $(this).offset().top - topoffset;
+                 window.localStorage.setItem("to_position", position);
+                 $.mobile.silentScroll(position);
+             });
+            </script>-->
+
+         <script>
+             function toggleMoreInfo(val) {
+				 document.getElementById("textid-4").style.display = "block";
+                 var elementId = "#cf2 img.top" + (val);
+                 //toggleMoveInFront();
+                 $(elementId).toggleClass("transparent");
+             }
+         </script>
+                          
+                        <!--Content Section Starts Here-->
+                        <div data-role="content" data-theme="a" id="timeline-pregnancy-content">  
+								<div id="timeline2">						
+                                                       <div id='cf2' class='banner'>
+                                                         <span class='banner-text' id='textid-4' style='display: none;'>
+                                                         <h5>Mom this Week</h5>
+                                                         <p>You probably don&#39;t need to change your diet while breastfeeding, but it&#39;s important to eat well (like during pregnancy!) and drink water. You might feel extra hungry, so eat healthy foods that will fill you up and make healthy breastmilk for baby.</p>
+                                                         </span>
+                                                       <img class='top5' src='images/timeline/baby/baby-week5.jpg' onClick='toggleMoreInfo(5);' />						
+												</div>
+																	
+										<!-- Baby Accordion Information Starts Here -->
+										<div id="baby_week_info" class="slide_wrapper">
+												<div data-role="collapsible-set" data-theme="a" data-content-theme="d" data-iconpos="right">
+													<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="timeline-icon-four" data-expanded-icon="timeline-icon-four" id="baby1">
+														<h3>Baby's Development</h3>
+														<div class="timeline-grid-baby-one">
+															<div class='timeline-block-one top-margin20'> 
+                                                            <div class='timeline-block-one-pic'>
+                                                            <img src="images/timeline/baby-tab1/week1-8.jpg" alt=''>
+                                                            </div> 
+                                                            <ul class='top-margin20'> 
+                                                             <li class='no-border'>Baby is Under 1 Month</li> 
+                                                            </ul> 
+                                                            </div> 
+                                                            <p>Baby is 1 month old! Baby sleeps a lot - up to 16 hours every day. He or she should be able to hold eye contact with you briefly. Learn about your baby - what helps setttle him or her down?  When is baby tired or hungry? Work with your partner to develop calming strategies. Swaddling, talking, rocking, and patting baby help. If you have any concerns, be sure to ask the Dr.</p>
+														</div>
+													</div>
+													<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="timeline-icon-two" data-expanded-icon="timeline-icon-two" id="baby2">
+														<h3 onclick="ShowResultBaby(5);">How You Compare</h3>
+														<div class="timeline-grid-baby-two">
+															<div id="poll-baby-quiz5"> 
+                                                                <h2 class='txt-center'>Take our poll and see what other Text4baby moms have to say!</h2> 
+                                                                <div class='radio-grid'> 
+                                                                   <p class='survey-spacer title-fontSize'>The first time I breastfed, my baby:</p> 
+                                                                      <label for="radio-choice-baby-poll5-a">Latched immediately</label> 
+                                                                      <input name="radio-choice-baby-poll5" id="radio-choice-baby-poll5-a" value='on' checked='checked' type='radio'> 
+                                                                      <label for="radio-choice-baby-poll5-b">Took some time to latch</label> 
+                                                                      <input name="radio-choice-baby-poll5" id="radio-choice-baby-poll5-b" value='off' type='radio'> 
+                                                                      <label for="radio-choice-baby-poll5-c">Didn&#39;t latch at all</label> 
+                                                                      <input name="radio-choice-baby-poll5" id="radio-choice-baby-poll5-c" value='other' type='radio'> 
+                                                                </div> 
+                                                              <div class='ui-field-contain'> 
+                                                                 <input id='submit-radio' value='Submit' type='submit' onClick="NewBabyAccorTwo(5)"> 
+                                                              </div> 
+                                                            </div> 
+                                                              <div id="poll-baby-result5" style='display: none;'> 
+                                                                 <p class='survey-spacer'>It can be tough to get a good latch your first time breastfeeding! We&#39;re proud you kept it up. Breastfeeding is very important for baby&#39;s development.</p> 
+                                                                    <div class='graph-shadow'> 
+                                                                       <div class='custom-graph-grid'> 
+                                                                          <h3 class='graph-title'>Other Text4baby Moms Said:</h3>
+                                                                          <div class='graph' style='padding: 0 0 0 5%;'>
+                                                                          <div class='graph-block'> <div class='graph-bar-value-grid'> 
+                                                                          <div class='graph-bar1-value'>22%</div> 
+                                                                          <div class='graph-bar2-value'>64%</div> 
+                                                                          <div class='graph-bar3-value'>14%</div> 
+                                                                       </div>
+                                                                <div class='bar1 baby-week5-bar-1'>
+                                                                </div> 
+                                                                <div class='bar2 baby-week5-bar-2'>
+                                                                </div> 
+                                                                <div class='bar3 baby-week5-bar-3'>
+                                                                </div>  
+                                                             <div class='labels'>
+                                                                <ul> 
+                                                                     <li class='bar-one'>Immediately</li> 
+                                                                     <li class='bar-two'>Took some time</li> 
+                                                                     <li class='bar-three'>Didn&prime;t latch</li> 
+                                                                </ul>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                 </div> 
+                                           </div> 
+                                   </div>
+							                         </div>
+													</div>
+													<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="timeline-icon-three" data-expanded-icon="timeline-icon-three" id="baby3">
+														<h3 onclick="ShowCheckListBaby(5);">To-Dos This Week</h3>
+														<div class="timeline-grid-baby-three">
+															<h2 class='txt-center'>Weekly Checklist</h2> 
+                                                               <p class='bottom-margin20'>Get a star every time you complete a total of three tasks. When you collect 5 stars, you'll get a Text4baby badge</p> 
+                                                               <p class='bottom-margin20'>In &quot;More&quot; you can see all your badges!</p> 
+                                                            <div id='checklist-grid'> 
+                                                               <input name="checkbox-week5-baby-c1" id="checkbox-week5-baby-c1" type='checkbox' onClick="CheckboxBabySelect(5);"> 
+                                                               <label for="checkbox-week5-baby-c1">How are you feeling? If you are still feeling blue call your Dr. and tell her how you feel.</label> 
+                                                               <input name="checkbox-week5-baby-c2" id="checkbox-week5-baby-c2" type='checkbox' onClick="CheckboxBabySelect2(5);"> 
+                                                               <label for="checkbox-week5-baby-c2">Talk to baby face-to-face. Baby can look at you and loves watching you</label> 
+                                                            </div> 
+                                                               <div class='star-badge-grid'> 
+                                                                  <div class='star-rating'> 
+                                                                      <span id='star1nb'>Star</span> 
+                                                                      <span id='star2nb'>Star</span> 
+                                                                      <span id='star3nb'>Star</span> 
+                                                                      <span id='star4nb'>Star</span> 
+                                                                      <span id='star5nb'>Star</span> 
+                                                                   </div> 
+                                                            <div class='timeline-grid-one txt-center' id='badgedivnb'> 
+                                                               <span id='badgespannb'>
+                                                                </span> 
+                                                                <span id='badgetextnb' class='badge-name'>
+                                                                </span>
+                                                                </div>
+                                                              </div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Baby Accordion Information Ends Here -->
+										
+							</div>
+						</div>
+                        <!--Content Section Ends Here-->
+                        
+		</div>
+				
+	</body>
+</html>
+

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Safe Sleep</string>
+		<key>Title</key>
+		<string>Baby Care</string>
+		<key>Page</key>
+		<string>safe-sleep.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>No TV for Baby</string>
+		<key>Title</key>
+		<string>Baby Care</string>
+		<key>Page</key>
+		<string>no-tv-baby.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Crying Baby</string>
+		<key>Title</key>
+		<string>Baby Care</string>
+		<key>Page</key>
+		<string>crying-baby.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Bathing Baby</string>
+		<key>Title</key>
+		<string>Baby Care</string>
+		<key>Page</key>
+		<string>bathing-baby.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Reading to Baby</string>
+		<key>Title</key>
+		<string>Baby Care</string>
+		<key>Page</key>
+		<string>reading-baby.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Bedtime Routine</string>
+		<key>Title</key>
+		<string>Baby Care</string>
+		<key>Page</key>
+		<string>bedtime-routine.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Vaccines</string>
+		<key>Title</key>
+		<string>Baby's Health &amp; Safety</string>
+		<key>Page</key>
+		<string>baby-vaccines.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Sun Safety</string>
+		<key>Title</key>
+		<string>Baby's Health &amp; Safety</string>
+		<key>Page</key>
+		<string>sun-safety.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Car Seat Safety</string>
+		<key>Title</key>
+		<string>Baby's Health &amp; Safety</string>
+		<key>Page</key>
+		<string>car-seat-safety.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Baby Walkers</string>
+		<key>Title</key>
+		<string>Baby's Health &amp; Safety</string>
+		<key>Page</key>
+		<string>baby-walkers.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Tips</string>
+		<key>Title</key>
+		<string>Teething</string>
+		<key>Page</key>
+		<string>tips.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>NamC</key>
+		<string>cavities</string>
+		<key>Title</key>
+		<string>Teething</string>
+		<key>Page</key>
+		<string>cavities.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Jaundice</string>
+		<key>Title</key>
+		<string>Issues &amp; Concerns</string>
+		<key>Page</key>
+		<string>jaundice.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Fever</string>
+		<key>Title</key>
+		<string>Issues &amp; Concerns</string>
+		<key>Page</key>
+		<string>fever.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Preemies Correct Age</string>
+		<key>Title</key>
+		<string>Issues &amp; Concerns</string>
+		<key>Page</key>
+		<string>preemies-correct-age.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Iron Deficiency</string>
+		<key>Title</key>
+		<string>Issues &amp; Concerns</string>
+		<key>Page</key>
+		<string>iron-deficiency.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>RSV</string>
+		<key>Title</key>
+		<string>Issues &amp; Concerns</string>
+		<key>Page</key>
+		<string>rsv.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Flu</string>
+		<key>Title</key>
+		<string>Issues &amp; Concerns</string>
+		<key>Page</key>
+		<string>flu.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Breastfeeding</string>
+		<key>Title</key>
+		<string>Feeding Baby</string>
+		<key>Page</key>
+		<string>breastfeeding.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>How Much</string>
+		<key>Title</key>
+		<string>Feeding Baby</string>
+		<key>Page</key>
+		<string>how-much.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Baby's Weight Bain</string>
+		<key>Title</key>
+		<string>Feeding Baby</string>
+		<key>Page</key>
+		<string>baby-weight-gain.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Starting Solids</string>
+		<key>Title</key>
+		<string>Feeding Baby</string>
+		<key>Page</key>
+		<string>starting-solids.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>First Foods</string>
+		<key>Title</key>
+		<string>Feeding Baby</string>
+		<key>Page</key>
+		<string>first-foods.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Self Feeding</string>
+		<key>Title</key>
+		<string>Feeding Baby</string>
+		<key>Page</key>
+		<string>self-feeding.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Baby Safety</string>
+		<key>Title</key>
+		<string>Hotlines</string>
+		<key>Page</key>
+		<string>baby-safety.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Help &amp; Support</string>
+		<key>Title</key>
+		<string>Hotlines</string>
+		<key>Page</key>
+		<string>baby-help-support.html</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Page</string>
+		<key>Name</key>
+		<string>Health</string>
+		<key>Title</key>
+		<string>Hotlines</string>
+		<key>Page</key>
+		<string>baby-health.html</string>
+	</dict>
+</array>
+</plist>

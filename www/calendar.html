@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/calendar.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<title>:: Text4baby :: Baby Calendar ::</title>
+		<!-- InstanceEndEditable -->
+		<link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css" />
+        <link rel="stylesheet" href="themes/css/t4b-style.css" />
+        <link rel="stylesheet" href="css/jquery-ui.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- InstanceBeginEditable name="head" -->
+        <!-- InstanceEndEditable -->
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery-ui.js"></script>
+		<script src="js/jquery.mobile-1.3.2.min.js"></script>
+        <script src="js/header-footer-fix.js"></script>
+        <script src="phonegap.js"></script>
+        <script src="js/calendar.js"></script>
+        <script src = "js/process.js"></script> 
+		<script src = "js/exec.js"></script> 
+        <script src = "js/formvalidations.js"></script>
+        <script src="js/analytics.js"></script>
+		<script src="js/pageinfo.js"></script>	 
+        <!--<script src="js/databaseoperation.js"></script>-->
+        <link href="css/mobiscroll.custom-2.12.0.min.css" rel="stylesheet" type="text/css" />
+		<script src="js/mobiscroll.custom-2.12.0.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+				$(function () {
+					//var curr = new Date().getFullYear();
+					var opt = {
+		
+					}
+		
+					opt.date = {preset : 'date'};
+			//opt.datetime = { preset : 'datetime', minDate: new Date(2012,3,10,9,22), maxDate: new Date(2014,7,30,15,44), stepMinute: 5  };
+			//opt.time = {preset : 'time'};
+			
+		
+					$('select.changes').bind('change', function() {
+						var demo = $('#demo').val();
+						$(".demos").hide();
+						if (!($("#demo_"+demo).length))
+							demo = 'default';
+		
+						$("#demo_" + demo).show();
+						$('#baby-appointment-date,#pregnancy-appointment-date').scroller('destroy').scroller($.extend(opt[$('#demo').val()], { theme: 'ios', mode: $('#mode').val(), display: 'bottom', lang: $('#language').val() , onCancel: function (valueText, inst) {
+                        $('#baby-appointment-date,#pregnancy-appointment-date').blur();
+                    }
+                    }));
+						
+					});
+		
+					$('#demo').trigger('change');
+				});
+			</script>
+</head>
+    
+	<body onload="showcalendar();">
+    <div class="ui-loader-background"> </div>
+	<div data-role="page" data-theme="a">
+            
+              <!--Baby Calendar  Home Page Header Section Starts Here-->
+            <div id="baby_calendar_home" style=" display : none;">
+            <div data-role="header" data-theme="a" data-position="fixed" id="header">
+				<!-- InstanceBeginEditable name="Back Button" --><div id="back-btn"></div><!-- InstanceEndEditable -->
+				<div class="logo"><img src="images/logo.png" alt="text4baby" width="96" height="21"></div>
+				<!-- InstanceBeginEditable name="Flip Button" --><div class="pregnancy-flip" id="pregnancy-flip"><a href="#" data-transition="flip" title="Pregnancy Calendar" onclick="displayflip('pregnancy-calendar');">Pregnancy</a></div><!-- InstanceEndEditable -->
+	  		</div>
+            </div>
+            <!--Baby Calendar  Home Page Header Section Ends Here-->
+
+            <!--Pregnancy Calendar  Home Page Header Section Starts Here-->
+            <div id="pregnancy_calendar_home" style=" display : none;">
+            <div data-role="header" data-theme="a" data-position="fixed" id="header">
+				<!-- InstanceBeginEditable name="Back Button" --><div id="back-btn-preg"></div><!-- InstanceEndEditable -->
+				<div class="logo"><img src="images/logo.png" alt="text4baby" width="96" height="21"></div>
+				<!-- InstanceBeginEditable name="Flip Button" --><div class="baby-flip" id="baby-flip"><a href="#" data-transition="flip" title="Baby Calendar" onclick="displayflip('baby-calendar');">Baby</a></div><!-- InstanceEndEditable -->
+	  		</div>
+            </div>
+            <!--Pregnancy Calendar  Home Page Header Section Ends Here-->
+            
+            <!--Content Section Starts Here-->
+			<div data-role="content" data-theme="a">
+            
+            <div id="timeline">
+            <div data-role="fieldcontain" style=" display: none;">   
+                  					    <input type="hidden" id="tType" value="page" />                                     	
+                                        <select name="demo" id="demo" class="changes">                                            
+                       						 <option value="date" >Date</option>
+                                        </select>
+                            </div>
+				<!-- InstanceBeginEditable name="Content Section" -->
+                <!-- Baby Calender Divs Starts here-->
+                <div id="baby-calendar" style=" display : none;">
+                <div class="responsive-banner calendar-banner"></div>
+                <div class="grid-container top-margin20">
+                <div id="baby_calendar">
+                <span class="add-info"></span><p id="baby_info"> Learn about recommended new baby and postpartum appointments.</p>
+                <span class="add-appointment"></span><p id="baby_appointment">Set up text message appointment reminders.</p>
+                <span class="add-checklist"></span><p id="baby_checklist">Find checklists to review before and during doctor visits.</p>
+                </div>
+                	<div data-role="collapsible-set" data-theme="a" data-content-theme="d" data-iconpos="right">
+                        <div data-role="collapsible" data-collapsed-icon="calendar-icon-four" data-expanded-icon="calendar-icon-four">
+                            <h3 onclick="FetchCalendarDataFromDB('4');">0 - 4 Months</h3>
+                            <div class="timeline-grid-one" id="baby1">
+                                <ul data-role="listview" id="calendar-grid" data-split-icon="arrow" data-inset="true" class="nbfirstaccordianlist">
+                                    
+                                </ul>
+                                
+                                
+                            </div>
+                        </div>
+                        <div data-role="collapsible" data-collapsed-icon="calendar-icon-five" data-expanded-icon="calendar-icon-five">
+                            <h3 onclick="FetchCalendarDataFromDB('5');">5 - 8 Months</h3>
+                            <div class="timeline-grid-one" id="baby2">
+                                
+                                <ul data-role="listview" id="calendar-grid" data-split-icon="arrow" data-split-theme="d" data-inset="true" class="nbsecaccordianlist">
+                                    
+                                </ul>
+                                
+                            </div>
+                        </div>
+                        <div data-role="collapsible" data-collapsed-icon="calendar-icon-six" data-expanded-icon="calendar-icon-six">
+                            <h3 onclick="FetchCalendarDataFromDB('6');">9 - 12 Months</h3>
+                            <div class="timeline-grid-one" id="baby3">
+                                
+                                <ul data-role="listview" id="calendar-grid" data-split-icon="arrow" data-split-theme="d" data-inset="true" class="nbthirdaccordianlist">
+                                    
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div id="baby-appointment" style=" display : none;">
+                <!--<div class="grid-container" id="prenatal-visit-grid">
+                	<h2 id="nbpage2h2"></h2>
+                	<p id="nbpage2p"></p>
+                	<ul data-role="listview" data-split-icon="arrow" data-split-theme="d" data-inset="true">
+                		<li>
+                    		<a href="#" rel="external" onclick="display('baby-add-appointment');">
+                        		<span class="add-appointment">Appointment</span>
+                            	<h2>Record Appointment</h2>
+                            	<p>Set Reminder</p>
+                        	</a>
+                    	</li>
+                    	<li>
+                    		<a href="#" rel="external" onclick="display('baby-add-checklist');">
+                        		<span class="add-checklist">Checklist</span>
+                            	<h2>Add a Checklist</h2>
+                        	</a>
+                    	</li>
+                    </ul>
+                </div>-->
+                </div>
+
+                <div id="baby-add-appointment" style=" display : none;">
+                 <div class="grid-container" id="appointment-grid">
+                	<h2><span class="add-appointment">Appointment</span>Set Appointment<br> Reminder</h2>
+                	<!--<p>Text4baby sends free appointment reminders via text message. Reminder texts will be sent three days before and the morning of the appointment.</p>-->
+                	<div class="pink-bg">
+                        <p>Text4baby sends free appointment reminders via text message. Enter your appointment information below to set up a text message reminder.</p>
+                    </div>
+                    <p>When is your appointment?</p>
+                    <div class="ui-field-contain">
+                    	<input name="baby-appointment-date" id="baby-appointment-date" class="appointment-fld-icon" placeholder="Appointment Date" value="" data-role="date" data-inline="true" type="text" readonly onchange="showdate('baby-appointment');">
+                    </div>
+                    <p>What is the appointment for?</p>
+                    <span class="password-info">(20 characters or less, please!)</span>
+                    <div class="ui-field-contain">
+     					<input name="baby-appointment-title" id="baby-appointment-title" class="appointment-title-icon" placeholder="Example: 3pm apt w Dr Parker" value="" type="text" maxlength="20">
+                    </div>
+                    <div class="ui-field-contain">
+                    	<input value="Save" type="submit" id="baby-appointment-save">
+                    </div>
+                    <p style="display:none" id="nbidhidden"></p>
+                    <p style="display:none" id="nbtypeidhidden"></p>
+                    <!--<p style="display:none" id="nbsubtypeidhidden"></p>-->
+                </div>
+                </div>
+
+                <div id="baby-add-checklist" style=" display : none;">
+                 <div class="grid-container" id="calendar-checklist-grid">
+                	<h2><span class="add-checklist">Checklist</span>Add a Checklist</h2>
+                	<p id="checklistdatababy"></p>
+                	<div id="checklist-grid" class="checklistfixedbaby">
+                    	<!--<input name="baby-checkbox-checklist-c1" id="baby-checkbox-checklist-c1" type="checkbox">
+                        <label for="baby-checkbox-checklist-c1">Make next doctor appointment for 1 week</label>-->
+                    </div>
+                    <div id="additional-checklist" class="checklistdynamicbaby">
+                    	<!--<input name="baby-checkbox-checklist-c3" id="baby-checkbox-checklist-c3" type="checkbox">
+                        <label for="baby-checkbox-checklist-c3">Dynamically Added Checklist</label>-->
+                    </div>
+                    <ul data-role="listview" data-split-icon="arrow" data-split-theme="d" data-inset="true">
+                    	<li>
+                    		<a href="#" rel="external" onclick="display('baby-checklist-item');">
+                            	<h2>Add a Checklist Item</h2>
+                        	</a>
+                    	</li>
+                    </ul>
+                    <p style="display:none" id="nbidchklist"></p>
+                    <p style="display:none" id="nbaidchklist"></p>
+                    <p style="display:none" id="nbtidchklist"></p>
+                    <p style="display:none" id="nbstidchklist"></p>
+                </div>
+                </div>
+
+                <div id="baby-checklist-item" style=" display : none;">
+                <div class="grid-container" id="calendar-checklist-grid">
+                	<h2><span class="add-checklist-item">Checklist</span>Add a Checklist Item</h2>
+                	<div class="ui-field-contain">
+                        <textarea cols="40" rows="15" placeholder="Start typing..." name="tr1-pv1-cl" id="tr1-pv1-cl" maxlength="50"></textarea>
+                    </div>
+                    <div class="ui-field-contain top-margin20">
+                    	<input value="Save" type="submit" id="baby-checklist-item-save">
+                    </div>
+                    <p style="display:none" id="babychecklistcount"></p>
+                </div>
+                </div>
+                <!-- Baby Calender Divs Ends here-->
+
+                <!-- Pregnancy Calender Divs Starts here-->
+                <div id="pregnancy-calendar" style=" display : none;">
+                <div class="responsive-banner calendar-banner-preg"></div>
+                <div class="grid-container top-margin20">
+                <div id="preg_calendar">
+                <span class="add-info"></span><p id="preg_info"> Learn about recommended prenatal appointments.</p>
+                <span class="add-appointment"></span><p id="preg_appointment">Set up text message appointment reminders.</p>
+                <span class="add-checklist"></span><p id="preg_checklist">Find checklists to review before and during doctor visits.</p>
+                </div>
+                	<div data-role="collapsible-set" data-theme="a" data-content-theme="d" data-iconpos="right">
+                        <div data-role="collapsible" data-collapsed-icon="calendar-icon-one" data-expanded-icon="calendar-icon-one">
+                            <h3 onclick="FetchCalendarDataFromDB('1');">Trimester One</h3>
+                            <div class="timeline-grid-one" id="preg1">
+                                <div class="timeline-block-one top-margin20">
+                                <p>Here are the appointments you should have during weeks 1-13.</p>
+                                	<!--<div class="timeline-block-one-pic"><img src="images/calendar/1trimester.jpg" alt="1st Trimester"></div>
+                                    <ul class="top-margin20">
+                                    	<li class="no-border">Weeks 1 - 13</li>
+                                    </ul>-->
+                                </div>
+                                <div id="pregfirstaccordian">
+                                <ul data-role="listview" id="calendar-grid" data-split-icon="arrow" data-inset="true" class="pregfirstaccordianlist">
+                                    
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-role="collapsible" data-collapsed-icon="calendar-icon-two" data-expanded-icon="calendar-icon-two">
+                            <h3 onclick="FetchCalendarDataFromDB('2');">Trimester Two</h3>
+                            <div class="timeline-grid-one" id="preg2">
+                                <div class="timeline-block-one top-margin20">
+                                <p> Here are the appointments you should have during weeks 14-27.</p>
+                                	<!--<div class="timeline-block-one-pic"><img src="images/calendar/2trimester.jpg" alt="2nd Trimester"></div>
+                                    <ul class="top-margin20">
+                                    	<li class="no-border">Weeks 14 - 27</li>
+                                    </ul>-->
+                                </div>
+                                
+                                <ul data-role="listview" id="calendar-grid" data-split-icon="arrow" data-split-theme="d" data-inset="true" class="pregsecaccordianlist">
+                                    
+                                </ul>
+                                
+                            </div>
+                        </div>
+                        <div data-role="collapsible" data-collapsed-icon="calendar-icon-three" data-expanded-icon="calendar-icon-three">
+                            <h3 onclick="FetchCalendarDataFromDB('3');">Trimester Three</h3>
+                            <div class="timeline-grid-one" id="preg3">
+                                <div class="timeline-block-one top-margin20">
+                                <p> Here are the appointments you should have during weeks 28-40.</p>
+                                	<!--<div class="timeline-block-one-pic"><img src="images/calendar/3trimester.jpg" alt="3rd Trimester"></div>
+                                    <ul class="top-margin20">
+                                    	<li class="no-border">Weeks 28 - 40</li>
+                                    </ul>-->
+                                </div>
+                                
+                                <ul data-role="listview" id="calendar-grid" data-split-icon="arrow" data-split-theme="d" data-inset="true" class="pregthirdaccordianlist">
+                                    
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div id="pregnancy-appointment" style=" display : none;">
+                <!--<div class="grid-container" id="prenatal-visit-grid">
+                	<h2 id="pregpage2h2"></h2>
+                	<p id="pregpage2p"></p>
+                	<ul data-role="listview" data-split-icon="arrow" data-split-theme="d" data-inset="true">
+                		<li>
+                    		<a href="#" rel="external" onclick="display('pregnancy-add-appointment');">
+                        		<span class="add-appointment">Appointment</span>
+                            	<h2>Record Appointment</h2>
+                            	<p>Set Reminder</p>
+                        	</a>
+                    	</li>
+                    	<li>
+                    		<a href="#" rel="external" onclick="display('pregnancy-add-checklist');">
+                        		<span class="add-checklist">Checklist</span>
+                            	<h2>Add a Checklist</h2>
+                        	</a>
+                    	</li>
+                    </ul>
+                </div>-->
+                </div>
+
+                <div id="pregnancy-add-appointment" style=" display : none;">
+                <div class="grid-container" id="appointment-grid">
+                	<h2><span class="add-appointment">Appointment</span>Set Appointment<br> Reminder</h2>
+                	<!--<p>Text4baby sends free appointment reminders via text message. Reminder texts will be sent three days before and the morning of the appointment.</p>-->
+                	<div class="pink-bg">
+                        <p>Text4baby sends free appointment reminders via text message. Enter your appointment information below to set up a text message reminder.</p>
+                    </div>
+                    <p>When is your appointment?</p>
+                    <div class="ui-field-contain">
+                    	<input name="pregnancy-appointment-date" id="pregnancy-appointment-date" class="appointment-fld-icon" placeholder="Appointment Date" value="" data-role="date" data-inline="true" type="text" readonly onchange="showdate('preg-appointment');">
+                    </div>
+                    <p>What is the appointment for?</p>
+                    <span class="password-info">(20 characters or less, please!)</span>
+                    <div class="ui-field-contain">
+     					<input name="pregnancy-appointment-title" id="pregnancy-appointment-title" class="appointment-title-icon" placeholder="Example: 3pm apt w Dr Parker" value="" type="text" maxlength="20">
+                    </div>
+                    <div class="ui-field-contain">
+                    	<input value="Save" type="submit" id="pregnancy-appointment-save">
+                    </div>
+                    <p style="display:none" id="idhidden"></p>
+                   <p style="display:none" id="typeidhidden"></p>
+                     <!--<p style="display:none" id="subtypeidhidden"></p>-->
+                </div>
+                </div>
+
+                <div id="pregnancy-add-checklist" style=" display : none;">
+                 <div class="grid-container" id="calendar-checklist-grid">
+                	<h2><span class="add-checklist">Checklist</span>Add a Checklist</h2>
+                	<p id="checklistdata"></p>
+                	<div id="checklist-grid" class="checklistfixed">
+                    	<!--<input name="pregnancy-add-checklist-c1" id="pregnancy-add-checklist-c1" type="checkbox">
+                        <label for="pregnancy-add-checklist-c1">Schedule next prenatal appointment</label>
+                        <input name="pregnancy-add-checklist-c2" id="pregnancy-add-checklist-c2" type="checkbox">
+                        <label for="pregnancy-add-checklist-c2">Find a provider for the rest of pregnancy and delivery</label>-->
+                    </div>
+                    <div id="additional-checklist" class="checklistdynamic">
+                    	<!--<input name="pregnancy-add-checklist-c3" id="pregnancy-add-checklist-c3" type="checkbox">
+                        <label for="pregnancy-add-checklist-c3">Dynamically Added Checklist</label>-->
+                    </div>
+                    <ul data-role="listview" data-split-icon="arrow" data-split-theme="d" data-inset="true">
+                    	<li>
+                    		<a href="#" rel="external" onclick="display('pregnancy-checklist-item');">
+                            	<h2>Add a Checklist Item</h2>
+                        	</a>
+                    	</li>
+                    </ul>
+                    <p style="display:none" id="idchklist"></p>
+                    <p style="display:none" id="aidchklist"></p>
+                    <p style="display:none" id="tidchklist"></p>
+                    <p style="display:none" id="stidchklist"></p>
+                </div>
+                </div>
+
+                <div id="pregnancy-checklist-item" style=" display : none;">
+                 <div class="grid-container" id="calendar-checklist-grid">
+                	<h2><span class="add-checklist-item">Checklist</span>Add a Checklist Item</h2>
+                	<div class="ui-field-contain">
+                        <textarea cols="40" rows="15" placeholder="Start typing..." name="tr1-pv1-cl" id="Textarea1" maxlength="50"></textarea>
+                    </div>
+                    <div class="ui-field-contain top-margin20">
+                    	<input value="Save" type="submit" id="pregnancy-checklist-item-save">
+                    </div>
+                    <p style="display:none" id="pregchecklistcount"></p>
+                </div>
+                </div>
+                <!-- Pregnancy Calender Divs Ends here-->
+				<!-- InstanceEndEditable -->	
+			</div>
+            </div>
+            <!--Content Section Ends Here-->
+            
+            <!--Footer Section Starts Here-->
+            <div data-role="footer" data-theme="a" data-position="fixed" id="footer">
+                <div data-role="navbar" data-grid="c">
+                    <ul>
+                        <li><a href="javascript:void(0);" onclick="timelinePage()" id="timeline-icon" rel="external" data-icon="custom">Timeline</a></li>
+                        <li><a href="calendar.html" id="calender-icon" rel="external" class="active" data-icon="custom">Appts</a></li>
+                        <li><a href="topics.html" id="topics-icon" rel="external" data-icon="custom">Topics</a></li>
+                        <li><a href="more.html" id="more-icon" rel="external" data-icon="custom">More</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--Footer Section Ends Here-->
+            
+		</div>
+        
+	</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,164 @@
+﻿
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+		<title>:: Text4baby :: Timeline ::</title>
+		<link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css" />		
+	    <link rel="stylesheet" href="themes/css/t4b-style.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body onload="RegisterPagehit('timeline/pregnancy/week-36');">
+    	<div class="ui-loader-background"> </div>
+		<div data-role="page" data-theme="a">
+
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery.mobile-1.3.2.min.js"></script>		
+	 <script src="js/nativeeventhandler.js"></script>
+		<script src = "js/process.js"></script> 
+		<script src = "js/exec.js"></script> 		
+		<script src="js/analytics.js"></script>
+		<script src="js/pageinfo.js"></script>	
+        
+         <!--<script>
+             $(document).on("expand", "[data-role=collapsible]", function () {
+                 var topoffset = 50;
+                 var position = $(this).offset().top - topoffset;
+                 window.localStorage.setItem("to_position", position);
+                 $.mobile.silentScroll(position);
+             });
+            </script>-->
+
+         <script>
+             function toggleMoreInfo(val) {
+				 document.getElementById("textid-4").style.display = "block";
+                 var elementId = "#cf2 img.top" + (val);
+                 //toggleMoveInFront();
+                 $(elementId).toggleClass("transparent");
+             }
+         </script>
+
+                        <!--Content Section Starts Here-->
+                        <div data-role="content" data-theme="a" id="timeline-pregnancy-content">  
+								<div id="timeline2">						
+                                                       <div id='cf2' class='banner'>
+                                                       <span class='banner-text' id='textid-4' style='display: none;'>
+                                                         <h5>Mom this Week</h5>
+                                                         <p>Your due date is just four weeks away! It&#39;s normal to feel nervous and have questions about the birth. Ask your Dr. or midwife and talk to your partner and other moms.</p>
+                                                       </span>
+                                                   <img class='top36' src='images/timeline/pregnancy/pregnancy-week36.jpg' onClick='toggleMoreInfo(36);' />							
+												</div>   
+												
+										<!-- Pregnancy Accordion Information Starts Here -->
+										<div id="pregnancy_week_info" class="slide_wrapper">
+											<div data-role="collapsible-set" data-theme="a" data-content-theme="d" data-iconpos="right">
+													<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="timeline-icon-one" data-expanded-icon="timeline-icon-one" id="preg1">
+														<h3>How Big is Baby?</h3>
+														<div class="timeline-grid-pregnancy-one">
+                                                            <h2 class='margin-spacer txt-center'>Your baby is the size of a butternut squash!</h2>
+                                                          <div class='timeline-block-one'> 
+                                                           <div class='timeline-block-one-pic'>
+                                                            <img src="images/timeline/pregnancy-tab1/week36.jpg">
+                                                           </div> 
+                                                            <ul> 
+                                                            <li>6 lbs</li> 
+                                                            <li>18.5 - 20 inches</li> 
+                                                            </ul>  
+                                                          </div> 
+                                                           <p>At week 36, baby&#39;s head is still soft. This will make birth easier and her head will grow as baby&#39;s brain grows.  Baby is also getting chubbier!</p>
+														</div>
+													</div>
+													<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="timeline-icon-two" data-expanded-icon="timeline-icon-two" id="preg2">
+														<h3 onclick="ShowResult(36);">How You Compare</h3>
+														<div class="timeline-grid-pregnancy-two">
+														  <div id="poll-pregnancy-quiz36"> 
+                                                            <h2 class='txt-center'>Take our poll and see what other Text4baby moms have to say!</h2> 
+                                                              <div class='radio-grid'> 
+                                                                <p class='survey-spacer title-fontSize'>During labor I plan to deliver:</p> 
+                                                                   <label for="radio-choice-pregnancy36-a">With an epidural</label> 
+                                                                   <input name="radio-choice-pregnancy36" id="radio-choice-pregnancy36-a" value='on' checked='checked' type='radio'> 
+                                                                   <label for="radio-choice-pregnancy36-b">Without an epidural</label> 
+                                                                   <input name="radio-choice-pregnancy36" id="radio-choice-pregnancy36-b" value='off' type='radio'> 
+                                                                   <label for="radio-choice-pregnancy36-c">I don&#39;t know yet</label> 
+                                                                   <input name="radio-choice-pregnancy36" id="radio-choice-pregnancy36-c" value='other' type='radio'> 
+                                                              </div> 
+                                                           <div class='ui-field-contain'> 
+                                                             <input id='submit-radio' value='Submit' type='submit' onClick='PregAccorTwo(36)'> 
+                                                           </div> 
+                                                         </div> 
+                                                        <div id="poll-pregnancy-result36" style='display: none;'> 
+                                                          <p class='survey-spacer'>It&#39;s important to plan for labor. Think about what is best for you and make sure to share those plans with your doctor or midwife.</p> 
+                                                            <div class='graph-shadow'> 
+                                                              <div class='custom-graph-grid'> 
+                                                                   <h3 class='graph-title'>Other Text4baby Moms Said:</h3>
+                                                                      <div class='graph' style='padding : 0 0 0 9%;'>
+                                                                         <div class='graph-block'>
+                                                                             <div class='graph-bar-value-grid'> 
+                                                                                <div class='graph-bar1-value'>55%</div> 
+                                                                                <div class='graph-bar2-value'>41%</div> 
+                                                                                <div class='graph-bar3-value'>4%</div> 
+                                                                              </div> 
+                                                                         <div class='bar1 pregnancy-week36-bar-1'>
+                                                                    </div> 
+                                                              <div class='bar2 pregnancy-week36-bar-2'>
+                                                         </div> 
+                                                            <div class='bar3 pregnancy-week36-bar-3'>
+                                                            </div> 
+                                                            <div class='labels'>
+                                                              <ul> 
+                                                                  <li class='bar-one'>Epidural</li> 
+                                                                  <li class='bar-two'>No epidural</li> 
+                                                                  <li class='bar-three'>Don&prime;t know</li> 
+                                                              </ul>
+                                                            </div>
+                                                          </div>
+                                                        </div> 
+                                                     </div> 
+                                                  </div> 
+                                              </div>	
+					                   </div>
+													</div>
+													<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="timeline-icon-three" data-expanded-icon="timeline-icon-three" id="preg3">
+														<h3 onclick="ShowCheckList(36);">To-Dos This Week</h3>
+														<div class="timeline-grid-pregnancy-three">
+														  <h2 class='txt-center'>Weekly Checklist</h2> 
+                                                            <p class='bottom-margin20'>Get a star every time you complete a total of three tasks. When you collect 5 stars, you'll get a Text4baby badge</p> 
+                                                            <p class='bottom-margin20'>In &quot;More&quot; you can see all your badges!</p> 
+                                                               <div id='checklist-grid'> 
+                                                                 <input name="checkbox-week36-pregnancy-c1" id="checkbox-week36-pregnancy-c1" type='checkbox' onClick='CheckboxSelect(36)'> 
+                                                                 <label for="checkbox-week36-pregnancy-c1">Go to your prenatal visit this week</label> 
+                                                                 <input name="checkbox-week36-pregnancy-c2" id="checkbox-week36-pregnancy-c2" type='checkbox' onClick='CheckboxSelect2(36)'> 
+                                                                 <label for="checkbox-week36-pregnancy-c2">Call the Dr. or midwife if your baby is moving less than normal</label> 
+                                                               </div> 
+                                                            <div class='star-badge-grid'> 
+                                                               <div class='star-rating'> 
+                                                                  <span id='star1'>Star</span> 
+                                                                  <span id='star2'>Star</span> 
+                                                                  <span id='star3'>Star</span> 
+                                                                  <span id='star4'>Star</span> 
+                                                                  <span id='star5'>Star</span> 
+                                                              </div> 
+                                                           <div class='timeline-grid-one txt-center' id='badgediv'> 
+                                                                  <span id='badgespan' >
+                                                                  </span> 
+                                                                  <span id='badgetext' class='badge-name'>
+                                                                  </span>
+                                                           </div>
+                                                        </div>	
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- Pregnancy Accordion Information Ends Here -->
+										  <!--Pregnancy Section Ends Here-->							
+							</div>
+						</div>
+                        <!--Content Section Ends Here-->   
+		</div>
+
+	</body>
+</html>
+
+

@@ -1,0 +1,164 @@
+﻿
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+		<title>:: Text4baby :: Timeline ::</title>
+		<link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css" />		
+	    <link rel="stylesheet" href="themes/css/t4b-style.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body onload="RegisterPagehit('timeline/pregnancy/week-30');">
+    	<div class="ui-loader-background"> </div>
+		<div data-role="page" data-theme="a">
+
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery.mobile-1.3.2.min.js"></script>		
+	 <script src="js/nativeeventhandler.js"></script>
+		<script src = "js/process.js"></script> 
+		<script src = "js/exec.js"></script> 		
+		<script src="js/analytics.js"></script>
+		<script src="js/pageinfo.js"></script>	
+        
+         <!--<script>
+             $(document).on("expand", "[data-role=collapsible]", function () {
+                 var topoffset = 50;
+                 var position = $(this).offset().top - topoffset;
+                 window.localStorage.setItem("to_position", position);
+                 $.mobile.silentScroll(position);
+             });
+            </script>-->
+
+         <script>
+             function toggleMoreInfo(val) {
+				 document.getElementById("textid-4").style.display = "block";
+                 var elementId = "#cf2 img.top" + (val);
+                 //toggleMoveInFront();
+                 $(elementId).toggleClass("transparent");
+             }
+         </script>
+
+                        <!--Content Section Starts Here-->
+                        <div data-role="content" data-theme="a" id="timeline-pregnancy-content">  
+								<div id="timeline2">						
+                                                       <div id='cf2' class='banner'>
+                                                       <span class='banner-text' id='textid-4' style='display: none;'>
+                                                         <h5>Mom this Week</h5>
+                                                         <p>If you work, you might want to take time off after baby. Many employers are required to offer unpaid leave by the Family and Medical Leave Act, and some states have passed laws for paid family leave. Check out: www.text4baby.org/paidleave.</p>
+                                                       </span>
+                                                   <img class='top30' src='images/timeline/pregnancy/pregnancy-week30.jpg' onClick='toggleMoreInfo(30);' />							
+												</div>   
+												
+										<!-- Pregnancy Accordion Information Starts Here -->
+										<div id="pregnancy_week_info" class="slide_wrapper">
+											<div data-role="collapsible-set" data-theme="a" data-content-theme="d" data-iconpos="right">
+													<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="timeline-icon-one" data-expanded-icon="timeline-icon-one" id="preg1">
+														<h3>How Big is Baby?</h3>
+														<div class="timeline-grid-pregnancy-one">
+                                                            <h2 class='margin-spacer txt-center'>Your baby is the size of a pineapple!</h2>
+                                                          <div class='timeline-block-one'> 
+                                                           <div class='timeline-block-one-pic'>
+                                                            <img src="images/timeline/pregnancy-tab1/week30.jpg">
+                                                           </div> 
+                                                            <ul> 
+                                                            <li>2.5 - 3  lbs</li> 
+                                                            <li>15 - 17 inches</li> 
+                                                            </ul>  
+                                                          </div> 
+                                                           <p>Baby is still practicing sucking and swallowing. This will prepare baby to eat when she is born. Baby is also getting chubby now!</p>
+														</div>
+													</div>
+													<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="timeline-icon-two" data-expanded-icon="timeline-icon-two" id="preg2">
+														<h3 onclick="ShowResult(30);">How You Compare</h3>
+														<div class="timeline-grid-pregnancy-two">
+														  <div id="poll-pregnancy-quiz30"> 
+                                                            <h2 class='txt-center'>Take our poll and see what other Text4baby moms have to say!</h2> 
+                                                              <div class='radio-grid'> 
+                                                                <p class='survey-spacer title-fontSize'>The toughest part of pregnancy is the:</p> 
+                                                                   <label for="radio-choice-pregnancy30-a">Morning sickness</label> 
+                                                                   <input name="radio-choice-pregnancy30" id="radio-choice-pregnancy30-a" value='on' checked='checked' type='radio'> 
+                                                                   <label for="radio-choice-pregnancy30-b">Extra weight</label> 
+                                                                   <input name="radio-choice-pregnancy30" id="radio-choice-pregnancy30-b" value='off' type='radio'> 
+                                                                   <label for="radio-choice-pregnancy30-c">Hormones</label> 
+                                                                   <input name="radio-choice-pregnancy30" id="radio-choice-pregnancy30-c" value='other' type='radio'> 
+                                                              </div> 
+                                                           <div class='ui-field-contain'> 
+                                                             <input id='submit-radio' value='Submit' type='submit' onClick='PregAccorTwo(30)'> 
+                                                           </div> 
+                                                         </div> 
+                                                        <div id="poll-pregnancy-result30" style='display: none;'> 
+                                                          <p class='survey-spacer'>There are many things that are tough about pregnancy. Hang in there! You are almost through it and the reward of a new baby makes it all worth it.</p> 
+                                                            <div class='graph-shadow'> 
+                                                              <div class='custom-graph-grid'> 
+                                                                   <h3 class='graph-title'>Other Text4baby Moms Said:</h3>
+                                                                      <div class='graph' style='padding : 0 0 0 4%;'>
+                                                                         <div class='graph-block'>
+                                                                             <div class='graph-bar-value-grid'> 
+                                                                                <div class='graph-bar1-value'>45%</div> 
+                                                                                <div class='graph-bar2-value'>25%</div> 
+                                                                                <div class='graph-bar3-value'>30%</div> 
+                                                                              </div> 
+                                                                         <div class='bar1 pregnancy-week30-bar-1'>
+                                                                    </div> 
+                                                              <div class='bar2 pregnancy-week30-bar-2'>
+                                                         </div> 
+                                                            <div class='bar3 pregnancy-week30-bar-3'>
+                                                            </div> 
+                                                            <div class='labels'>
+                                                              <ul> 
+                                                                  <li class='bar-one'>Morning sickness</li> 
+                                                                  <li class='bar-two'>Extra weight</li> 
+                                                                  <li class='bar-three'>Hormones</li> 
+                                                              </ul>
+                                                            </div>
+                                                          </div>
+                                                        </div> 
+                                                     </div> 
+                                                  </div> 
+                                              </div>	
+					                   </div>
+													</div>
+													<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="timeline-icon-three" data-expanded-icon="timeline-icon-three" id="preg3">
+														<h3 onclick="ShowCheckList(30);">To-Dos This Week</h3>
+														<div class="timeline-grid-pregnancy-three">
+														  <h2 class='txt-center'>Weekly Checklist</h2> 
+                                                            <p class='bottom-margin20'>Get a star every time you complete a total of three tasks. When you collect 5 stars, you'll get a Text4baby badge</p> 
+                                                            <p class='bottom-margin20'>In &quot;More&quot; you can see all your badges!</p> 
+                                                               <div id='checklist-grid'> 
+                                                                 <input name="checkbox-week30-pregnancy-c1" id="checkbox-week30-pregnancy-c1" type='checkbox' onClick='CheckboxSelect(30)'> 
+                                                                 <label for="checkbox-week30-pregnancy-c1">Learn about and talk to your Dr. or midwife about your wishes for baby&#39;s birth</label> 
+                                                                 <input name="checkbox-week30-pregnancy-c2" id="checkbox-week30-pregnancy-c2" type='checkbox' onClick='CheckboxSelect2(30)'> 
+                                                                 <label for="checkbox-week30-pregnancy-c2">Learn about pain management options during birth</label> 
+                                                               </div> 
+                                                            <div class='star-badge-grid'> 
+                                                               <div class='star-rating'> 
+                                                                  <span id='star1'>Star</span> 
+                                                                  <span id='star2'>Star</span> 
+                                                                  <span id='star3'>Star</span> 
+                                                                  <span id='star4'>Star</span> 
+                                                                  <span id='star5'>Star</span> 
+                                                              </div> 
+                                                           <div class='timeline-grid-one txt-center' id='badgediv'> 
+                                                                  <span id='badgespan' >
+                                                                  </span> 
+                                                                  <span id='badgetext' class='badge-name'>
+                                                                  </span>
+                                                           </div>
+                                                        </div>	
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- Pregnancy Accordion Information Ends Here -->
+										  <!--Pregnancy Section Ends Here-->							
+							</div>
+						</div>
+                        <!--Content Section Ends Here-->   
+		</div>
+
+	</body>
+</html>
+
+

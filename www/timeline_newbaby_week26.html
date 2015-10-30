@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+		<title>:: Text4baby :: Timeline ::</title>
+		<link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css" />		
+	    <link rel="stylesheet" href="themes/css/t4b-style.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body onload="RegisterPagehit('timeline/baby/week-26');">
+    	<div class="ui-loader-background"> </div>
+		<div data-role="page" data-theme="a">
+        
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery.mobile-1.3.2.min.js"></script>	
+         <script src="js/nativeeventhandler.js"></script>
+		<script src = "js/process.js"></script> 
+		<script src = "js/exec.js"></script> 		
+		<script src="js/analytics.js"></script>
+		<script src="js/pageinfo.js"></script>	
+
+         <!--<script>
+             $(document).on("expand", "[data-role=collapsible]", function () {
+                 var topoffset = 50;
+                 var position = $(this).offset().top - topoffset;
+                 window.localStorage.setItem("to_position", position);
+                 $.mobile.silentScroll(position);
+             });
+            </script>-->
+
+         <script>
+             function toggleMoreInfo(val) {
+				 document.getElementById("textid-4").style.display = "block";
+                 var elementId = "#cf2 img.top" + (val);
+                 //toggleMoveInFront();
+                 $(elementId).toggleClass("transparent");
+             }
+         </script>
+                          
+                        <!--Content Section Starts Here-->
+                        <div data-role="content" data-theme="a" id="timeline-pregnancy-content">  
+								<div id="timeline2">						
+                                                       <div id='cf2' class='banner'>
+                                                         <span class='banner-text' id='textid-4' style='display: none;'>
+                                                         <h5>Mom this Week</h5>
+                                                         <p>Are you still eating well, mom? Make sure to eat breakfast every day. You may not have much time, but your body needs the energy (especially when you&#39;re lacking sleep!). Eggs, yogurt, fruit, and oatmeal are healthy options to keep you full.</p>
+                                                         </span>
+                                                       <img class='top26' src='images/timeline/baby/baby-week26.jpg' onClick='toggleMoreInfo(26);' />						
+												</div>
+																	
+										<!-- Baby Accordion Information Starts Here -->
+										<div id="baby_week_info" class="slide_wrapper">
+												<div data-role="collapsible-set" data-theme="a" data-content-theme="d" data-iconpos="right">
+													<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="timeline-icon-four" data-expanded-icon="timeline-icon-four" id="baby1">
+														<h3>Baby's Development</h3>
+														<div class="timeline-grid-baby-one">
+															<div class='timeline-block-one top-margin20'> 
+                                                            <div class='timeline-block-one-pic'>
+                                                            <img src="images/timeline/baby-tab1/week25-28.jpg" alt=''>
+                                                            </div> 
+                                                            <ul class='top-margin20'> 
+                                                             <li class='no-border'>Baby at 6 Months</li> 
+                                                            </ul> 
+                                                            </div> 
+                                                            <p>By 6 months your baby has almost doubled in weight since birth. At this point, your baby&#39;s growth will start to slow down. You can start to feed your baby solid foods. Introduce one food at a time, waiting a few days between new foods to find out if baby has any allergic reactions. Give baby soft and small bites. Continue to breastfeed and bottle feed, as necessary.</p>
+														</div>
+													</div>
+													<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="timeline-icon-two" data-expanded-icon="timeline-icon-two" id="baby2">
+														<h3 onclick="ShowResultBaby(26);">How You Compare</h3>
+														<div class="timeline-grid-baby-two">
+															<div id="poll-baby-quiz26"> 
+                                                                <h2 class='txt-center'>Take our poll and see what other Text4baby moms have to say!</h2> 
+                                                                <div class='radio-grid'> 
+                                                                   <p class='survey-spacer title-fontSize'>The craziest baby poops originate from:</p> 
+                                                                      <label for="radio-choice-baby-poll26-a">Breastfeeding</label> 
+                                                                      <input name="radio-choice-baby-poll26" id="radio-choice-baby-poll26-a" value='on' checked='checked' type='radio'> 
+                                                                      <label for="radio-choice-baby-poll26-b">Formula</label> 
+                                                                      <input name="radio-choice-baby-poll26" id="radio-choice-baby-poll26-b" value='off' type='radio'> 
+                                                                      <label for="radio-choice-baby-poll26-c">Solid foods</label> 
+                                                                      <input name="radio-choice-baby-poll26" id="radio-choice-baby-poll26-c" value='other' type='radio'> 
+                                                                </div> 
+                                                              <div class='ui-field-contain'> 
+                                                                 <input id='submit-radio' value='Submit' type='submit' onClick="NewBabyAccorTwo(26)"> 
+                                                              </div> 
+                                                            </div> 
+                                                              <div id="poll-baby-result26" style='display: none;'> 
+                                                                 <p class='survey-spacer'>Isn&#39;t it crazy how different baby&#39;s poop is from breastfeeding to formula to solid foods?</p> 
+                                                                    <div class='graph-shadow'> 
+                                                                       <div class='custom-graph-grid'> 
+                                                                          <h3 class='graph-title'>Other Text4baby Moms Said:</h3>
+                                                                          <div class='graph' style='padding: 0 0 0 7%;'>
+                                                                          <div class='graph-block'> <div class='graph-bar-value-grid'> 
+                                                                          <div class='graph-bar1-value'>38%</div> 
+                                                                          <div class='graph-bar2-value'>40%</div> 
+                                                                          <div class='graph-bar3-value'>22%</div> 
+                                                                       </div>
+                                                                <div class='bar1 baby-week26-bar-1'>
+                                                                </div> 
+                                                                <div class='bar2 baby-week26-bar-2'>
+                                                                </div> 
+                                                                <div class='bar3 baby-week26-bar-3'>
+                                                                </div>  
+                                                             <div class='labels'>
+                                                                <ul> 
+                                                                     <li class='bar-one'>Breastfeeding</li> 
+                                                                     <li class='bar-two'>Formula</li> 
+                                                                     <li class='bar-three'>Solid foods</li> 
+                                                                </ul>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                 </div> 
+                                           </div> 
+                                   </div>
+							                         </div>
+													</div>
+													<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="timeline-icon-three" data-expanded-icon="timeline-icon-three" id="baby3">
+														<h3 onclick="ShowCheckListBaby(26);">To-Dos This Week</h3>
+														<div class="timeline-grid-baby-three">
+															<h2 class='txt-center'>Weekly Checklist</h2> 
+                                                               <p class='bottom-margin20'>Get a star every time you complete a total of three tasks. When you collect 5 stars, you'll get a Text4baby badge</p> 
+                                                               <p class='bottom-margin20'>In &quot;More&quot; you can see all your badges!</p> 
+                                                            <div id='checklist-grid'> 
+                                                               <input name="checkbox-week26-baby-c1" id="checkbox-week26-baby-c1" type='checkbox' onClick="CheckboxBabySelect(26);"> 
+                                                               <label for="checkbox-week26-baby-c1">Don&#39;t stop now! Learn about the benefits of breastfeeding until baby is age 1</label> 
+                                                               <input name="checkbox-week26-baby-c2" id="checkbox-week26-baby-c2" type='checkbox' onClick="CheckboxBabySelect2(26);"> 
+                                                               <label for="checkbox-week26-baby-c2">Get baby a mirror and see if baby likes to look at her/himself in the mirror</label> 
+                                                            </div> 
+                                                               <div class='star-badge-grid'> 
+                                                                  <div class='star-rating'> 
+                                                                      <span id='star1nb'>Star</span> 
+                                                                      <span id='star2nb'>Star</span> 
+                                                                      <span id='star3nb'>Star</span> 
+                                                                      <span id='star4nb'>Star</span> 
+                                                                      <span id='star5nb'>Star</span> 
+                                                                   </div> 
+                                                            <div class='timeline-grid-one txt-center' id='badgedivnb'> 
+                                                               <span id='badgespannb'>
+                                                                </span> 
+                                                                <span id='badgetextnb' class='badge-name'>
+                                                                </span>
+                                                                </div>
+                                                              </div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Baby Accordion Information Ends Here -->
+										
+							</div>
+						</div>
+                        <!--Content Section Ends Here-->
+                        
+		</div>
+				
+	</body>
+</html>
+

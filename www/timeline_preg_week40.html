@@ -1,0 +1,164 @@
+﻿
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+		<title>:: Text4baby :: Timeline ::</title>
+		<link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css" />		
+	    <link rel="stylesheet" href="themes/css/t4b-style.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body onload="RegisterPagehit('timeline/pregnancy/week-40');">
+    	<div class="ui-loader-background"> </div>
+		<div data-role="page" data-theme="a">
+
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery.mobile-1.3.2.min.js"></script>		
+	 <script src="js/nativeeventhandler.js"></script>
+		<script src = "js/process.js"></script> 
+		<script src = "js/exec.js"></script> 		
+		<script src="js/analytics.js"></script>
+		<script src="js/pageinfo.js"></script>	
+        
+         <!--<script>
+             $(document).on("expand", "[data-role=collapsible]", function () {
+                 var topoffset = 50;
+                 var position = $(this).offset().top - topoffset;
+                 window.localStorage.setItem("to_position", position);
+                 $.mobile.silentScroll(position);
+             });
+            </script>-->
+
+         <script>
+             function toggleMoreInfo(val) {
+				 document.getElementById("textid-4").style.display = "block";
+                 var elementId = "#cf2 img.top" + (val);
+                 //toggleMoveInFront();
+                 $(elementId).toggleClass("transparent");
+             }
+         </script>
+
+                        <!--Content Section Starts Here-->
+                        <div data-role="content" data-theme="a" id="timeline-pregnancy-content">  
+								<div id="timeline2">						
+                                                       <div id='cf2' class='banner'>
+                                                       <span class='banner-text' id='textid-4' style='display: none;'>
+                                                         <h5>Mom this Week</h5>
+                                                         <p>Congratulations! You made it to 40 weeks. Half of pregnant women go past their due date. Most women don&#39;t actually have their water break before the hospital, but if you do feel a leak or a trickle, call your provider.</p>
+                                                       </span>
+                                                   <img class='top40' src='images/timeline/pregnancy/pregnancy-week40.jpg' onClick='toggleMoreInfo(40);' />							
+												</div>   
+												
+										<!-- Pregnancy Accordion Information Starts Here -->
+										<div id="pregnancy_week_info" class="slide_wrapper">
+											<div data-role="collapsible-set" data-theme="a" data-content-theme="d" data-iconpos="right">
+													<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="timeline-icon-one" data-expanded-icon="timeline-icon-one" id="preg1">
+														<h3>How Big is Baby?</h3>
+														<div class="timeline-grid-pregnancy-one">
+                                                            <h2 class='margin-spacer txt-center'>Your baby is the size of a small watermelon!</h2>
+                                                          <div class='timeline-block-one'> 
+                                                           <div class='timeline-block-one-pic'>
+                                                            <img src="images/timeline/pregnancy-tab1/week40.jpg">
+                                                           </div> 
+                                                            <ul> 
+                                                            <li>7 - 8 lbs</li> 
+                                                            <li>21 inches</li> 
+                                                            </ul>  
+                                                          </div> 
+                                                           <p>The fine hair, Lanugo, may be completely gone by now. Your baby is fully developed and is getting ready for birth, if you haven&#39;t given birth already! Congratulations!</p>
+														</div>
+													</div>
+													<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="timeline-icon-two" data-expanded-icon="timeline-icon-two" id="preg2">
+														<h3 onclick="ShowResult(40);">How You Compare</h3>
+														<div class="timeline-grid-pregnancy-two">
+														  <div id="poll-pregnancy-quiz40"> 
+                                                            <h2 class='txt-center'>Take our poll and see what other Text4baby moms have to say!</h2> 
+                                                              <div class='radio-grid'> 
+                                                                <p class='survey-spacer title-fontSize'>Congratulations! You&#39;ve made it 40 weeks. How do you feel?</p> 
+                                                                   <label for="radio-choice-pregnancy40-a">I&#39;ll miss being pregnant</label> 
+                                                                   <input name="radio-choice-pregnancy40" id="radio-choice-pregnancy40-a" value='on' checked='checked' type='radio'> 
+                                                                   <label for="radio-choice-pregnancy40-b">Get this baby out of me!</label> 
+                                                                   <input name="radio-choice-pregnancy40" id="radio-choice-pregnancy40-b" value='off' type='radio'> 
+                                                                   <label for="radio-choice-pregnancy40-c">Ready to meet my child</label> 
+                                                                   <input name="radio-choice-pregnancy40" id="radio-choice-pregnancy40-c" value='other' type='radio'> 
+                                                              </div> 
+                                                           <div class='ui-field-contain'> 
+                                                             <input id='submit-radio' value='Submit' type='submit' onClick='PregAccorTwo(40)'> 
+                                                           </div> 
+                                                         </div> 
+                                                        <div id="poll-pregnancy-result40" style='display: none;'> 
+                                                          <p class='survey-spacer'>At this stage in the game, all of these reactions are normal. You&#39;re almost there! Keep it up mom!</p> 
+                                                            <div class='graph-shadow'> 
+                                                              <div class='custom-graph-grid'> 
+                                                                   <h3 class='graph-title'>Other Text4baby Moms Said:</h3>
+                                                                      <div class='graph' style='padding : 0 0 0 0;'>
+                                                                         <div class='graph-block'>
+                                                                             <div class='graph-bar-value-grid'> 
+                                                                                <div class='graph-bar1-value'>4%</div> 
+                                                                                <div class='graph-bar2-value'>66%</div> 
+                                                                                <div class='graph-bar3-value'>30%</div> 
+                                                                              </div> 
+                                                                         <div class='bar1 pregnancy-week40-bar-1'>
+                                                                    </div> 
+                                                              <div class='bar2 pregnancy-week40-bar-2'>
+                                                         </div> 
+                                                            <div class='bar3 pregnancy-week40-bar-3'>
+                                                            </div> 
+                                                            <div class='labels'>
+                                                              <ul> 
+                                                                  <li class='bar-one'>Miss pregnancy</li> 
+                                                                  <li class='bar-two'>Get baby out</li> 
+                                                                  <li class='bar-three'>Ready to meet baby</li> 
+                                                              </ul>
+                                                            </div>
+                                                          </div>
+                                                        </div> 
+                                                     </div> 
+                                                  </div> 
+                                              </div>	
+					                   </div>
+													</div>
+													<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="timeline-icon-three" data-expanded-icon="timeline-icon-three" id="preg3">
+														<h3 onclick="ShowCheckList(40);">To-Dos This Week</h3>
+														<div class="timeline-grid-pregnancy-three">
+														  <h2 class='txt-center'>Weekly Checklist</h2> 
+                                                            <p class='bottom-margin20'>Get a star every time you complete a total of three tasks. When you collect 5 stars, you'll get a Text4baby badge</p> 
+                                                            <p class='bottom-margin20'>In &quot;More&quot; you can see all your badges!</p> 
+                                                               <div id='checklist-grid'> 
+                                                                 <input name="checkbox-week40-pregnancy-c1" id="checkbox-week40-pregnancy-c1" type='checkbox' onClick='CheckboxSelect(40)'> 
+                                                                 <label for="checkbox-week40-pregnancy-c1">Go to your prenatal visit this week</label> 
+                                                                 <input name="checkbox-week40-pregnancy-c2" id="checkbox-week40-pregnancy-c2" type='checkbox' onClick='CheckboxSelect2(40)'> 
+                                                                 <label for="checkbox-week40-pregnancy-c2">Call the Dr. or midwife if your baby is moving less than normal</label> 
+                                                               </div> 
+                                                            <div class='star-badge-grid'> 
+                                                               <div class='star-rating'> 
+                                                                  <span id='star1'>Star</span> 
+                                                                  <span id='star2'>Star</span> 
+                                                                  <span id='star3'>Star</span> 
+                                                                  <span id='star4'>Star</span> 
+                                                                  <span id='star5'>Star</span> 
+                                                              </div> 
+                                                           <div class='timeline-grid-one txt-center' id='badgediv'> 
+                                                                  <span id='badgespan' >
+                                                                  </span> 
+                                                                  <span id='badgetext' class='badge-name'>
+                                                                  </span>
+                                                           </div>
+                                                        </div>	
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- Pregnancy Accordion Information Ends Here -->
+										  <!--Pregnancy Section Ends Here-->							
+							</div>
+						</div>
+                        <!--Content Section Ends Here-->   
+		</div>
+
+	</body>
+</html>
+
+

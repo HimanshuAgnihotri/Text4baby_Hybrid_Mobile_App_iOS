@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>:: Text4baby :: Sign In ::</title>
+		<link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css" />
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery.mobile-1.3.2.min.js"></script>
+        <link rel="stylesheet" href="themes/css/t4b-style.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/process.js"></script>
+        <script src="js/nativeeventhandler.js"></script>
+		<script src="js/formvalidations.js"></script>
+		<script src="js/exec.js"></script>
+        <script src="js/header-footer-fix.js"></script>
+		<script src="js/analytics.js"></script>
+		<script src="js/pageinfo.js"></script>
+		<script src="phonegap.js"></script>
+        
+        <script src="js/signin.js"></script>
+       
+
+	</head>
+    
+	<body onload="dispdiv_4();">
+    	<div class="ui-loader-background"> </div>
+		<div data-role="page" data-theme="a" id="sign_in_page">
+            
+            <!--Header Section Starts Here-->
+           
+            <!--Header Section Ends Here-->
+            
+            <!--Content Section Starts Here-->
+			<div data-role="content" data-theme="a" id="sign_in_content">
+				<div class="responsive-banner sign-in-banner"></div>
+                
+              
+                <div class="grid-container" id="sign-in-4">
+                	<h2>Reset Password</h2>
+                    <div class="ui-field-contain">
+     					<input name="password-4" id="password-4" class="signin-password-icon" value="" autocomplete="off" type="password" placeholder="Create Password">
+                        <span class="password-info">(at least 8 characters with one number)</span>
+                    </div>
+                    <div class="ui-field-contain">
+     					<input name="password-5" id="password-5" class="repeat-password-icon" value="" autocomplete="off" type="password" placeholder="Confirm Password">
+                    </div>
+                    <div class="ui-field-contain">
+     					<button class="ui-btn ui-corner-all ui-btn-inline" id="savechangepassword">Save</button>
+                    </div>
+                </div>
+               
+			</div>
+            <!--Content Section Ends Here-->
+            
+		</div>
+	</body>
+
+</html>

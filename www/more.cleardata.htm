@@ -1,0 +1,129 @@
+﻿
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>:: Text4baby :: More ::</title>
+		<link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css" />
+        <link rel="stylesheet" href="css/jquery-ui.css" />
+        <link rel="stylesheet" href="themes/css/t4b-style.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        
+        <!-- CORDOVA InApp Browser Code start -->
+        <script>
+            function BeginSplash() {
+
+            }
+        </script>
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery-ui.js"></script>
+		<script src="js/jquery.mobile-1.3.2.min.js"></script>
+        <script src="js/header-footer-fix.js"></script>
+        <script src="phonegap.js"></script>
+        <script src="js/nativeeventhandler.js"></script>
+       <script src="js/databaseoperation.js"></script>
+        <script src="js/process.js"></script>
+		<script src="js/formvalidations.js"></script>
+		<script src="js/exec.js"></script>
+        <script src="js/analytics.js"></script>
+		<script src="js/pageinfo.js"></script>
+        
+        <script>
+            $(document).ready(function () {
+                RegisterPagehit('more-cleardata');
+            });
+        </script>
+
+        <script type="text/javascript" charset="utf-8">
+            document.addEventListener("deviceready", onDeviceReady, false);
+            // Global InAppBrowser reference
+            var iabRef = null;
+            function iabLoadStart(event) {
+                alert(event.type + ' - ' + event.url);
+            }
+            function iabLoadStop(event) {
+                alert(event.type + ' - ' + event.url);
+            }
+            function iabClose(event) {
+                alert(event.type);
+                iabRef.removeEventListener('loadstart', iabLoadStart);
+                iabRef.removeEventListener('loadstop', iabLoadStop);
+                iabRef.removeEventListener('exit', iabClose);
+            }
+            // Cordova is ready
+            function onDeviceReady() {
+                var iVoxC4L = 1;
+            }
+        </script>
+    	<!-- CORDOVA InApp Browser Code end -->
+        
+		
+        
+        <!--Device Back Button Handled Here-->
+
+        <script type="text/javascript">
+            document.addEventListener("backbutton", onBackKeyDown, false);
+
+            function onBackKeyDown(e) {
+                history.go(-1);
+            }
+
+            $(document).on("tap", function () {
+                if (window.localStorage.getItem("session") == 'false') {
+                    //alert('timeout');
+                    window.location = "sign-in.html";
+                }
+
+            });
+        </script> 
+    
+        <!--Device Back Button Handled Here-->
+
+        <script type="text/javascript">
+            $(document).on("change", function () {
+                if (window.localStorage.getItem("session") == 'false') {
+                    window.location = "sign-in.html";
+                }
+
+            });
+        </script>
+
+        
+	</head>
+    
+	<body>
+    	<div class="ui-loader-background"> </div>
+		<div data-role="page" data-theme="a">
+
+            <!--Content Section Starts Here-->
+			<div data-role="content" data-theme="a">
+                          <div class="more-container" id="cleardata_grid">
+                            <h2><!--Clear Data--></h2>
+                            </div>
+
+                            <div class="timeline-grid-one">
+                                <div class="ui-field-contain" id="clear-toggle">
+                                    <div class="flip-due-date-block">
+                                        <label for="flip-select-data">Clear Your Data?</label>
+                                        <select name="flip-select-data" id="flip-select-data" data-role="slider" onchange="OnFlip('ClearDataText');">
+                                            <option value="off" selected="selected">No</option>
+                                            <option value="on">Yes</option>
+                                        </select>
+                                    </div>
+                                     </div>
+                                    <p class="more-text" id="ClearDataPara">Clearing your data will wipe your information including name, password, due date, and all of the appointments you have created from the Text4baby app. You will be able to use the app as if it has just been installed. If you clear your data, you will be asked to sign-in again.</p>
+                               <div class="ui-field-contain">
+                                    <input value="Save" type="submit" id="clearData">
+                                </div>
+                        
+                         </div>
+                 </div>
+            <!--Content Section Ends Here-->
+            
+            
+		</div>
+        
+        <script src="js/update-url.js"></script>
+	</body>
+</html>

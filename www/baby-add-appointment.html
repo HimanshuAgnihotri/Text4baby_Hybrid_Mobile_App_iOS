@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/calendar.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<title>:: Text4baby :: Baby Calendar ::</title>
+		<!-- InstanceEndEditable -->
+		<link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css" />
+        <link rel="stylesheet" href="themes/css/t4b-style.css" />
+        <link rel="stylesheet" href="css/jquery-ui.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- InstanceBeginEditable name="head" -->
+        <!-- InstanceEndEditable -->
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery-ui.js"></script>
+		<script src="js/jquery.mobile-1.3.2.min.js"></script>
+        <script src="js/nativeeventhandler.js"></script>
+        <script src="js/calendar.js"></script>
+        <script src = "js/process.js"></script> 
+		<script src = "js/exec.js"></script> 
+        <script src = "js/formvalidations.js"></script>
+        <script src="js/analytics.js"></script>
+		<script src="js/pageinfo.js"></script>	 
+        <!--<script src="js/databaseoperation.js"></script>-->
+        <link href="css/mobiscroll.custom-2.13.2.min.css" rel="stylesheet" type="text/css" />
+		<script src="js/mobiscroll.custom-2.13.2.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(function () {
+                //var curr = new Date().getFullYear();
+                var opt = {
+
+                }
+
+                opt.date = { preset: 'date' };
+                //opt.datetime = { preset : 'datetime', minDate: new Date(2012,3,10,9,22), maxDate: new Date(2014,7,30,15,44), stepMinute: 5  };
+                //opt.time = {preset : 'time'};
+
+
+                $('select.changes').bind('change', function () {
+                    var demo = $('#demo').val();
+                    $(".demos").hide();
+                    if (!($("#demo_" + demo).length))
+                        demo = 'default';
+
+                    $("#demo_" + demo).show();
+                    $('#baby-appointment-date,#pregnancy-appointment-date').scroller('destroy').scroller($.extend(opt[$('#demo').val()], { theme: 'ios', mode: $('#mode').val(), display: 'bottom', lang: $('#language').val(), onCancel: function (valueText, inst) {
+                        $('#baby-appointment-date,#pregnancy-appointment-date').blur();
+                    }
+                    }));
+
+                });
+
+                $('#demo').trigger('change');
+            });
+			</script>
+</head>
+    
+	<body onload="display('baby-add-appointment');">
+    <div class="ui-loader-background"> </div>
+	<div data-role="page" data-theme="a">
+            
+             
+            
+            <!--Content Section Starts Here-->
+			<div data-role="content" data-theme="a">
+            
+            <div id="timeline">
+            <div data-role="fieldcontain" style=" display: none;">   
+                  					    <input type="hidden" id="tType" value="page" />                                     	
+                                        <select name="demo" id="demo" class="changes">                                            
+                       						 <option value="date" >Date</option>
+                                        </select>
+                            </div>
+				<!-- InstanceBeginEditable name="Content Section" -->
+                <!-- Baby Calender Divs Starts here-->
+             
+
+                <div id="baby-add-appointment" >
+                 <div class="grid-container" id="appointment-grid">                	
+                	<!--<p>Text4baby sends free appointment reminders via text message. Reminder texts will be sent three days before and the morning of the appointment.</p>-->
+                	<div class="pink-bg">
+                        <p>Text4baby sends free appointment reminders via text message. Enter your appointment information below to set up a text message reminder.</p>
+                    </div>
+                    <p>When is your appointment?</p>
+                    <div class="ui-field-contain">
+                    	<input name="baby-appointment-date" id="baby-appointment-date" class="appointment-fld-icon" placeholder="Appointment Date" value="" data-role="date" data-inline="true" type="text" readonly onchange="showdate('baby-appointment');">
+                    </div>
+                    <p>What is the appointment for?</p>
+                    <span class="password-info">(20 characters or less, please!)</span>
+                    <div class="ui-field-contain">
+     					<input name="baby-appointment-title" id="baby-appointment-title" class="appointment-title-icon" placeholder="Example: 3pm apt w Dr Parker" value="" type="text" maxlength="20">
+                    </div>
+                    <div class="ui-field-contain">
+                    	<input value="Save" type="submit" id="baby-appointment-save">
+                    </div>
+                    <p style="display:none" id="nbidhidden"></p>
+                    <p style="display:none" id="nbtypeidhidden"></p>
+                    <!--<p style="display:none" id="nbsubtypeidhidden"></p>-->
+                </div>
+                </div>
+
+                <!-- Baby Calender Divs Ends here-->
+
+               
+				<!-- InstanceEndEditable -->	
+			</div>
+            </div>
+            <!--Content Section Ends Here-->
+            
+            <!--Footer Section Starts Here-->
+            
+            <!--Footer Section Ends Here-->
+            
+		</div>
+        
+	</body>
+<!-- InstanceEnd --></html>
