@@ -14,15 +14,15 @@ var password = "pyramid123";*/
 
 
 //New Credentials From 8 May 2015: Details For Production
-var username = "VoxivaText4babyiOSMobileApp";
+/*var username = "VoxivaText4babyiOSMobileApp";
 var password = "api@123$%";
 
-var URL      = "https://vste2.voxiva.net/voxiva.apiv2/getresponse.callback"; // For Produtcion
+var URL      = "https://vste2.voxiva.net/voxiva.apiv2/getresponse.callback"; // For Produtcion*/
 
 //Credentials For Development
-/*var username = "APIServiceAccountBI";
+var username = "APIServiceAccountBI";
 var password = "pyramid123";
-var URL = "https://dev.ches.ste.voxiva.net/voxiva.apiv2/getresponse.callback";*/
+var URL = "https://dev.ches.ste.voxiva.net/voxiva.apiv2/getresponse.callback";
 
 function transaction(str, action, subaction) {
     //    alert("transaction:" + str +"\naction:" + action + "\nsubaction:" + subaction);

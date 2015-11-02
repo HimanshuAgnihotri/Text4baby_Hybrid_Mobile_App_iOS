@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface VisitorDesignType2Cell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *labelVisitName;
+@property (weak, nonatomic) IBOutlet UILabel *labelVisitDate;
+@property (weak, nonatomic) IBOutlet UILabel *labelVisitDescription;
 
 @end

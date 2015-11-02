@@ -34,6 +34,11 @@
                     </label>
                 </subviews>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="labelVisitDate" destination="fln-iw-889" id="zkT-Mt-GzT"/>
+                <outlet property="labelVisitDescription" destination="FQW-OG-KwE" id="RuK-Ai-A2O"/>
+                <outlet property="labelVisitName" destination="Hwy-D4-TE3" id="tGq-Aj-IbG"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>
