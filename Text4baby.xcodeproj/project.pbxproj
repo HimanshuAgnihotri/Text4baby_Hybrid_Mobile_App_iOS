@@ -7,13 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A3B898321BE34B8100F1E06E /* VisitOptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B898311BE34B8100F1E06E /* VisitOptionViewController.m */; };
-		A3B898351BE34BAA00F1E06E /* VaccinesOptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B898341BE34BAA00F1E06E /* VaccinesOptionViewController.m */; };
-		A3B898381BE37C0500F1E06E /* visit-top-banner.png in Resources */ = {isa = PBXBuildFile; fileRef = A3B898371BE37C0500F1E06E /* visit-top-banner.png */; };
-		A3B8983C1BE3868300F1E06E /* VisitorDesignType1Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B8983A1BE3868300F1E06E /* VisitorDesignType1Cell.m */; };
-		A3B8983D1BE3868300F1E06E /* VisitorDesignType1Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3B8983B1BE3868300F1E06E /* VisitorDesignType1Cell.xib */; };
-		A3B898411BE386A800F1E06E /* VisitorDesignType2Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B8983F1BE386A800F1E06E /* VisitorDesignType2Cell.m */; };
-		A3B898421BE386A800F1E06E /* VisitorDesignType2Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3B898401BE386A800F1E06E /* VisitorDesignType2Cell.xib */; };
 		A3DBB7861AE78C3900ACB51E /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DBB7821AE78C3900ACB51E /* Icon-60@2x.png */; };
 		A3DBB7871AE78C3900ACB51E /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DBB7831AE78C3900ACB51E /* Icon-60@3x.png */; };
 		A3DBB7881AE78C3900ACB51E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A3DBB7841AE78C3900ACB51E /* Icon.png */; };
@@ -79,17 +72,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A3B898301BE34B8100F1E06E /* VisitOptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VisitOptionViewController.h; path = "New-VCs/VisitOptionViewController.h"; sourceTree = "<group>"; };
-		A3B898311BE34B8100F1E06E /* VisitOptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VisitOptionViewController.m; path = "New-VCs/VisitOptionViewController.m"; sourceTree = "<group>"; };
-		A3B898331BE34BAA00F1E06E /* VaccinesOptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VaccinesOptionViewController.h; path = "New-VCs/VaccinesOptionViewController.h"; sourceTree = "<group>"; };
-		A3B898341BE34BAA00F1E06E /* VaccinesOptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VaccinesOptionViewController.m; path = "New-VCs/VaccinesOptionViewController.m"; sourceTree = "<group>"; };
-		A3B898371BE37C0500F1E06E /* visit-top-banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "visit-top-banner.png"; sourceTree = "<group>"; };
-		A3B898391BE3868300F1E06E /* VisitorDesignType1Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VisitorDesignType1Cell.h; path = "Utility-Classes/VisitorDesignType1Cell.h"; sourceTree = "<group>"; };
-		A3B8983A1BE3868300F1E06E /* VisitorDesignType1Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VisitorDesignType1Cell.m; path = "Utility-Classes/VisitorDesignType1Cell.m"; sourceTree = "<group>"; };
-		A3B8983B1BE3868300F1E06E /* VisitorDesignType1Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VisitorDesignType1Cell.xib; path = "Utility-Classes/VisitorDesignType1Cell.xib"; sourceTree = "<group>"; };
-		A3B8983E1BE386A800F1E06E /* VisitorDesignType2Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VisitorDesignType2Cell.h; path = "Utility-Classes/VisitorDesignType2Cell.h"; sourceTree = "<group>"; };
-		A3B8983F1BE386A800F1E06E /* VisitorDesignType2Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VisitorDesignType2Cell.m; path = "Utility-Classes/VisitorDesignType2Cell.m"; sourceTree = "<group>"; };
-		A3B898401BE386A800F1E06E /* VisitorDesignType2Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VisitorDesignType2Cell.xib; path = "Utility-Classes/VisitorDesignType2Cell.xib"; sourceTree = "<group>"; };
 		A3DBB7821AE78C3900ACB51E /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
 		A3DBB7831AE78C3900ACB51E /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
 		A3DBB7841AE78C3900ACB51E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
@@ -194,18 +176,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A3B898361BE37BF000F1E06E /* NewChanges-Images */ = {
-			isa = PBXGroup;
-			children = (
-				A3B898371BE37C0500F1E06E /* visit-top-banner.png */,
-			);
-			name = "NewChanges-Images";
-			sourceTree = "<group>";
-		};
 		EC0F27E21914201400E887E1 = {
 			isa = PBXGroup;
 			children = (
-				A3B898361BE37BF000F1E06E /* NewChanges-Images */,
 				A3DBB7821AE78C3900ACB51E /* Icon-60@2x.png */,
 				A3DBB7831AE78C3900ACB51E /* Icon-60@3x.png */,
 				A3DBB7841AE78C3900ACB51E /* Icon.png */,
@@ -261,10 +234,6 @@
 				EC6C22B21A1957220034BD2F /* SwapViewProtocol.h */,
 				EC14C92619B395BC00E501E3 /* SwapViewController.h */,
 				EC14C92719B395BC00E501E3 /* SwapViewController.m */,
-				A3B898301BE34B8100F1E06E /* VisitOptionViewController.h */,
-				A3B898311BE34B8100F1E06E /* VisitOptionViewController.m */,
-				A3B898331BE34BAA00F1E06E /* VaccinesOptionViewController.h */,
-				A3B898341BE34BAA00F1E06E /* VaccinesOptionViewController.m */,
 				EC6F296019A5950F009ABBFA /* BrowserSwipeViewController.h */,
 				EC6F296119A5950F009ABBFA /* BrowserSwipeViewController.m */,
 				ECB161B11A0BE2C300411DA2 /* CalendarViewController.h */,
@@ -289,12 +258,6 @@
 				EC834C6119E21E5C0002A1EA /* WeekTableViewController.m */,
 				ECB9C2151A257558003BD819 /* BaseNavController.h */,
 				ECB9C2161A257558003BD819 /* BaseNavController.m */,
-				A3B8983E1BE386A800F1E06E /* VisitorDesignType2Cell.h */,
-				A3B8983F1BE386A800F1E06E /* VisitorDesignType2Cell.m */,
-				A3B898401BE386A800F1E06E /* VisitorDesignType2Cell.xib */,
-				A3B898391BE3868300F1E06E /* VisitorDesignType1Cell.h */,
-				A3B8983A1BE3868300F1E06E /* VisitorDesignType1Cell.m */,
-				A3B8983B1BE3868300F1E06E /* VisitorDesignType1Cell.xib */,
 			);
 			path = nT4B1;
 			sourceTree = "<group>";
@@ -430,7 +393,6 @@
 				EC834C6419EAD90A0002A1EA /* logo-bg.png in Resources */,
 				EC8CAAAF1A36AD7800959CDB /* switch-pregnancy.png in Resources */,
 				EC03799619CA6FA700EBE083 /* welcomevideo.mp4 in Resources */,
-				A3B8983D1BE3868300F1E06E /* VisitorDesignType1Cell.xib in Resources */,
 				EC834C6719ECD1110002A1EA /* VAGRoundedStd-Bold.otf in Resources */,
 				A3DBB7881AE78C3900ACB51E /* Icon.png in Resources */,
 				ECAF86DD1A1826EB005A76E6 /* tab-topics-02a.png in Resources */,
@@ -438,12 +400,10 @@
 				EC0F28021914201400E887E1 /* Main_iPhone.storyboard in Resources */,
 				ECAF86D81A1826EB005A76E6 /* tab-calendar-02b.png in Resources */,
 				EC834C6819ECD1110002A1EA /* VAGRoundedStd-Light.otf in Resources */,
-				A3B898381BE37C0500F1E06E /* visit-top-banner.png in Resources */,
 				EC14C92519B36D2A00E501E3 /* TopicsPreg.plist in Resources */,
 				EC661875193B8FB00090730E /* nT4B-120x120.png in Resources */,
 				EC14C92219B36D2A00E501E3 /* TimelineBaby.plist in Resources */,
 				EC4B02C51A06523100E62310 /* t4b-background-01.png in Resources */,
-				A3B898421BE386A800F1E06E /* VisitorDesignType2Cell.xib in Resources */,
 				ECAF86D71A1826EB005A76E6 /* tab-calendar-02a.png in Resources */,
 				A3DBB7871AE78C3900ACB51E /* Icon-60@3x.png in Resources */,
 				EC2665901A1ECE9900FFBDA3 /* Default-568h@2x.png in Resources */,
@@ -484,12 +444,8 @@
 				EC6C22BF1A1C21D10034BD2F /* WaitViewController.m in Sources */,
 				EC834C6219E21E5C0002A1EA /* WeekTableViewController.m in Sources */,
 				EC6F296619A6D123009ABBFA /* WebViewController.m in Sources */,
-				A3B898411BE386A800F1E06E /* VisitorDesignType2Cell.m in Sources */,
 				ECAF86CC1A178458005A76E6 /* WelcomeViewController.m in Sources */,
-				A3B898321BE34B8100F1E06E /* VisitOptionViewController.m in Sources */,
-				A3B8983C1BE3868300F1E06E /* VisitorDesignType1Cell.m in Sources */,
 				EC834C5919DF940E0002A1EA /* ContactUsViewController.m in Sources */,
-				A3B898351BE34BAA00F1E06E /* VaccinesOptionViewController.m in Sources */,
 				EC0F27FB1914201400E887E1 /* main.m in Sources */,
 				EC664A001929B8AF00AC2ED4 /* MoreViewController.m in Sources */,
 				EC14C92819B395BC00E501E3 /* SwapViewController.m in Sources */,

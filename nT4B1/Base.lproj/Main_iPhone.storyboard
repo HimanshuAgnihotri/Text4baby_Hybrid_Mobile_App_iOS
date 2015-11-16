@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="iuO-re-na4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="iuO-re-na4">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -16,7 +16,7 @@
         <scene sceneID="99L-CR-Rmi">
             <objects>
                 <navigationController title="TimelineNav" definesPresentationContext="YES" id="aeH-px-mcm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="tab-timeline-02b.png" id="MfT-LO-sko"/>
+                    <tabBarItem key="tabBarItem" title="Timeline" image="tab-timeline-02b.png" id="MfT-LO-sko"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="ymh-om-atW">
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
@@ -303,7 +303,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sJ4-md-Ufd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-826" y="1148"/>
+            <point key="canvasLocation" x="-567" y="1130"/>
         </scene>
         <!--GetReady-->
         <scene sceneID="rIc-Tv-Q4w">
@@ -341,7 +341,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z7q-C4-uaL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-138" y="1446"/>
+            <point key="canvasLocation" x="-161" y="1126"/>
         </scene>
         <!--MoreNav-->
         <scene sceneID="Mdr-JV-4P9">
@@ -438,47 +438,11 @@
             </objects>
             <point key="canvasLocation" x="1594" y="1113"/>
         </scene>
-        <!--Vaccines-->
-        <scene sceneID="Ewf-xH-apQ">
-            <objects>
-                <navigationController id="sOl-9f-yp1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Vaccines" image="tab-topics-02b.png" id="jXS-jH-92T"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AJX-Ho-SpZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="65G-SF-ps7" kind="relationship" relationship="rootViewController" id="CdF-eR-TVL"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="H5d-Lw-yqS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-451" y="706"/>
-        </scene>
-        <!--Text4baby-->
-        <scene sceneID="CNz-bS-Yik">
-            <objects>
-                <viewController id="65G-SF-ps7" customClass="VaccinesOptionViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uWH-hc-rUu"/>
-                        <viewControllerLayoutGuide type="bottom" id="aEf-lM-iHE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="enV-zZ-kvY">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Text4baby" id="jV4-1W-OQx"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="F32-Ji-DcM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-48" y="764"/>
-        </scene>
         <!--TopicsNav-->
         <scene sceneID="JXa-MA-ijE">
             <objects>
                 <navigationController title="TopicsNav" definesPresentationContext="YES" id="3YQ-mA-S6X" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Learn" image="tab-topics-02a.png" id="cns-c0-hPp"/>
+                    <tabBarItem key="tabBarItem" title="Topics" image="tab-topics-02a.png" id="cns-c0-hPp"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="ibr-cP-7y0">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="1" green="0.0" blue="0.64263999829999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -585,7 +549,6 @@
                     <connections>
                         <segue destination="aeH-px-mcm" kind="relationship" relationship="viewControllers" id="rd2-yj-2iG"/>
                         <segue destination="wpT-7r-8DL" kind="relationship" relationship="viewControllers" id="b3q-Gs-Fug"/>
-                        <segue destination="sOl-9f-yp1" kind="relationship" relationship="viewControllers" id="TW9-cQ-opH"/>
                         <segue destination="3YQ-mA-S6X" kind="relationship" relationship="viewControllers" id="LAL-r3-Jrk"/>
                         <segue destination="FRD-fY-RUc" kind="relationship" relationship="viewControllers" id="omk-Lg-3VD"/>
                     </connections>
@@ -598,7 +561,7 @@
         <scene sceneID="WyR-rf-V0x">
             <objects>
                 <navigationController title="CalendarNav" definesPresentationContext="YES" id="wpT-7r-8DL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Visits" image="tab-calendar-02a.png" id="pNZ-OJ-tVE"/>
+                    <tabBarItem key="tabBarItem" title="Appts" image="tab-calendar-02a.png" id="pNZ-OJ-tVE"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="nzL-Fr-U7d">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="1" green="0.0" blue="0.64263999829999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -608,7 +571,7 @@
                         </textAttributes>
                     </navigationBar>
                     <connections>
-                        <segue destination="nuv-qU-ukp" kind="relationship" relationship="rootViewController" id="zJQ-7R-qzE"/>
+                        <segue destination="hN5-iS-BCV" kind="relationship" relationship="rootViewController" id="t2T-aP-iUe"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Efv-cZ-a1v" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -633,7 +596,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k1d-eZ-cAg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2273" y="-224"/>
+            <point key="canvasLocation" x="1594" y="-204"/>
         </scene>
         <!--Base Nav Controller-->
         <scene sceneID="4D7-ZT-pzb">
@@ -747,7 +710,7 @@
                         <viewControllerLayoutGuide type="bottom" id="i54-lB-DAk"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1Cn-je-OYq">
-                        <rect key="frame" x="0.0" y="64" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
@@ -765,132 +728,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="86e-hW-KcF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1747" y="-204"/>
-        </scene>
-        <!--Visit-->
-        <scene sceneID="GmS-I4-CFS">
-            <objects>
-                <viewController title="Visit" id="nuv-qU-ukp" customClass="VisitOptionViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="KiO-Ob-nPG"/>
-                        <viewControllerLayoutGuide type="bottom" id="x49-B7-OjD"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="sXZ-LP-fRT">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="visit-top-banner.png" translatesAutoresizingMaskIntoConstraints="NO" id="o87-lO-6t8">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
-                            </imageView>
-                            <view alpha="0.39999999999999963" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xmD-eF-9vv">
-                                <rect key="frame" x="0.0" y="20" width="85" height="32"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Next Visit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQ3-Mo-hzn">
-                                        <rect key="frame" x="0.0" y="0.0" width="85" height="33"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="14"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <view alpha="0.39999999999999963" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hOC-40-onY">
-                                <rect key="frame" x="0.0" y="100" width="320" height="60"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Parental Visit 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLv-HU-8HN">
-                                        <rect key="frame" x="8" y="2" width="124" height="21"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgx-nA-ov8">
-                                        <rect key="frame" x="132" y="3" width="2" height="21"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2W4-rd-Xyt">
-                                        <rect key="frame" x="8" y="24" width="244" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <state key="normal" title="Learn more about this visit &gt;">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="moreVisitBtnPressed:" destination="nuv-qU-ukp" eventType="touchUpInside" id="x6X-jY-bHM"/>
-                                        </connections>
-                                    </button>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gfh-c3-gda">
-                                        <rect key="frame" x="148" y="22" width="160" height="2"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tym-Fp-dni">
-                                        <rect key="frame" x="156" y="-2" width="144" height="30"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                        <state key="normal" title="Add Date"/>
-                                        <connections>
-                                            <action selector="addORupdateBtnPressed:" destination="nuv-qU-ukp" eventType="touchUpInside" id="Ofv-6h-2o9"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Visit Timeline" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCv-qa-Hza">
-                                <rect key="frame" x="12" y="166" width="109" height="28"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asg-KS-1Am">
-                                <rect key="frame" x="12" y="192" width="294" height="71"/>
-                                <string key="text">Welcome to your personal visit calendar! Add your appointment date and we’ll send you a text message reminder. Tap on a visit to learn more.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="1rG-vI-yfY">
-                                <rect key="frame" x="12" y="266" width="296" height="188"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="pId-WW-hYj">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pId-WW-hYj" id="wjI-b4-gXi">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="qb0-eP-mMB">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qb0-eP-mMB" id="c5k-UU-2xf">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="vY4-vz-ap5">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vY4-vz-ap5" id="5fd-wl-I8i">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <sections/>
-                                <connections>
-                                    <outlet property="dataSource" destination="nuv-qU-ukp" id="Ebg-Nc-onH"/>
-                                    <outlet property="delegate" destination="nuv-qU-ukp" id="G6y-4G-4J2"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Text4baby" id="63d-r0-HRx"/>
-                    <connections>
-                        <outlet property="addORupdateDateBtn" destination="tym-Fp-dni" id="UZt-S1-oap"/>
-                        <outlet property="moreVisitBtn" destination="2W4-rd-Xyt" id="Dt5-te-5Am"/>
-                        <outlet property="tableView" destination="1rG-vI-yfY" id="IiV-Ia-NJb"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ETS-8n-Ic8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1295" y="-204"/>
+            <point key="canvasLocation" x="1084" y="-204"/>
         </scene>
         <!--Topics-->
         <scene sceneID="Nvd-X5-I02">
@@ -976,9 +814,7 @@
         <image name="tab-more-02a.png" width="30" height="30"/>
         <image name="tab-timeline-02b.png" width="30" height="30"/>
         <image name="tab-topics-02a.png" width="30" height="30"/>
-        <image name="tab-topics-02b.png" width="30" height="30"/>
         <image name="timeline-preg-03.png" width="30" height="30"/>
-        <image name="visit-top-banner.png" width="320" height="139"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
